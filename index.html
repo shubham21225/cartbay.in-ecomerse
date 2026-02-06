@@ -1,179 +1,275 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CartBay - Premium Indian eCommerce</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
     <!-- Main container for WordPress/WooCommerce integration -->
     <div class="cb-homepage-container">
-        
-        <!-- HEADER SECTION -->
-        <header class="cb-header">
-            <div class="cb-header__inner">
-                <!-- Logo and Mobile Menu Toggle -->
-                <div class="cb-header__top">
-                    <button class="cb-header__mobile-toggle" id="mobileMenuToggle">
-                        <i class="fas fa-bars"></i>
-                    </button>
-                    
-                    <div class="cb-header__logo">
-                        <a href="#" class="cb-header__logo-link">
-                            <span class="cb-header__logo-text">CartBay</span>
-                        </a>
-                    </div>
-                    
-                    <div class="cb-header__right">
-                        <div class="cb-header__search">
-                            <button class="cb-header__search-toggle" id="searchToggle">
-                                <i class="fas fa-search"></i>
-                            </button>
-                        </div>
-                        
-                        <div class="cb-header__user">
-                            <a href="#" class="cb-header__user-link">
-                                <i class="fas fa-user"></i>
-                            </a>
-                        </div>
-                        
-                        <div class="cb-header__cart">
-                            <a href="cart.html" class="cb-header__cart-link">
-                                <i class="fas fa-shopping-bag"></i>
-                                <span class="cb-header__cart-count">0</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Search Bar (Hidden on Mobile by default) -->
-                <div class="cb-header__search-bar" id="searchBar">
-                    <form class="cb-header__search-form">
-                        <input type="text" class="cb-header__search-input" placeholder="Search for products...">
-                        <button type="submit" class="cb-header__search-submit">
-                            <i class="fas fa-search"></i>
-                        </button>
-                    </form>
-                    <button class="cb-header__search-close" id="searchClose">
-                        <i class="fas fa-times"></i>
-                    </button>
-                </div>
-                
-                <!-- Main Navigation -->
-                <nav class="cb-header__nav" id="mainNav">
-                    <ul class="cb-header__nav-list">
-                        <li class="cb-header__nav-item">
-                            <a href="#" class="cb-header__nav-link">Home</a>
-                        </li>
-                        <li class="cb-header__nav-item cb-header__nav-item--has-dropdown">
-                            <a href="#" class="cb-header__nav-link">Collections</a>
-                            <div class="cb-header__dropdown">
-                                <a href="#" class="cb-header__dropdown-link">Home Essentials</a>
-                                <a href="#" class="cb-header__dropdown-link">Personal Care</a>
-                                <a href="#" class="cb-header__dropdown-link">Kitchen & Dining</a>
-                                <a href="#" class="cb-header__dropdown-link">Sustainable Living</a>
-                            </div>
-                        </li>
-                        <li class="cb-header__nav-item">
-                            <a href="all-products.html" class="cb-header__nav-link">Best Sellers</a>
-                        </li>
-                        <li class="cb-header__nav-item">
-                            <a href="blogs.html" class="cb-header__nav-link">Our Blogs</a>
-                        </li>
-                        <li class="cb-header__nav-item">
-                            <a href="about.html" class="cb-header__nav-link">Our Story</a>
-                        </li>
-                        <li class="cb-header__nav-item">
-                            <a href="contact.html" class="cb-header__nav-link">Contact</a>
-                        </li>
-                    </ul>
-                    
-                    <!-- Mobile-only additional links -->
-                    <div class="cb-header__mobile-extras">
-                        <a href="#" class="cb-header__mobile-link">
-                            <i class="fas fa-user"></i>
-                            My Account
-                        </a>
-                        <a href="#" class="cb-header__mobile-link">
-                            <i class="fas fa-heart"></i>
-                            Wishlist
-                        </a>
-                        <a href="#" class="cb-header__mobile-link">
-                            <i class="fas fa-question-circle"></i>
-                            Help Center
-                        </a>
-                    </div>
-                </nav>
+      <!-- HEADER SECTION -->
+      <header class="cb-header">
+        <div class="cb-header__inner">
+          <!-- Logo and Mobile Menu Toggle -->
+          <div class="cb-header__top">
+            <button class="cb-header__mobile-toggle" id="mobileMenuToggle">
+              <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="cb-header__logo">
+              <a href="#" class="cb-header__logo-link">
+                <span class="cb-header__logo-text">CartBay</span>
+              </a>
             </div>
-        </header>
 
-        <!-- MAIN CONTENT (Your existing sections here) -->
-        <main class="cb-main-content">
-            
-            <!-- Section 1: Hero -->
-            <section class="cb-home-hero">
-                <div class="cb-home-hero__inner">
-                    <div class="cb-home-hero__content">
-                        <h1 class="cb-home-hero__title">Curated Quality, Delivered with Care</h1>
-                        <p class="cb-home-hero__subtitle">Discover thoughtfully selected products for your home and life.</p>
-                        <div class="cb-home-hero__cta-group">
-                            <a href="#" class="cb-home-hero__cta-primary">Explore Collections</a>
-                            <a href="#" class="cb-home-hero__cta-secondary">Learn More</a>
-                        </div>
-                    </div>
-                    <div class="cb-home-hero__image">
-                        <div class="cb-home-hero__image-placeholder">
-                            <!-- In production, replace with actual lifestyle image -->
-                            <div class="cb-home-hero__image-overlay">Premium Lifestyle Image</div>
-                        </div>
-                    </div>
+            <div class="cb-header__right">
+              <div class="cb-header__search">
+                <button class="cb-header__search-toggle" id="searchToggle">
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+
+              <div class="cb-header__user">
+                <a href="#" class="cb-header__user-link">
+                  <i class="fas fa-user"></i>
+                </a>
+              </div>
+
+              <div class="cb-header__cart">
+                <a href="cart.html" class="cb-header__cart-link">
+                  <i class="fas fa-shopping-bag"></i>
+                  <span class="cb-header__cart-count">0</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Search Bar (Hidden on Mobile by default) -->
+          <div class="cb-header__search-bar" id="searchBar">
+            <form class="cb-header__search-form">
+              <input
+                type="text"
+                class="cb-header__search-input"
+                placeholder="Search for products..."
+              />
+              <button type="submit" class="cb-header__search-submit">
+                <i class="fas fa-search"></i>
+              </button>
+            </form>
+            <button class="cb-header__search-close" id="searchClose">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+
+          <!-- Main Navigation -->
+          <nav class="cb-header__nav" id="mainNav">
+            <ul class="cb-header__nav-list">
+              <li class="cb-header__nav-item">
+                <a href="#" class="cb-header__nav-link">Home</a>
+              </li>
+              <li class="cb-header__nav-item cb-header__nav-item--has-dropdown">
+                <a href="#" class="cb-header__nav-link">Collections</a>
+                <div class="cb-header__dropdown">
+                  <a href="#" class="cb-header__dropdown-link"
+                    >Home Essentials</a
+                  >
+                  <a href="#" class="cb-header__dropdown-link">Personal Care</a>
+                  <a href="#" class="cb-header__dropdown-link"
+                    >Kitchen & Dining</a
+                  >
+                  <a href="#" class="cb-header__dropdown-link"
+                    >Sustainable Living</a
+                  >
                 </div>
-            </section>
+              </li>
+              <li class="cb-header__nav-item">
+                <a href="all-products.html" class="cb-header__nav-link"
+                  >Best Sellers</a
+                >
+              </li>
+              <li class="cb-header__nav-item">
+                <a href="blogs.html" class="cb-header__nav-link">Our Blogs</a>
+              </li>
+              <li class="cb-header__nav-item">
+                <a href="about.html" class="cb-header__nav-link">Our Story</a>
+              </li>
+              <li class="cb-header__nav-item">
+                <a href="contact.html" class="cb-header__nav-link">Contact</a>
+              </li>
+            </ul>
 
-            <!-- Section 2: Trust Signals -->
-            <section class="cb-home-trust">
-                <div class="cb-home-trust__inner">
-                    <h2 class="cb-home-trust__title">Why Shop With CartBay</h2>
-                    <div class="cb-home-trust__grid">
-                        <div class="cb-home-trust__item">
-                            <div class="cb-home-trust__icon">
-                                <i class="fas fa-shield-alt"></i>
-                            </div>
-                            <h3 class="cb-home-trust__item-title">Secure Shopping</h3>
-                            <p class="cb-home-trust__item-text">SSL encrypted payments with 100% secure checkout</p>
-                        </div>
-                        <div class="cb-home-trust__item">
-                            <div class="cb-home-trust__icon">
-                                <i class="fas fa-truck"></i>
-                            </div>
-                            <h3 class="cb-home-trust__item-title">Free Shipping</h3>
-                            <p class="cb-home-trust__item-text">Free delivery on orders above ₹999 across India</p>
-                        </div>
-                        <div class="cb-home-trust__item">
-                            <div class="cb-home-trust__icon">
-                                <i class="fas fa-undo"></i>
-                            </div>
-                            <h3 class="cb-home-trust__item-title">Easy Returns</h3>
-                            <p class="cb-home-trust__item-text">10-day return policy with no questions asked</p>
-                        </div>
-                        <div class="cb-home-trust__item">
-                            <div class="cb-home-trust__icon">
-                                <i class="fas fa-headset"></i>
-                            </div>
-                            <h3 class="cb-home-trust__item-title">Support</h3>
-                            <p class="cb-home-trust__item-text">Dedicated customer care available 7 days a week</p>
-                        </div>
-                    </div>
+            <!-- Mobile-only additional links -->
+            <div class="cb-header__mobile-extras">
+              <a href="#" class="cb-header__mobile-link">
+                <i class="fas fa-user"></i>
+                My Account
+              </a>
+              <a href="#" class="cb-header__mobile-link">
+                <i class="fas fa-heart"></i>
+                Wishlist
+              </a>
+              <a href="#" class="cb-header__mobile-link">
+                <i class="fas fa-question-circle"></i>
+                Help Center
+              </a>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <!-- MAIN CONTENT (Your existing sections here) -->
+      <main class="cb-main-content">
+        <!-- Section 1: Hero -->
+        <section class="cb-home-hero">
+          <div class="cb-home-hero__inner">
+            <div class="cb-home-hero__content">
+              <h1 class="cb-home-hero__title">
+                Curated Quality, Delivered with Care
+              </h1>
+              <p class="cb-home-hero__subtitle">
+                Discover thoughtfully selected products for your home and life.
+              </p>
+              <div class="cb-home-hero__cta-group">
+                <a href="#" class="cb-home-hero__cta-primary"
+                  >Explore Collections</a
+                >
+                <a href="#" class="cb-home-hero__cta-secondary">Learn More</a>
+              </div>
+            </div>
+            <div class="cb-home-hero__image">
+              <div class="cb-home-hero__image-placeholder">
+                <!-- In production, replace with actual lifestyle image -->
+                <div class="cb-home-hero__image-overlay">
+                  Premium Lifestyle Image
                 </div>
-            </section>
+              </div>
+            </div>
+          </div>
+        </section>
 
-            <!-- Section 3: Featured Collections -->
-            <section class="cb-home-collections">
+        <!-- Section 2: Trust Signals -->
+        <section class="cb-home-trust">
+          <div class="cb-home-trust__inner">
+            <h2 class="cb-home-trust__title">Why Shop With CartBay</h2>
+            <div class="cb-home-trust__grid">
+              <div class="cb-home-trust__item">
+                <div class="cb-home-trust__icon">
+                  <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3 class="cb-home-trust__item-title">Secure Shopping</h3>
+                <p class="cb-home-trust__item-text">
+                  SSL encrypted payments with 100% secure checkout
+                </p>
+              </div>
+              <div class="cb-home-trust__item">
+                <div class="cb-home-trust__icon">
+                  <i class="fas fa-truck"></i>
+                </div>
+                <h3 class="cb-home-trust__item-title">Free Shipping</h3>
+                <p class="cb-home-trust__item-text">
+                  Free delivery on orders above ₹999 across India
+                </p>
+              </div>
+              <div class="cb-home-trust__item">
+                <div class="cb-home-trust__icon">
+                  <i class="fas fa-undo"></i>
+                </div>
+                <h3 class="cb-home-trust__item-title">Easy Returns</h3>
+                <p class="cb-home-trust__item-text">
+                  10-day return policy with no questions asked
+                </p>
+              </div>
+              <div class="cb-home-trust__item">
+                <div class="cb-home-trust__icon">
+                  <i class="fas fa-headset"></i>
+                </div>
+                <h3 class="cb-home-trust__item-title">Support</h3>
+                <p class="cb-home-trust__item-text">
+                  Dedicated customer care available 7 days a week
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 3: Featured Collections -->
+        <section class="cb-home-collections">
+          <div class="cb-home-collections__inner">
+            <div class="cb-home-collections__header">
+              <h2 class="cb-home-collections__title">Featured Collections</h2>
+              <p class="cb-home-collections__subtitle">
+                Carefully curated special selections for modern living
+              </p>
+            </div>
+            <div class="cb-home-collections__grid">
+              <a href="#" class="cb-home-collections__card">
+                <div class="cb-home-collections__card-image">
+                  <img
+                    src="https://i.pinimg.com/736x/37/84/08/37840842216139312fe81b7f6a87879a.jpg"
+                    alt="Home Essentials collection"
+                  />
+                </div>
+                <h3 class="cb-home-collections__card-title">Home Essentials</h3>
+                <p class="cb-home-collections__card-text">
+                  Premium quality products for everyday living
+                </p>
+              </a>
+              <a href="#" class="cb-home-collections__card">
+                <div class="cb-home-collections__card-image">
+                  <img
+                    src="https://i.pinimg.com/736x/fb/29/e7/fb29e7b9e4bf9deec8c62748ab35f2fc.jpg"
+                    alt="Personal Care collection"
+                  />
+                </div>
+                <h3 class="cb-home-collections__card-title">Personal Care</h3>
+                <p class="cb-home-collections__card-text">
+                  Thoughtfully crafted self-care essentials
+                </p>
+              </a>
+              <a href="#" class="cb-home-collections__card">
+                <div class="cb-home-collections__card-image">
+                  <img
+                    src="https://i.pinimg.com/736x/37/84/08/37840842216139312fe81b7f6a87879a.jpg"
+                    alt="Kitchen & Dining collection"
+                  />
+                </div>
+                <h3 class="cb-home-collections__card-title">
+                  Kitchen & Dining
+                </h3>
+                <p class="cb-home-collections__card-text">
+                  Elevate your cooking and dining experience
+                </p>
+              </a>
+              <a href="#" class="cb-home-collections__card">
+                <div class="cb-home-collections__card-image">
+                  <img
+                    src="https://i.pinimg.com/736x/44/6d/06/446d06eb5345f927b1260f6e91e7d76f.jpg"
+                    alt="Sustainable Living collection"
+                  />
+                </div>
+                <h3 class="cb-home-collections__card-title">
+                  Sustainable Living
+                </h3>
+                <p class="cb-home-collections__card-text">
+                  Eco-friendly choices for conscious consumers
+                </p>
+              </a>
+            </div>
+          </div>
+        </section>
+        <!-- <section class="cb-home-collections">
                 <div class="cb-home-collections__inner">
                     <div class="cb-home-collections__header">
                         <h2 class="cb-home-collections__title">Featured Collections</h2>
@@ -215,416 +311,568 @@
                         </a>
                     </div>
                 </div>
-            </section>
-            <!-- Section: Popular Products -->
-<section class="cb-home-popular">
-    <div class="cb-home-popular__inner">
-        <div class="cb-home-popular__header">
-            <h2 class="cb-home-popular__title">Popular Products</h2>
-            <p class="cb-home-popular__subtitle">Most loved by our customers</p>
-        </div>
-        
-        <div class="cb-home-popular__products">
-            <!-- Product 1 -->
-            <div class="cb-home-popular__product">
+            </section> -->
+
+        <!-- Section: Popular Products -->
+        <section class="cb-home-popular">
+          <div class="cb-home-popular__inner">
+            <div class="cb-home-popular__header">
+              <h2 class="cb-home-popular__title">Popular Products</h2>
+              <p class="cb-home-popular__subtitle">
+                Most loved by our customers
+              </p>
+            </div>
+
+            <div class="cb-home-popular__products">
+              <!-- Product 1 -->
+              <div class="cb-home-popular__product">
                 <a href="#" class="cb-home-popular__product-link">
-                    <div class="cb-home-popular__product-image">
-                        <div class="cb-home-popular__product-badge">Bestseller</div>
-                        <div class="cb-home-popular__image-placeholder">
-                        <img src="https://i.pinimg.com/736x/1f/98/7b/1f987b7b7171bc8e19ee80de8dd2e690.jpg" alt="" srcset="">
-                        Product Image</div>
+                  <div class="cb-home-popular__product-image">
+                    <div class="cb-home-popular__product-badge">Bestseller</div>
+                    <div class="cb-home-popular__image-placeholder">
+                      <img
+                        src="https://i.pinimg.com/736x/1f/98/7b/1f987b7b7171bc8e19ee80de8dd2e690.jpg"
+                        alt=""
+                        srcset=""
+                      />
+                      Product Image
                     </div>
-                    <div class="cb-home-popular__product-info">
-                        <h3 class="cb-home-popular__product-title">Premium Cotton Bed Sheet Set</h3>
-                        <div class="cb-home-popular__product-rating">
-                            <div class="cb-home-popular__rating-stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                            <span class="cb-home-popular__rating-count">(428)</span>
-                        </div>
-                        <p class="cb-home-popular__product-desc">300 thread count, breathable cotton with premium finish</p>
-                        <div class="cb-home-popular__product-price">
-                            <span class="cb-home-popular__product-price-current">₹1,899</span>
-                            <span class="cb-home-popular__product-price-original">₹2,499</span>
-                            <span class="cb-home-popular__product-price-discount">24% off</span>
-                        </div>
+                  </div>
+                  <div class="cb-home-popular__product-info">
+                    <h3 class="cb-home-popular__product-title">
+                      Premium Cotton Bed Sheet Set
+                    </h3>
+                    <div class="cb-home-popular__product-rating">
+                      <div class="cb-home-popular__rating-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                      </div>
+                      <span class="cb-home-popular__rating-count">(428)</span>
                     </div>
+                    <p class="cb-home-popular__product-desc">
+                      300 thread count, breathable cotton with premium finish
+                    </p>
+                    <div class="cb-home-popular__product-price">
+                      <span class="cb-home-popular__product-price-current"
+                        >₹1,899</span
+                      >
+                      <span class="cb-home-popular__product-price-original"
+                        >₹2,499</span
+                      >
+                      <span class="cb-home-popular__product-price-discount"
+                        >24% off</span
+                      >
+                    </div>
+                  </div>
                 </a>
                 <button class="cb-home-popular__add-to-cart">
-                    <i class="fas fa-shopping-bag"></i>
-                    Add to Cart
+                  <i class="fas fa-shopping-bag"></i>
+                  Add to Cart
                 </button>
-            </div>
-            
-            <!-- Product 2 -->
-            <div class="cb-home-popular__product">
+              </div>
+
+              <!-- Product 2 -->
+              <div class="cb-home-popular__product">
                 <a href="#" class="cb-home-popular__product-link">
-                    <div class="cb-home-popular__product-image">
-                        <div class="cb-home-popular__product-badge">Trending</div>
-                        <div class="cb-home-popular__image-placeholder"><img src="https://i.pinimg.com/1200x/01/70/76/0170767edd078011de4a56f2a86ad162.jpg" alt="" srcset="">Product Image</div>
+                  <div class="cb-home-popular__product-image">
+                    <div class="cb-home-popular__product-badge">Trending</div>
+                    <div class="cb-home-popular__image-placeholder">
+                      <img
+                        src="https://i.pinimg.com/1200x/01/70/76/0170767edd078011de4a56f2a86ad162.jpg"
+                        alt=""
+                        srcset=""
+                      />Product Image
                     </div>
-                    <div class="cb-home-popular__product-info">
-                        <h3 class="cb-home-popular__product-title">Ceramic Dinner Set (24 Pcs)</h3>
-                        <div class="cb-home-popular__product-rating">
-                            <div class="cb-home-popular__rating-stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <span class="cb-home-popular__rating-count">(312)</span>
-                        </div>
-                        <p class="cb-home-popular__product-desc">Microwave safe, dishwasher friendly ceramic set</p>
-                        <div class="cb-home-popular__product-price">
-                            <span class="cb-home-popular__product-price-current">₹3,299</span>
-                            <span class="cb-home-popular__product-price-original">₹4,199</span>
-                            <span class="cb-home-popular__product-price-discount">21% off</span>
-                        </div>
+                  </div>
+                  <div class="cb-home-popular__product-info">
+                    <h3 class="cb-home-popular__product-title">
+                      Ceramic Dinner Set (24 Pcs)
+                    </h3>
+                    <div class="cb-home-popular__product-rating">
+                      <div class="cb-home-popular__rating-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <span class="cb-home-popular__rating-count">(312)</span>
                     </div>
+                    <p class="cb-home-popular__product-desc">
+                      Microwave safe, dishwasher friendly ceramic set
+                    </p>
+                    <div class="cb-home-popular__product-price">
+                      <span class="cb-home-popular__product-price-current"
+                        >₹3,299</span
+                      >
+                      <span class="cb-home-popular__product-price-original"
+                        >₹4,199</span
+                      >
+                      <span class="cb-home-popular__product-price-discount"
+                        >21% off</span
+                      >
+                    </div>
+                  </div>
                 </a>
                 <button class="cb-home-popular__add-to-cart">
-                    <i class="fas fa-shopping-bag"></i>
-                    Add to Cart
+                  <i class="fas fa-shopping-bag"></i>
+                  Add to Cart
                 </button>
-            </div>
-            
-            <!-- Product 3 -->
-            <div class="cb-home-popular__product">
+              </div>
+
+              <!-- Product 3 -->
+              <div class="cb-home-popular__product">
                 <a href="#" class="cb-home-popular__product-link">
-                    <div class="cb-home-popular__product-image">
-                        <div class="cb-home-popular__product-badge">Bestseller</div>
-                        <div class="cb-home-popular__image-placeholder"><img src="https://i.pinimg.com/1200x/8d/e7/50/8de750a8c68952d0666c256bdfc78530.jpg" alt="" srcset="">Product Image</div>
+                  <div class="cb-home-popular__product-image">
+                    <div class="cb-home-popular__product-badge">Bestseller</div>
+                    <div class="cb-home-popular__image-placeholder">
+                      <img
+                        src="https://i.pinimg.com/1200x/8d/e7/50/8de750a8c68952d0666c256bdfc78530.jpg"
+                        alt=""
+                        srcset=""
+                      />Product Image
                     </div>
-                    <div class="cb-home-popular__product-info">
-                        <h3 class="cb-home-popular__product-title">Natural Bamboo Cutting Board</h3>
-                        <div class="cb-home-popular__product-rating">
-                            <div class="cb-home-popular__rating-stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <span class="cb-home-popular__rating-count">(198)</span>
-                        </div>
-                        <p class="cb-home-popular__product-desc">Eco-friendly, anti-bacterial, durable bamboo board</p>
-                        <div class="cb-home-popular__product-price">
-                            <span class="cb-home-popular__product-price-current">₹899</span>
-                            <span class="cb-home-popular__product-price-original">₹1,199</span>
-                            <span class="cb-home-popular__product-price-discount">25% off</span>
-                        </div>
+                  </div>
+                  <div class="cb-home-popular__product-info">
+                    <h3 class="cb-home-popular__product-title">
+                      Natural Bamboo Cutting Board
+                    </h3>
+                    <div class="cb-home-popular__product-rating">
+                      <div class="cb-home-popular__rating-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <span class="cb-home-popular__rating-count">(198)</span>
                     </div>
+                    <p class="cb-home-popular__product-desc">
+                      Eco-friendly, anti-bacterial, durable bamboo board
+                    </p>
+                    <div class="cb-home-popular__product-price">
+                      <span class="cb-home-popular__product-price-current"
+                        >₹899</span
+                      >
+                      <span class="cb-home-popular__product-price-original"
+                        >₹1,199</span
+                      >
+                      <span class="cb-home-popular__product-price-discount"
+                        >25% off</span
+                      >
+                    </div>
+                  </div>
                 </a>
                 <button class="cb-home-popular__add-to-cart">
-                    <i class="fas fa-shopping-bag"></i>
-                    Add to Cart
+                  <i class="fas fa-shopping-bag"></i>
+                  Add to Cart
                 </button>
-            </div>
-            
-            <!-- Product 4 -->
-            <div class="cb-home-popular__product">
+              </div>
+
+              <!-- Product 4 -->
+              <div class="cb-home-popular__product">
                 <a href="#" class="cb-home-popular__product-link">
-                    <div class="cb-home-popular__product-image">
-                        <div class="cb-home-popular__product-badge">New</div>
-                        <div class="cb-home-popular__image-placeholder"><img src="https://i.pinimg.com/1200x/54/9a/54/549a54ab29422b393dcf9e41274c7c64.jpg" alt="" srcset="">Product Image</div>
+                  <div class="cb-home-popular__product-image">
+                    <div class="cb-home-popular__product-badge">New</div>
+                    <div class="cb-home-popular__image-placeholder">
+                      <img
+                        src="https://i.pinimg.com/1200x/54/9a/54/549a54ab29422b393dcf9e41274c7c64.jpg"
+                        alt=""
+                        srcset=""
+                      />Product Image
                     </div>
-                    <div class="cb-home-popular__product-info">
-                        <h3 class="cb-home-popular__product-title">Organic Cotton Towel Set</h3>
-                        <div class="cb-home-popular__product-rating">
-                            <div class="cb-home-popular__rating-stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
-                            </div>
-                            <span class="cb-home-popular__rating-count">(156)</span>
-                        </div>
-                        <p class="cb-home-popular__product-desc">Super absorbent, soft, 100% organic cotton towels</p>
-                        <div class="cb-home-popular__product-price">
-                            <span class="cb-home-popular__product-price-current">₹2,199</span>
-                            <span class="cb-home-popular__product-price-original">₹2,799</span>
-                            <span class="cb-home-popular__product-price-discount">21% off</span>
-                        </div>
+                  </div>
+                  <div class="cb-home-popular__product-info">
+                    <h3 class="cb-home-popular__product-title">
+                      Organic Cotton Towel Set
+                    </h3>
+                    <div class="cb-home-popular__product-rating">
+                      <div class="cb-home-popular__rating-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                      </div>
+                      <span class="cb-home-popular__rating-count">(156)</span>
                     </div>
+                    <p class="cb-home-popular__product-desc">
+                      Super absorbent, soft, 100% organic cotton towels
+                    </p>
+                    <div class="cb-home-popular__product-price">
+                      <span class="cb-home-popular__product-price-current"
+                        >₹2,199</span
+                      >
+                      <span class="cb-home-popular__product-price-original"
+                        >₹2,799</span
+                      >
+                      <span class="cb-home-popular__product-price-discount"
+                        >21% off</span
+                      >
+                    </div>
+                  </div>
                 </a>
                 <button class="cb-home-popular__add-to-cart">
-                    <i class="fas fa-shopping-bag"></i>
-                    Add to Cart
+                  <i class="fas fa-shopping-bag"></i>
+                  Add to Cart
                 </button>
+              </div>
             </div>
-        </div>
-        
-        <div class="cb-home-popular__view-all">
-            <a href="#" class="cb-home-popular__view-all-link">
+
+            <div class="cb-home-popular__view-all">
+              <a href="#" class="cb-home-popular__view-all-link">
                 View All Products
                 <i class="fas fa-arrow-right"></i>
-            </a>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 4: Brand Promise -->
+         <section class="cb-home-promise">
+    <div class="cb-home-promise__inner">
+        <div class="cb-home-promise__content">
+            <h2 class="cb-home-promise__title">Our Promise to You</h2>
+            <p class="cb-home-promise__text">
+                At CartBay, we believe shopping should be a thoughtful
+                experience, not just a transaction. We carefully select each
+                product in our collection, focusing on quality, durability, and
+                design that lasts.
+            </p>
+            <p class="cb-home-promise__text">
+                Born in India, for India—we understand what matters to you. From
+                secure payments to reliable delivery, we're building a shopping
+                experience you can trust.
+            </p>
+            <div class="cb-home-promise__signature">
+                <span class="cb-home-promise__signature-text">— The CartBay Team</span>
+            </div>
+        </div>
+        <div class="cb-home-promise__visual">
+            <div class="cb-home-promise__visual-placeholder">
+                <img src="https://i.pinimg.com/736x/f3/26/99/f32699769eeb32b71030c5e1353f0603.jpg" alt="CartBay brand promise visual">
+            </div>
         </div>
     </div>
 </section>
 
-
-            
-            <!-- Section 4: Brand Promise -->
-            <section class="cb-home-promise">
-                <div class="cb-home-promise__inner">
-                    <div class="cb-home-promise__content">
-                        <h2 class="cb-home-promise__title">Our Promise to You</h2>
-                        <p class="cb-home-promise__text">At CartBay, we believe shopping should be a thoughtful experience, not just a transaction. We carefully select each product in our collection, focusing on quality, durability, and design that lasts.</p>
-                        <p class="cb-home-promise__text">Born in India, for India—we understand what matters to you. From secure payments to reliable delivery, we're building a shopping experience you can trust.</p>
-                        <div class="cb-home-promise__signature">
-                            <span class="cb-home-promise__signature-text">— The CartBay Team</span>
-                        </div>
-                    </div>
-                    <div class="cb-home-promise__visual">
-                        <div class="cb-home-promise__visual-placeholder">
-                            <!-- In production, replace with brand image or visual element -->
-                             <img src="" alt="" srcset="">
-                            <div class="cb-home-promise__visual-overlay">
-                                
-                               <img src="https://i.pinimg.com/736x/f3/26/99/f32699769eeb32b71030c5e1353f0603.jpg" alt="" style="height:500px; object-fit: cover; width:550px;" srcset=""> 
-                                <!-- Brand Visual Element -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-
-            
-            <!-- Section 5: Social Proof -->
-            <section class="cb-home-social-proof">
-                <div class="cb-home-social-proof__inner">
-                    <h2 class="cb-home-social-proof__title">Trusted by Thousands</h2>
-                    <p class="cb-home-social-proof__subtitle">What our customers are saying</p>
-                    <div class="cb-home-social-proof__grid">
-                        <div class="cb-home-social-proof__testimonial">
-                            <div class="cb-home-social-proof__rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <p class="cb-home-social-proof__quote">"The quality of products at CartBay is consistently excellent. Their customer service team resolved my query within minutes."</p>
-                            <div class="cb-home-social-proof__author">
-                                <span class="cb-home-social-proof__author-name">Priya Sharma</span>
-                                <span class="cb-home-social-proof__author-location">Mumbai</span>
-                            </div>
-                        </div>
-                        <div class="cb-home-social-proof__testimonial">
-                            <div class="cb-home-social-proof__rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <p class="cb-home-social-proof__quote">"I appreciate how they curate their collections. It saves me time and I always receive exactly what I expected."</p>
-                            <div class="cb-home-social-proof__author">
-                                <span class="cb-home-social-proof__author-name">Rohan Mehta</span>
-                                <span class="cb-home-social-proof__author-location">Delhi</span>
-                            </div>
-                        </div>
-                        <div class="cb-home-social-proof__testimonial">
-                            <div class="cb-home-social-proof__rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <p class="cb-home-social-proof__quote">"The delivery was prompt and the packaging was thoughtful. It's clear they care about the entire customer experience."</p>
-                            <div class="cb-home-social-proof__author">
-                                <span class="cb-home-social-proof__author-name">Ananya Patel</span>
-                                <span class="cb-home-social-proof__author-location">Bangalore</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cb-home-social-proof__stats">
-                        <div class="cb-home-social-proof__stat">
-                            <span class="cb-home-social-proof__stat-number">50,000+</span>
-                            <span class="cb-home-social-proof__stat-label">Happy Customers</span>
-                        </div>
-                        <div class="cb-home-social-proof__stat">
-                            <span class="cb-home-social-proof__stat-number">4.8/5</span>
-                            <span class="cb-home-social-proof__stat-label">Average Rating</span>
-                        </div>
-                        <div class="cb-home-social-proof__stat">
-                            <span class="cb-home-social-proof__stat-number">98%</span>
-                            <span class="cb-home-social-proof__stat-label">Recommend CartBay</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Section 6: Footer Teaser -->
-            <section class="cb-home-footer-teaser">
-                <div class="cb-home-footer-teaser__inner">
-                    <h2 class="cb-home-footer-teaser__title">Ready to Experience Thoughtful Shopping?</h2>
-                    <p class="cb-home-footer-teaser__text">Join thousands of satisfied customers who trust CartBay for their everyday needs.</p>
-                    <div class="cb-home-footer-teaser__cta-group">
-                        <a href="#" class="cb-home-footer-teaser__cta">Start Shopping Now</a>
-                        <a href="#" class="cb-home-footer-teaser__link">Browse All Categories</a>
-                    </div>
-                </div>
-            </section>
-            
-        </main>
-
-        <!-- FOOTER SECTION -->
-        <footer class="cb-footer">
-            <div class="cb-footer__inner">
-                <!-- Main Footer Content -->
-                <div class="cb-footer__main">
-                    <!-- Brand Column -->
-                    <div class="cb-footer__brand">
-                        <div class="cb-footer__logo">
-                            <a href="#" class="cb-footer__logo-link">
-                                <span class="cb-footer__logo-text">CartBay</span>
-                            </a>
-                        </div>
-                        <p class="cb-footer__tagline">Thoughtful shopping for modern living.</p>
-                        <div class="cb-footer__social">
-                            <a href="#" class="cb-footer__social-link">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a href="#" class="cb-footer__social-link">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a href="#" class="cb-footer__social-link">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                            <a href="#" class="cb-footer__social-link">
-                                <i class="fab fa-pinterest"></i>
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <!-- Quick Links -->
-                    <div class="cb-footer__links">
-                        <h3 class="cb-footer__links-title">Quick Links</h3>
-                        <ul class="cb-footer__links-list">
-                            <li class="cb-footer__links-item">
-                                <a href="#" class="cb-footer__links-link">Home</a>
-                            </li>
-                            <li class="cb-footer__links-item">
-                                <a href="#" class="cb-footer__links-link">All Products</a>
-                            </li>
-                            <li class="cb-footer__links-item">
-                                <a href="#" class="cb-footer__links-link">New Arrivals</a>
-                            </li>
-                            <li class="cb-footer__links-item">
-                                <a href="#" class="cb-footer__links-link">Best Sellers</a>
-                            </li>
-                            <li class="cb-footer__links-item">
-                                <a href="#" class="cb-footer__links-link">Sale</a>
-                            </li>
-                        </ul>
-                    </div>
-                    
-                    <!-- Categories -->
-                    <div class="cb-footer__links">
-                        <h3 class="cb-footer__links-title">Categories</h3>
-                        <ul class="cb-footer__links-list">
-                            <li class="cb-footer__links-item">
-                                <a href="#" class="cb-footer__links-link">Home Essentials</a>
-                            </li>
-                            <li class="cb-footer__links-item">
-                                <a href="#" class="cb-footer__links-link">Personal Care</a>
-                            </li>
-                            <li class="cb-footer__links-item">
-                                <a href="#" class="cb-footer__links-link">Kitchen & Dining</a>
-                            </li>
-                            <li class="cb-footer__links-item">
-                                <a href="#" class="cb-footer__links-link">Sustainable Living</a>
-                            </li>
-                            <li class="cb-footer__links-item">
-                                <a href="#" class="cb-footer__links-link">Gifts</a>
-                            </li>
-                        </ul>
-                    </div>
-                    
-                    <!-- Support -->
-                    <div class="cb-footer__links">
-                        <h3 class="cb-footer__links-title">Support</h3>
-                        <ul class="cb-footer__links-list">
-                            <li class="cb-footer__links-item">
-                                <a href="#" class="cb-footer__links-link">Contact Us</a>
-                            </li>
-                            <li class="cb-footer__links-item">
-                                <a href="#" class="cb-footer__links-link">FAQ</a>
-                            </li>
-                            <li class="cb-footer__links-item">
-                                <a href="#" class="cb-footer__links-link">Shipping Policy</a>
-                            </li>
-                            <li class="cb-footer__links-item">
-                                <a href="#" class="cb-footer__links-link">Return Policy</a>
-                            </li>
-                            <li class="cb-footer__links-item">
-                                <a href="#" class="cb-footer__links-link">Privacy Policy</a>
-                            </li>
-                        </ul>
-                    </div>
-                    
-                    <!-- Contact Info -->
-                    <div class="cb-footer__contact">
-                        <h3 class="cb-footer__contact-title">Contact Us</h3>
-                        <div class="cb-footer__contact-info">
-                            <div class="cb-footer__contact-item">
-                                <i class="fas fa-envelope"></i>
-                                <span>hello@cartbay.in</span>
-                            </div>
-                            <div class="cb-footer__contact-item">
-                                <i class="fas fa-phone"></i>
-                                <span>+91 1800-123-4567</span>
-                            </div>
-                            <div class="cb-footer__contact-item">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <span>Mumbai, India</span>
-                            </div>
-                        </div>
-                        
-                        <!-- Newsletter Signup -->
-                        <div class="cb-footer__newsletter">
-                            <h4 class="cb-footer__newsletter-title">Stay Updated</h4>
-                            <p class="cb-footer__newsletter-text">Get early access to new collections and exclusive offers.</p>
-                            <form class="cb-footer__newsletter-form">
-                                <input type="email" class="cb-footer__newsletter-input" placeholder="Your email address">
-                                <button type="submit" class="cb-footer__newsletter-submit">Subscribe</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Footer Bottom -->
-                <div class="cb-footer__bottom">
-                    <div class="cb-footer__payment">
-                        <span class="cb-footer__payment-text">Secure Payment:</span>
-                        <div class="cb-footer__payment-icons">
-                            <i class="fab fa-cc-visa"></i>
-                            <i class="fab fa-cc-mastercard"></i>
-                            <i class="fab fa-cc-amex"></i>
-                            <i class="fab fa-cc-paypal"></i>
-                            <i class="fas fa-university"></i>
-                        </div>
-                    </div>
-                    
-                    <div class="cb-footer__copyright">
-                        <p>&copy; 2023 CartBay. All rights reserved.</p>
-                    </div>
-                </div>
+        <!-- <section class="cb-home-promise">
+          <div class="cb-home-promise__inner">
+            <div class="cb-home-promise__content">
+              <h2 class="cb-home-promise__title">Our Promise to You</h2>
+              <p class="cb-home-promise__text">
+                At CartBay, we believe shopping should be a thoughtful
+                experience, not just a transaction. We carefully select each
+                product in our collection, focusing on quality, durability, and
+                design that lasts.
+              </p>
+              <p class="cb-home-promise__text">
+                Born in India, for India—we understand what matters to you. From
+                secure payments to reliable delivery, we're building a shopping
+                experience you can trust.
+              </p>
+              <div class="cb-home-promise__signature">
+                <span class="cb-home-promise__signature-text"
+                  >— The CartBay Team</span
+                >
+              </div>
             </div>
-        </footer>
+            <div class="cb-home-promise__visual">
+              <div class="cb-home-promise__visual-placeholder">
+              
+                <img src="" alt="" srcset="" />
+                <div class="cb-home-promise__visual-overlay">
+                  <img
+                    src="https://i.pinimg.com/736x/f3/26/99/f32699769eeb32b71030c5e1353f0603.jpg"
+                    alt=""
+                    style="height: 500px; object-fit: cover; width: 550px"
+                    srcset=""
+                  />
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+        </section> -->
 
+        <!-- Section 5: Social Proof -->
+        <section class="cb-home-social-proof">
+          <div class="cb-home-social-proof__inner">
+            <h2 class="cb-home-social-proof__title">Trusted by Thousands</h2>
+            <p class="cb-home-social-proof__subtitle">
+              What our customers are saying
+            </p>
+            <div class="cb-home-social-proof__grid">
+              <div class="cb-home-social-proof__testimonial">
+                <div class="cb-home-social-proof__rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="cb-home-social-proof__quote">
+                  "The quality of products at CartBay is consistently excellent.
+                  Their customer service team resolved my query within minutes."
+                </p>
+                <div class="cb-home-social-proof__author">
+                  <span class="cb-home-social-proof__author-name"
+                    >Priya Sharma</span
+                  >
+                  <span class="cb-home-social-proof__author-location"
+                    >Mumbai</span
+                  >
+                </div>
+              </div>
+              <div class="cb-home-social-proof__testimonial">
+                <div class="cb-home-social-proof__rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="cb-home-social-proof__quote">
+                  "I appreciate how they curate their collections. It saves me
+                  time and I always receive exactly what I expected."
+                </p>
+                <div class="cb-home-social-proof__author">
+                  <span class="cb-home-social-proof__author-name"
+                    >Rohan Mehta</span
+                  >
+                  <span class="cb-home-social-proof__author-location"
+                    >Delhi</span
+                  >
+                </div>
+              </div>
+              <div class="cb-home-social-proof__testimonial">
+                <div class="cb-home-social-proof__rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="cb-home-social-proof__quote">
+                  "The delivery was prompt and the packaging was thoughtful.
+                  It's clear they care about the entire customer experience."
+                </p>
+                <div class="cb-home-social-proof__author">
+                  <span class="cb-home-social-proof__author-name"
+                    >Ananya Patel</span
+                  >
+                  <span class="cb-home-social-proof__author-location"
+                    >Bangalore</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="cb-home-social-proof__stats">
+              <div class="cb-home-social-proof__stat">
+                <span class="cb-home-social-proof__stat-number">50,000+</span>
+                <span class="cb-home-social-proof__stat-label"
+                  >Happy Customers</span
+                >
+              </div>
+              <div class="cb-home-social-proof__stat">
+                <span class="cb-home-social-proof__stat-number">4.8/5</span>
+                <span class="cb-home-social-proof__stat-label"
+                  >Average Rating</span
+                >
+              </div>
+              <div class="cb-home-social-proof__stat">
+                <span class="cb-home-social-proof__stat-number">98%</span>
+                <span class="cb-home-social-proof__stat-label"
+                  >Recommend CartBay</span
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 6: Footer Teaser -->
+        <section class="cb-home-footer-teaser">
+          <div class="cb-home-footer-teaser__inner">
+            <h2 class="cb-home-footer-teaser__title">
+              Ready to Experience Thoughtful Shopping?
+            </h2>
+            <p class="cb-home-footer-teaser__text">
+              Join thousands of satisfied customers who trust CartBay for their
+              everyday needs.
+            </p>
+            <div class="cb-home-footer-teaser__cta-group">
+              <a href="#" class="cb-home-footer-teaser__cta"
+                >Start Shopping Now</a
+              >
+              <a href="#" class="cb-home-footer-teaser__link"
+                >Browse All Categories</a
+              >
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- FOOTER SECTION -->
+      <footer class="cb-footer">
+        <div class="cb-footer__inner">
+          <!-- Main Footer Content -->
+          <div class="cb-footer__main">
+            <!-- Brand Column -->
+            <div class="cb-footer__brand">
+              <div class="cb-footer__logo">
+                <a href="#" class="cb-footer__logo-link">
+                  <span class="cb-footer__logo-text">CartBay</span>
+                </a>
+              </div>
+              <p class="cb-footer__tagline">
+                Thoughtful shopping for modern living.
+              </p>
+              <div class="cb-footer__social">
+                <a href="#" class="cb-footer__social-link">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="cb-footer__social-link">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="cb-footer__social-link">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="cb-footer__social-link">
+                  <i class="fab fa-pinterest"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="cb-footer__links">
+              <h3 class="cb-footer__links-title">Quick Links</h3>
+              <ul class="cb-footer__links-list">
+                <li class="cb-footer__links-item">
+                  <a href="#" class="cb-footer__links-link">Home</a>
+                </li>
+                <li class="cb-footer__links-item">
+                  <a href="#" class="cb-footer__links-link">All Products</a>
+                </li>
+                <li class="cb-footer__links-item">
+                  <a href="#" class="cb-footer__links-link">New Arrivals</a>
+                </li>
+                <li class="cb-footer__links-item">
+                  <a href="#" class="cb-footer__links-link">Best Sellers</a>
+                </li>
+                <li class="cb-footer__links-item">
+                  <a href="#" class="cb-footer__links-link">Sale</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Categories -->
+            <div class="cb-footer__links">
+              <h3 class="cb-footer__links-title">Categories</h3>
+              <ul class="cb-footer__links-list">
+                <li class="cb-footer__links-item">
+                  <a href="#" class="cb-footer__links-link">Home Essentials</a>
+                </li>
+                <li class="cb-footer__links-item">
+                  <a href="#" class="cb-footer__links-link">Personal Care</a>
+                </li>
+                <li class="cb-footer__links-item">
+                  <a href="#" class="cb-footer__links-link">Kitchen & Dining</a>
+                </li>
+                <li class="cb-footer__links-item">
+                  <a href="#" class="cb-footer__links-link"
+                    >Sustainable Living</a
+                  >
+                </li>
+                <li class="cb-footer__links-item">
+                  <a href="#" class="cb-footer__links-link">Gifts</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Support -->
+            <div class="cb-footer__links">
+              <h3 class="cb-footer__links-title">Support</h3>
+              <ul class="cb-footer__links-list">
+                <li class="cb-footer__links-item">
+                  <a href="#" class="cb-footer__links-link">Contact Us</a>
+                </li>
+                <li class="cb-footer__links-item">
+                  <a href="#" class="cb-footer__links-link">FAQ</a>
+                </li>
+                <li class="cb-footer__links-item">
+                  <a href="#" class="cb-footer__links-link">Shipping Policy</a>
+                </li>
+                <li class="cb-footer__links-item">
+                  <a href="#" class="cb-footer__links-link">Return Policy</a>
+                </li>
+                <li class="cb-footer__links-item">
+                  <a href="#" class="cb-footer__links-link">Privacy Policy</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="cb-footer__contact">
+              <h3 class="cb-footer__contact-title">Contact Us</h3>
+              <div class="cb-footer__contact-info">
+                <div class="cb-footer__contact-item">
+                  <i class="fas fa-envelope"></i>
+                  <span>hello@cartbay.in</span>
+                </div>
+                <div class="cb-footer__contact-item">
+                  <i class="fas fa-phone"></i>
+                  <span>+91 1800-123-4567</span>
+                </div>
+                <div class="cb-footer__contact-item">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>Mumbai, India</span>
+                </div>
+              </div>
+
+              <!-- Newsletter Signup -->
+              <div class="cb-footer__newsletter">
+                <h4 class="cb-footer__newsletter-title">Stay Updated</h4>
+                <p class="cb-footer__newsletter-text">
+                  Get early access to new collections and exclusive offers.
+                </p>
+                <form class="cb-footer__newsletter-form">
+                  <input
+                    type="email"
+                    class="cb-footer__newsletter-input"
+                    placeholder="Your email address"
+                  />
+                  <button type="submit" class="cb-footer__newsletter-submit">
+                    Subscribe
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <!-- Footer Bottom -->
+          <div class="cb-footer__bottom">
+            <div class="cb-footer__payment">
+              <span class="cb-footer__payment-text">Secure Payment:</span>
+              <div class="cb-footer__payment-icons">
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-cc-amex"></i>
+                <i class="fab fa-cc-paypal"></i>
+                <i class="fas fa-university"></i>
+              </div>
+            </div>
+
+            <div class="cb-footer__copyright">
+              <p>&copy; 2023 CartBay. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
-<script src="script.js"></script>
+    <script src="script.js"></script>
     <!-- JavaScript for interactive elements -->
     <!-- <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -681,5 +929,5 @@
             });
         });
     </script> -->
-</body>
+  </body>
 </html>
