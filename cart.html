@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CartBay - Premium Indian eCommerce</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Main container for WordPress/WooCommerce integration -->
+    <div class="cb-homepage-container">
+        
+        <!-- HEADER SECTION -->
+        <header class="cb-header">
+            <div class="cb-header__inner">
+                <!-- Logo and Mobile Menu Toggle -->
+                <div class="cb-header__top">
+                    <button class="cb-header__mobile-toggle" id="mobileMenuToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    
+                    <div class="cb-header__logo">
+                        <a href="#" class="cb-header__logo-link">
+                            <span class="cb-header__logo-text">CartBay</span>
+                        </a>
+                    </div>
+                    
+                    <div class="cb-header__right">
+                        <div class="cb-header__search">
+                            <button class="cb-header__search-toggle" id="searchToggle">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                        
+                        <div class="cb-header__user">
+                            <a href="#" class="cb-header__user-link">
+                                <i class="fas fa-user"></i>
+                            </a>
+                        </div>
+                        
+                        <div class="cb-header__cart">
+                            <a href="cart.html" class="cb-header__cart-link">
+                                <i class="fas fa-shopping-bag"></i>
+                                <span class="cb-header__cart-count">0</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Search Bar (Hidden on Mobile by default) -->
+                <div class="cb-header__search-bar" id="searchBar">
+                    <form class="cb-header__search-form">
+                        <input type="text" class="cb-header__search-input" placeholder="Search for products...">
+                        <button type="submit" class="cb-header__search-submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                    <button class="cb-header__search-close" id="searchClose">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                
+                <!-- Main Navigation -->
+                <nav class="cb-header__nav" id="mainNav">
+                    <ul class="cb-header__nav-list">
+                        <li class="cb-header__nav-item">
+                            <a href="index.html" class="cb-header__nav-link">Home</a>
+                        </li>
+                        <li class="cb-header__nav-item cb-header__nav-item--has-dropdown">
+                            <a href="#" class="cb-header__nav-link">Collections</a>
+                            <div class="cb-header__dropdown">
+                                <a href="#" class="cb-header__dropdown-link">Home Essentials</a>
+                                <a href="#" class="cb-header__dropdown-link">Personal Care</a>
+                                <a href="#" class="cb-header__dropdown-link">Kitchen & Dining</a>
+                                <a href="#" class="cb-header__dropdown-link">Sustainable Living</a>
+                            </div>
+                        </li>
+                        <li class="cb-header__nav-item">
+                            <a href="all-products.html" class="cb-header__nav-link">Best Sellers</a>
+                        </li>
+                        <li class="cb-header__nav-item">
+                            <a href="blogs.html" class="cb-header__nav-link">Our Blogs</a>
+                        </li>
+                        <li class="cb-header__nav-item">
+                            <a href="about.html" class="cb-header__nav-link">Our Story</a>
+                        </li>
+                        <li class="cb-header__nav-item">
+                            <a href="contact.html" class="cb-header__nav-link">Contact</a>
+                        </li>
+                    </ul>
+                    
+                    <!-- Mobile-only additional links -->
+                    <div class="cb-header__mobile-extras">
+                        <a href="#" class="cb-header__mobile-link">
+                            <i class="fas fa-user"></i>
+                            My Account
+                        </a>
+                        <a href="#" class="cb-header__mobile-link">
+                            <i class="fas fa-heart"></i>
+                            Wishlist
+                        </a>
+                        <a href="#" class="cb-header__mobile-link">
+                            <i class="fas fa-question-circle"></i>
+                            Help Center
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+    <!-- Cart Page Container -->
+    <div class="cb-cart-container">
+        
+        <!-- Section 1: Cart Intro -->
+        <section class="cb-cart-intro">
+            <div class="cb-cart-intro__inner">
+                <h1 class="cb-cart-intro__title">Your Cart</h1>
+                <p class="cb-cart-intro__reassurance">Review your items and proceed securely to checkout</p>
+            </div>
+        </section>
+
+        <!-- Cart Content Layout -->
+        <div class="cb-cart-content">
+            
+            <!-- Section 2: Cart Items -->
+            <section class="cb-cart-items">
+                <div class="cb-cart-items__inner">
+                    <!-- Cart Item 1 -->
+                    <div class="cb-cart-item">
+                        <div class="cb-cart-item__image">
+                            <div class="cb-cart-item__image-placeholder">Product Image</div>
+                        </div>
+                        
+                        <div class="cb-cart-item__details">
+                            <div class="cb-cart-item__header">
+                                <h3 class="cb-cart-item__title">Premium Cotton Bed Sheet Set</h3>
+                                <button class="cb-cart-item__remove" aria-label="Remove item">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                            
+                            <div class="cb-cart-item__options">
+                                <span class="cb-cart-item__option">Color: White</span>
+                                <span class="cb-cart-item__option">Size: Queen</span>
+                            </div>
+                            
+                            <div class="cb-cart-item__price-mobile">
+                                <span class="cb-cart-item__price-current">₹1,899</span>
+                                <span class="cb-cart-item__price-original">₹2,499</span>
+                            </div>
+                            
+                            <div class="cb-cart-item__controls">
+                                <div class="cb-cart-item__quantity">
+                                    <label for="quantity-1" class="cb-cart-item__quantity-label">Quantity</label>
+                                    <div class="cb-cart-item__quantity-selector">
+                                        <button class="cb-cart-item__quantity-btn cb-cart-item__quantity-minus">
+                                            <i class="fas fa-minus"></i>
+                                        </button>
+                                        <input type="number" id="quantity-1" class="cb-cart-item__quantity-input" value="1" min="1" max="10">
+                                        <button class="cb-cart-item__quantity-btn cb-cart-item__quantity-plus">
+                                            <i class="fas fa-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                
+                                <div class="cb-cart-item__price">
+                                    <div class="cb-cart-item__price-wrapper">
+                                        <span class="cb-cart-item__price-current">₹1,899</span>
+                                        <span class="cb-cart-item__price-original">₹2,499</span>
+                                    </div>
+                                    <span class="cb-cart-item__price-total">₹1,899</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Cart Item 2 -->
+                    <div class="cb-cart-item">
+                        <div class="cb-cart-item__image">
+                            <div class="cb-cart-item__image-placeholder">Product Image</div>
+                        </div>
+                        
+                        <div class="cb-cart-item__details">
+                            <div class="cb-cart-item__header">
+                                <h3 class="cb-cart-item__title">Natural Bamboo Cutting Board</h3>
+                                <button class="cb-cart-item__remove" aria-label="Remove item">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                            
+                            <div class="cb-cart-item__options">
+                                <span class="cb-cart-item__option">Material: Bamboo</span>
+                                <span class="cb-cart-item__option">Size: Large</span>
+                            </div>
+                            
+                            <div class="cb-cart-item__price-mobile">
+                                <span class="cb-cart-item__price-current">₹899</span>
+                                <span class="cb-cart-item__price-original">₹1,199</span>
+                            </div>
+                            
+                            <div class="cb-cart-item__controls">
+                                <div class="cb-cart-item__quantity">
+                                    <label for="quantity-2" class="cb-cart-item__quantity-label">Quantity</label>
+                                    <div class="cb-cart-item__quantity-selector">
+                                        <button class="cb-cart-item__quantity-btn cb-cart-item__quantity-minus">
+                                            <i class="fas fa-minus"></i>
+                                        </button>
+                                        <input type="number" id="quantity-2" class="cb-cart-item__quantity-input" value="2" min="1" max="10">
+                                        <button class="cb-cart-item__quantity-btn cb-cart-item__quantity-plus">
+                                            <i class="fas fa-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                
+                                <div class="cb-cart-item__price">
+                                    <div class="cb-cart-item__price-wrapper">
+                                        <span class="cb-cart-item__price-current">₹899</span>
+                                        <span class="cb-cart-item__price-original">₹1,199</span>
+                                    </div>
+                                    <span class="cb-cart-item__price-total">₹1,798</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Cart Item 3 -->
+                    <div class="cb-cart-item">
+                        <div class="cb-cart-item__image">
+                            <div class="cb-cart-item__image-placeholder">Product Image</div>
+                        </div>
+                        
+                        <div class="cb-cart-item__details">
+                            <div class="cb-cart-item__header">
+                                <h3 class="cb-cart-item__title">Organic Cotton Towel Set (2 pieces)</h3>
+                                <button class="cb-cart-item__remove" aria-label="Remove item">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                            
+                            <div class="cb-cart-item__options">
+                                <span class="cb-cart-item__option">Color: Beige</span>
+                                <span class="cb-cart-item__option">Size: Standard</span>
+                            </div>
+                            
+                            <div class="cb-cart-item__price-mobile">
+                                <span class="cb-cart-item__price-current">₹2,199</span>
+                                <span class="cb-cart-item__price-original">₹2,799</span>
+                            </div>
+                            
+                            <div class="cb-cart-item__controls">
+                                <div class="cb-cart-item__quantity">
+                                    <label for="quantity-3" class="cb-cart-item__quantity-label">Quantity</label>
+                                    <div class="cb-cart-item__quantity-selector">
+                                        <button class="cb-cart-item__quantity-btn cb-cart-item__quantity-minus">
+                                            <i class="fas fa-minus"></i>
+                                        </button>
+                                        <input type="number" id="quantity-3" class="cb-cart-item__quantity-input" value="1" min="1" max="10">
+                                        <button class="cb-cart-item__quantity-btn cb-cart-item__quantity-plus">
+                                            <i class="fas fa-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                
+                                <div class="cb-cart-item__price">
+                                    <div class="cb-cart-item__price-wrapper">
+                                        <span class="cb-cart-item__price-current">₹2,199</span>
+                                        <span class="cb-cart-item__price-original">₹2,799</span>
+                                    </div>
+                                    <span class="cb-cart-item__price-total">₹2,199</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Right Column: Summary & Actions -->
+            <div class="cb-cart-sidebar">
+                
+                <!-- Section 3: Cart Summary -->
+                <section class="cb-cart-summary">
+                    <div class="cb-cart-summary__inner">
+                        <h2 class="cb-cart-summary__title">Order Summary</h2>
+                        
+                        <div class="cb-cart-summary__rows">
+                            <div class="cb-cart-summary__row">
+                                <span class="cb-cart-summary__label">Subtotal (3 items)</span>
+                                <span class="cb-cart-summary__value">₹5,896</span>
+                            </div>
+                            
+                            <div class="cb-cart-summary__row">
+                                <span class="cb-cart-summary__label">Shipping</span>
+                                <span class="cb-cart-summary__value">Free</span>
+                            </div>
+                            
+                            <div class="cb-cart-summary__row cb-cart-summary__row--discount">
+                                <span class="cb-cart-summary__label">
+                                    <i class="fas fa-tag"></i>
+                                    Discount
+                                </span>
+                                <span class="cb-cart-summary__value">-₹1,604</span>
+                            </div>
+                            
+                            <div class="cb-cart-summary__divider"></div>
+                            
+                            <div class="cb-cart-summary__row cb-cart-summary__row--total">
+                                <span class="cb-cart-summary__label">Total</span>
+                                <span class="cb-cart-summary__value">₹4,292</span>
+                            </div>
+                            
+                            <div class="cb-cart-summary__note">
+                                <i class="fas fa-info-circle"></i>
+                                All prices include GST
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section 4: Coupon / Promo Section -->
+                <section class="cb-cart-coupon">
+                    <div class="cb-cart-coupon__inner">
+                        <button class="cb-cart-coupon__toggle">
+                            <i class="fas fa-tag"></i>
+                            Have a coupon code?
+                            <i class="fas fa-chevron-down cb-cart-coupon__toggle-icon"></i>
+                        </button>
+                        
+                        <div class="cb-cart-coupon__form">
+                            <div class="cb-cart-coupon__input-group">
+                                <input type="text" class="cb-cart-coupon__input" placeholder="Enter coupon code">
+                                <button type="button" class="cb-cart-coupon__apply">Apply</button>
+                            </div>
+                            <p class="cb-cart-coupon__note">Discounts will be applied at checkout</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section 5: Primary Actions -->
+                <section class="cb-cart-actions">
+                    <div class="cb-cart-actions__inner">
+                        <a href="checkout.html" class="cb-cart-actions__checkout">
+                            <i class="fas fa-lock"></i>
+                            Proceed to Secure Checkout
+                        </a>
+                        
+                        <div class="cb-cart-actions__secondary">
+                            <a href="all-products.html" class="cb-cart-actions__continue">
+                                <i class="fas fa-arrow-left"></i>
+                                Continue Shopping
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section 6: Trust Reinforcement -->
+                <section class="cb-cart-trust">
+                    <div class="cb-cart-trust__inner">
+                        <div class="cb-cart-trust__items">
+                            <div class="cb-cart-trust__item">
+                                <div class="cb-cart-trust__icon">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <div class="cb-cart-trust__content">
+                                    <h3 class="cb-cart-trust__title">Secure Payment</h3>
+                                    <p class="cb-cart-trust__text">SSL encrypted checkout</p>
+                                </div>
+                            </div>
+                            
+                            <div class="cb-cart-trust__item">
+                                <div class="cb-cart-trust__icon">
+                                    <i class="fas fa-undo"></i>
+                                </div>
+                                <div class="cb-cart-trust__content">
+                                    <h3 class="cb-cart-trust__title">Easy Returns</h3>
+                                    <p class="cb-cart-trust__text">10-day return policy</p>
+                                </div>
+                            </div>
+                            
+                            <div class="cb-cart-trust__item">
+                                <div class="cb-cart-trust__icon">
+                                    <i class="fas fa-headset"></i>
+                                </div>
+                                <div class="cb-cart-trust__content">
+                                    <h3 class="cb-cart-trust__title">Support</h3>
+                                    <p class="cb-cart-trust__text">Help available 7 days a week</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+
+        <!-- Section 7: Empty Cart State (Hidden by default) -->
+        <section class="cb-cart-empty" style="display: none;">
+            <div class="cb-cart-empty__inner">
+                <div class="cb-cart-empty__icon">
+                    <i class="fas fa-shopping-bag"></i>
+                </div>
+                <h2 class="cb-cart-empty__title">Your cart is empty</h2>
+                <p class="cb-cart-empty__text">Add some thoughtfully selected products to get started.</p>
+                <a href="#" class="cb-cart-empty__cta">
+                    <i class="fas fa-store"></i>
+                    Browse Products
+                </a>
+            </div>
+        </section>
+
+    </div>
+
+    
+        <!-- FOOTER SECTION -->
+        <footer class="cb-footer">
+            <div class="cb-footer__inner">
+                <!-- Main Footer Content -->
+                <div class="cb-footer__main">
+                    <!-- Brand Column -->
+                    <div class="cb-footer__brand">
+                        <div class="cb-footer__logo">
+                            <a href="#" class="cb-footer__logo-link">
+                                <span class="cb-footer__logo-text">CartBay</span>
+                            </a>
+                        </div>
+                        <p class="cb-footer__tagline">Thoughtful shopping for modern living.</p>
+                        <div class="cb-footer__social">
+                            <a href="#" class="cb-footer__social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="cb-footer__social-link">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="cb-footer__social-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="cb-footer__social-link">
+                                <i class="fab fa-pinterest"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Quick Links -->
+                    <div class="cb-footer__links">
+                        <h3 class="cb-footer__links-title">Quick Links</h3>
+                        <ul class="cb-footer__links-list">
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Home</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">All Products</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">New Arrivals</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Best Sellers</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Sale</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Categories -->
+                    <div class="cb-footer__links">
+                        <h3 class="cb-footer__links-title">Categories</h3>
+                        <ul class="cb-footer__links-list">
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Home Essentials</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Personal Care</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Kitchen & Dining</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Sustainable Living</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Gifts</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Support -->
+                    <div class="cb-footer__links">
+                        <h3 class="cb-footer__links-title">Support</h3>
+                        <ul class="cb-footer__links-list">
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Contact Us</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">FAQ</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Shipping Policy</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Return Policy</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Privacy Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Contact Info -->
+                    <div class="cb-footer__contact">
+                        <h3 class="cb-footer__contact-title">Contact Us</h3>
+                        <div class="cb-footer__contact-info">
+                            <div class="cb-footer__contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>hello@cartbay.in</span>
+                            </div>
+                            <div class="cb-footer__contact-item">
+                                <i class="fas fa-phone"></i>
+                                <span>+91 1800-123-4567</span>
+                            </div>
+                            <div class="cb-footer__contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Mumbai, India</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Newsletter Signup -->
+                        <div class="cb-footer__newsletter">
+                            <h4 class="cb-footer__newsletter-title">Stay Updated</h4>
+                            <p class="cb-footer__newsletter-text">Get early access to new collections and exclusive offers.</p>
+                            <form class="cb-footer__newsletter-form">
+                                <input type="email" class="cb-footer__newsletter-input" placeholder="Your email address">
+                                <button type="submit" class="cb-footer__newsletter-submit">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Footer Bottom -->
+                <div class="cb-footer__bottom">
+                    <div class="cb-footer__payment">
+                        <span class="cb-footer__payment-text">Secure Payment:</span>
+                        <div class="cb-footer__payment-icons">
+                            <i class="fab fa-cc-visa"></i>
+                            <i class="fab fa-cc-mastercard"></i>
+                            <i class="fab fa-cc-amex"></i>
+                            <i class="fab fa-cc-paypal"></i>
+                            <i class="fas fa-university"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="cb-footer__copyright">
+                        <p>&copy; 2023 CartBay. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    <!-- JavaScript for cart interactions -->
+     <script src="script.js"></script>
+    <!-- <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Quantity selector functionality
+            const quantityInputs = document.querySelectorAll('.cb-cart-item__quantity-input');
+            const minusButtons = document.querySelectorAll('.cb-cart-item__quantity-minus');
+            const plusButtons = document.querySelectorAll('.cb-cart-item__quantity-plus');
+            
+            minusButtons.forEach((button, index) => {
+                button.addEventListener('click', function() {
+                    const input = quantityInputs[index];
+                    let currentValue = parseInt(input.value);
+                    if (currentValue > parseInt(input.min)) {
+                        input.value = currentValue - 1;
+                        updateItemTotal(index, input.value);
+                        updateCartTotals();
+                    }
+                });
+            });
+            
+            plusButtons.forEach((button, index) => {
+                button.addEventListener('click', function() {
+                    const input = quantityInputs[index];
+                    let currentValue = parseInt(input.value);
+                    if (currentValue < parseInt(input.max)) {
+                        input.value = currentValue + 1;
+                        updateItemTotal(index, input.value);
+                        updateCartTotals();
+                    }
+                });
+            });
+            
+            // Manual input changes
+            quantityInputs.forEach((input, index) => {
+                input.addEventListener('change', function() {
+                    let value = parseInt(this.value);
+                    const min = parseInt(this.min);
+                    const max = parseInt(this.max);
+                    
+                    if (value < min) value = min;
+                    if (value > max) value = max;
+                    
+                    this.value = value;
+                    updateItemTotal(index, value);
+                    updateCartTotals();
+                });
+            });
+            
+            // Update individual item total
+            function updateItemTotal(index, quantity) {
+                const priceElements = document.querySelectorAll('.cb-cart-item__price-current');
+                const totalElements = document.querySelectorAll('.cb-cart-item__price-total');
+                
+                if (priceElements[index] && totalElements[index]) {
+                    const priceText = priceElements[index].textContent.replace('₹', '').replace(',', '');
+                    const price = parseFloat(priceText);
+                    const total = price * quantity;
+                    
+                    totalElements[index].textContent = '₹' + total.toLocaleString('en-IN');
+                }
+            }
+            
+            // Update cart totals (simplified)
+            function updateCartTotals() {
+                // In a real implementation, this would calculate from all items
+                console.log('Cart totals updated');
+            }
+            
+            // Remove item functionality
+            const removeButtons = document.querySelectorAll('.cb-cart-item__remove');
+            removeButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const cartItem = this.closest('.cb-cart-item');
+                    if (cartItem) {
+                        cartItem.style.opacity = '0.5';
+                        cartItem.style.transform = 'translateX(-20px)';
+                        
+                        setTimeout(() => {
+                            cartItem.remove();
+                            checkEmptyCart();
+                            updateCartTotals();
+                        }, 300);
+                    }
+                });
+            });
+            
+            // Coupon code toggle
+            const couponToggle = document.querySelector('.cb-cart-coupon__toggle');
+            const couponForm = document.querySelector('.cb-cart-coupon__form');
+            
+            if (couponToggle && couponForm) {
+                couponToggle.addEventListener('click', function() {
+                    couponForm.classList.toggle('cb-cart-coupon__form--visible');
+                    const icon = this.querySelector('.cb-cart-coupon__toggle-icon');
+                    if (icon) {
+                        icon.classList.toggle('cb-cart-coupon__toggle-icon--rotated');
+                    }
+                });
+            }
+            
+            // Apply coupon button
+            const applyCouponBtn = document.querySelector('.cb-cart-coupon__apply');
+            if (applyCouponBtn) {
+                applyCouponBtn.addEventListener('click', function() {
+                    const input = document.querySelector('.cb-cart-coupon__input');
+                    if (input && input.value.trim()) {
+                        // In real implementation, this would validate with backend
+                        this.textContent = 'Applied';
+                        this.style.backgroundColor = '#4CAF50';
+                        this.disabled = true;
+                        input.disabled = true;
+                        
+                        setTimeout(() => {
+                            this.textContent = 'Apply';
+                            this.style.backgroundColor = '';
+                            this.disabled = false;
+                            input.disabled = false;
+                            input.value = '';
+                            couponForm.classList.remove('cb-cart-coupon__form--visible');
+                            const icon = couponToggle.querySelector('.cb-cart-coupon__toggle-icon');
+                            if (icon) {
+                                icon.classList.remove('cb-cart-coupon__toggle-icon--rotated');
+                            }
+                        }, 3000);
+                    }
+                });
+            }
+            
+            // Check if cart is empty
+            function checkEmptyCart() {
+                const cartItems = document.querySelectorAll('.cb-cart-item');
+                const cartContent = document.querySelector('.cb-cart-content');
+                const emptyState = document.querySelector('.cb-cart-empty');
+                
+                if (cartItems.length === 0) {
+                    if (cartContent) cartContent.style.display = 'none';
+                    if (emptyState) emptyState.style.display = 'block';
+                }
+            }
+            
+            // Checkout button hover effect
+            const checkoutBtn = document.querySelector('.cb-cart-actions__checkout');
+            if (checkoutBtn) {
+                checkoutBtn.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-2px)';
+                });
+                
+                checkoutBtn.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            }
+            
+            // Continue shopping hover effect
+            const continueBtn = document.querySelector('.cb-cart-actions__continue');
+            if (continueBtn) {
+                continueBtn.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-2px)';
+                });
+                
+                continueBtn.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            }
+            
+            // Empty cart CTA hover effect
+            const emptyCartCta = document.querySelector('.cb-cart-empty__cta');
+            if (emptyCartCta) {
+                emptyCartCta.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-2px)';
+                });
+                
+                emptyCartCta.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            }
+        });
+    </script> -->
+</body>
+</html>

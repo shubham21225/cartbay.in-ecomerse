@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CartBay - Premium Indian eCommerce</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Main container for WordPress/WooCommerce integration -->
+    <div class="cb-homepage-container">
+        
+        <!-- HEADER SECTION -->
+        <header class="cb-header">
+            <div class="cb-header__inner">
+                <!-- Logo and Mobile Menu Toggle -->
+                <div class="cb-header__top">
+                    <button class="cb-header__mobile-toggle" id="mobileMenuToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    
+                    <div class="cb-header__logo">
+                        <a href="#" class="cb-header__logo-link">
+                            <span class="cb-header__logo-text">CartBay</span>
+                        </a>
+                    </div>
+                    
+                    <div class="cb-header__right">
+                        <div class="cb-header__search">
+                            <button class="cb-header__search-toggle" id="searchToggle">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                        
+                        <div class="cb-header__user">
+                            <a href="#" class="cb-header__user-link">
+                                <i class="fas fa-user"></i>
+                            </a>
+                        </div>
+                        
+                        <div class="cb-header__cart">
+                            <a href="cart.html" class="cb-header__cart-link">
+                                <i class="fas fa-shopping-bag"></i>
+                                <span class="cb-header__cart-count">0</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Search Bar (Hidden on Mobile by default) -->
+                <div class="cb-header__search-bar" id="searchBar">
+                    <form class="cb-header__search-form">
+                        <input type="text" class="cb-header__search-input" placeholder="Search for products...">
+                        <button type="submit" class="cb-header__search-submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                    <button class="cb-header__search-close" id="searchClose">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                
+                <!-- Main Navigation -->
+                <nav class="cb-header__nav" id="mainNav">
+                    <ul class="cb-header__nav-list">
+                        <li class="cb-header__nav-item">
+                            <a href="index.html" class="cb-header__nav-link">Home</a>
+                        </li>
+                        <li class="cb-header__nav-item cb-header__nav-item--has-dropdown">
+                            <a href="#" class="cb-header__nav-link">Collections</a>
+                            <div class="cb-header__dropdown">
+                                <a href="#" class="cb-header__dropdown-link">Home Essentials</a>
+                                <a href="#" class="cb-header__dropdown-link">Personal Care</a>
+                                <a href="#" class="cb-header__dropdown-link">Kitchen & Dining</a>
+                                <a href="#" class="cb-header__dropdown-link">Sustainable Living</a>
+                            </div>
+                        </li>
+                        <li class="cb-header__nav-item">
+                            <a href="all-products.html" class="cb-header__nav-link">Best Sellers</a>
+                        </li>
+                        <li class="cb-header__nav-item">
+                            <a href="blogs.html" class="cb-header__nav-link">Our Blogs</a>
+                        </li>
+                        <li class="cb-header__nav-item">
+                            <a href="about.html" class="cb-header__nav-link">Our Story</a>
+                        </li>
+                        <li class="cb-header__nav-item">
+                            <a href="contact.html" class="cb-header__nav-link">Contact</a>
+                        </li>
+                    </ul>
+                    
+                    <!-- Mobile-only additional links -->
+                    <div class="cb-header__mobile-extras">
+                        <a href="#" class="cb-header__mobile-link">
+                            <i class="fas fa-user"></i>
+                            My Account
+                        </a>
+                        <a href="#" class="cb-header__mobile-link">
+                            <i class="fas fa-heart"></i>
+                            Wishlist
+                        </a>
+                        <a href="#" class="cb-header__mobile-link">
+                            <i class="fas fa-question-circle"></i>
+                            Help Center
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+
+
+
+
+
+    <!-- Shop Page Container -->
+    <div class="cb-shop-container">
+        
+        <!-- Section 1: Shop Intro -->
+        <section class="cb-shop-intro">
+            <div class="cb-shop-intro__inner">
+                <h1 class="cb-shop-intro__title">Shop</h1>
+                <p class="cb-shop-intro__subtitle">Thoughtfully curated products for everyday living</p>
+                <div class="cb-shop-intro__meta">
+                    <span class="cb-shop-intro__count">Showing 24 products</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Filter & Sort Bar -->
+        <section class="cb-shop-controls">
+            <div class="cb-shop-controls__inner">
+                <!-- Category Filter -->
+                <div class="cb-shop-controls__group">
+                    <label for="cb-shop-category" class="cb-shop-controls__label">Category</label>
+                    <div class="cb-shop-controls__select-wrapper">
+                        <select id="cb-shop-category" class="cb-shop-controls__select">
+                            <option value="all">All Categories</option>
+                            <option value="home-essentials">Home Essentials</option>
+                            <option value="personal-care">Personal Care</option>
+                            <option value="kitchen-dining">Kitchen & Dining</option>
+                            <option value="sustainable-living">Sustainable Living</option>
+                            <option value="bed-bath">Bed & Bath</option>
+                        </select>
+                        <i class="fas fa-chevron-down cb-shop-controls__select-icon"></i>
+                    </div>
+                </div>
+                
+                <!-- Sort Option -->
+                <div class="cb-shop-controls__group">
+                    <label for="cb-shop-sort" class="cb-shop-controls__label">Sort by</label>
+                    <div class="cb-shop-controls__select-wrapper">
+                        <select id="cb-shop-sort" class="cb-shop-controls__select">
+                            <option value="popularity">Popularity</option>
+                            <option value="newest">Newest First</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                        </select>
+                        <i class="fas fa-chevron-down cb-shop-controls__select-icon"></i>
+                    </div>
+                </div>
+                
+                <!-- Category Pills (Alternative Filter Method) -->
+                <div class="cb-shop-controls__pills">
+                    <button class="cb-shop-controls__pill cb-shop-controls__pill--active">All</button>
+                    <button class="cb-shop-controls__pill">Home Essentials</button>
+                    <button class="cb-shop-controls__pill">Personal Care</button>
+                    <button class="cb-shop-controls__pill">Kitchen & Dining</button>
+                    <button class="cb-shop-controls__pill">Sustainable Living</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Product Grid -->
+        <section class="cb-shop-grid">
+            <div class="cb-shop-grid__inner">
+                <!-- Product Card 1 -->
+                <div class="cb-product-card">
+                    <a href="#" class="cb-product-card__link">
+                        <div class="cb-product-card__image">
+                            <div class="cb-product-card__image-placeholder">Product Image</div>
+                        </div>
+                        <div class="cb-product-card__content">
+                            <h3 class="cb-product-card__title">Premium Cotton Bed Sheet Set</h3>
+                            <p class="cb-product-card__benefit">300 thread count, breathable cotton</p>
+                            <div class="cb-product-card__rating">
+                                <div class="cb-product-card__stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="cb-product-card__review-count">(428)</span>
+                            </div>
+                            <div class="cb-product-card__price">
+                                <span class="cb-product-card__price-current">₹1,899</span>
+                                <span class="cb-product-card__price-original">₹2,499</span>
+                                <span class="cb-product-card__price-discount">24% off</span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="cb-product-card__actions">
+                        <button class="cb-product-card__add-to-cart">
+                            <i class="fas fa-shopping-bag"></i>
+                            Add to Cart
+                        </button>
+                        <button class="cb-product-card__buy-now">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Product Card 2 -->
+                <div class="cb-product-card">
+                    <a href="#" class="cb-product-card__link">
+                        <div class="cb-product-card__image">
+                            <div class="cb-product-card__image-placeholder">Product Image</div>
+                        </div>
+                        <div class="cb-product-card__content">
+                            <h3 class="cb-product-card__title">Ceramic Dinner Set (24 Pcs)</h3>
+                            <p class="cb-product-card__benefit">Microwave safe, dishwasher friendly</p>
+                            <div class="cb-product-card__rating">
+                                <div class="cb-product-card__stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="cb-product-card__review-count">(312)</span>
+                            </div>
+                            <div class="cb-product-card__price">
+                                <span class="cb-product-card__price-current">₹3,299</span>
+                                <span class="cb-product-card__price-original">₹4,199</span>
+                                <span class="cb-product-card__price-discount">21% off</span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="cb-product-card__actions">
+                        <button class="cb-product-card__add-to-cart">
+                            <i class="fas fa-shopping-bag"></i>
+                            Add to Cart
+                        </button>
+                        <button class="cb-product-card__buy-now">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Product Card 3 -->
+                <div class="cb-product-card">
+                    <a href="#" class="cb-product-card__link">
+                        <div class="cb-product-card__image">
+                            <div class="cb-product-card__image-placeholder">Product Image</div>
+                        </div>
+                        <div class="cb-product-card__content">
+                            <h3 class="cb-product-card__title">Natural Bamboo Cutting Board</h3>
+                            <p class="cb-product-card__benefit">Eco-friendly, anti-bacterial, durable</p>
+                            <div class="cb-product-card__rating">
+                                <div class="cb-product-card__stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="cb-product-card__review-count">(198)</span>
+                            </div>
+                            <div class="cb-product-card__price">
+                                <span class="cb-product-card__price-current">₹899</span>
+                                <span class="cb-product-card__price-original">₹1,199</span>
+                                <span class="cb-product-card__price-discount">25% off</span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="cb-product-card__actions">
+                        <button class="cb-product-card__add-to-cart">
+                            <i class="fas fa-shopping-bag"></i>
+                            Add to Cart
+                        </button>
+                        <button class="cb-product-card__buy-now">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Product Card 4 -->
+                <div class="cb-product-card">
+                    <a href="#" class="cb-product-card__link">
+                        <div class="cb-product-card__image">
+                            <div class="cb-product-card__image-placeholder">Product Image</div>
+                        </div>
+                        <div class="cb-product-card__content">
+                            <h3 class="cb-product-card__title">Organic Cotton Towel Set</h3>
+                            <p class="cb-product-card__benefit">Super absorbent, 100% organic cotton</p>
+                            <div class="cb-product-card__rating">
+                                <div class="cb-product-card__stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span class="cb-product-card__review-count">(156)</span>
+                            </div>
+                            <div class="cb-product-card__price">
+                                <span class="cb-product-card__price-current">₹2,199</span>
+                                <span class="cb-product-card__price-original">₹2,799</span>
+                                <span class="cb-product-card__price-discount">21% off</span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="cb-product-card__actions">
+                        <button class="cb-product-card__add-to-cart">
+                            <i class="fas fa-shopping-bag"></i>
+                            Add to Cart
+                        </button>
+                        <button class="cb-product-card__buy-now">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Product Card 5 -->
+                <div class="cb-product-card">
+                    <a href="#" class="cb-product-card__link">
+                        <div class="cb-product-card__image">
+                            <div class="cb-product-card__image-placeholder">Product Image</div>
+                        </div>
+                        <div class="cb-product-card__content">
+                            <h3 class="cb-product-card__title">Premium Cotton Duvet Cover</h3>
+                            <p class="cb-product-card__benefit">Soft sateen finish, hypoallergenic</p>
+                            <div class="cb-product-card__rating">
+                                <div class="cb-product-card__stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="cb-product-card__review-count">(189)</span>
+                            </div>
+                            <div class="cb-product-card__price">
+                                <span class="cb-product-card__price-current">₹2,499</span>
+                                <span class="cb-product-card__price-original">₹3,199</span>
+                                <span class="cb-product-card__price-discount">22% off</span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="cb-product-card__actions">
+                        <button class="cb-product-card__add-to-cart">
+                            <i class="fas fa-shopping-bag"></i>
+                            Add to Cart
+                        </button>
+                        <button class="cb-product-card__buy-now">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Product Card 6 -->
+                <div class="cb-product-card">
+                    <a href="#" class="cb-product-card__link">
+                        <div class="cb-product-card__image">
+                            <div class="cb-product-card__image-placeholder">Product Image</div>
+                        </div>
+                        <div class="cb-product-card__content">
+                            <h3 class="cb-product-card__title">Memory Foam Pillow</h3>
+                            <p class="cb-product-card__benefit">Orthopedic support, breathable cover</p>
+                            <div class="cb-product-card__rating">
+                                <div class="cb-product-card__stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="cb-product-card__review-count">(312)</span>
+                            </div>
+                            <div class="cb-product-card__price">
+                                <span class="cb-product-card__price-current">₹1,299</span>
+                                <span class="cb-product-card__price-original">₹1,699</span>
+                                <span class="cb-product-card__price-discount">24% off</span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="cb-product-card__actions">
+                        <button class="cb-product-card__add-to-cart">
+                            <i class="fas fa-shopping-bag"></i>
+                            Add to Cart
+                        </button>
+                        <button class="cb-product-card__buy-now">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Product Card 7 -->
+                <div class="cb-product-card">
+                    <a href="#" class="cb-product-card__link">
+                        <div class="cb-product-card__image">
+                            <div class="cb-product-card__image-placeholder">Product Image</div>
+                        </div>
+                        <div class="cb-product-card__content">
+                            <h3 class="cb-product-card__title">Glass Food Storage Set</h3>
+                            <p class="cb-product-card__benefit">BPA-free, airtight, microwave safe</p>
+                            <div class="cb-product-card__rating">
+                                <div class="cb-product-card__stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="cb-product-card__review-count">(245)</span>
+                            </div>
+                            <div class="cb-product-card__price">
+                                <span class="cb-product-card__price-current">₹1,899</span>
+                                <span class="cb-product-card__price-original">₹2,499</span>
+                                <span class="cb-product-card__price-discount">24% off</span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="cb-product-card__actions">
+                        <button class="cb-product-card__add-to-cart">
+                            <i class="fas fa-shopping-bag"></i>
+                            Add to Cart
+                        </button>
+                        <button class="cb-product-card__buy-now">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Product Card 8 -->
+                <div class="cb-product-card">
+                    <a href="#" class="cb-product-card__link">
+                        <div class="cb-product-card__image">
+                            <div class="cb-product-card__image-placeholder">Product Image</div>
+                        </div>
+                        <div class="cb-product-card__content">
+                            <h3 class="cb-product-card__title">Natural Loofah Bath Sponge</h3>
+                            <p class="cb-product-card__benefit">Eco-friendly, exfoliating, biodegradable</p>
+                            <div class="cb-product-card__rating">
+                                <div class="cb-product-card__stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="cb-product-card__review-count">(178)</span>
+                            </div>
+                            <div class="cb-product-card__price">
+                                <span class="cb-product-card__price-current">₹299</span>
+                                <span class="cb-product-card__price-original">₹399</span>
+                                <span class="cb-product-card__price-discount">25% off</span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="cb-product-card__actions">
+                        <button class="cb-product-card__add-to-cart">
+                            <i class="fas fa-shopping-bag"></i>
+                            Add to Cart
+                        </button>
+                        <button class="cb-product-card__buy-now">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Product Card 9 -->
+                <div class="cb-product-card">
+                    <a href="#" class="cb-product-card__link">
+                        <div class="cb-product-card__image">
+                            <div class="cb-product-card__image-placeholder">Product Image</div>
+                        </div>
+                        <div class="cb-product-card__content">
+                            <h3 class="cb-product-card__title">Stainless Steel Water Bottle</h3>
+                            <p class="cb-product-card__benefit">Insulated, leak-proof, BPA-free</p>
+                            <div class="cb-product-card__rating">
+                                <div class="cb-product-card__stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span class="cb-product-card__review-count">(267)</span>
+                            </div>
+                            <div class="cb-product-card__price">
+                                <span class="cb-product-card__price-current">₹899</span>
+                                <span class="cb-product-card__price-original">₹1,199</span>
+                                <span class="cb-product-card__price-discount">25% off</span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="cb-product-card__actions">
+                        <button class="cb-product-card__add-to-cart">
+                            <i class="fas fa-shopping-bag"></i>
+                            Add to Cart
+                        </button>
+                        <button class="cb-product-card__buy-now">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Product Card 10 -->
+                <div class="cb-product-card">
+                    <a href="#" class="cb-product-card__link">
+                        <div class="cb-product-card__image">
+                            <div class="cb-product-card__image-placeholder">Product Image</div>
+                        </div>
+                        <div class="cb-product-card__content">
+                            <h3 class="cb-product-card__title">Cotton Canvas Tote Bag</h3>
+                            <p class="cb-product-card__benefit">Reusable, washable, durable fabric</p>
+                            <div class="cb-product-card__rating">
+                                <div class="cb-product-card__stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="cb-product-card__review-count">(189)</span>
+                            </div>
+                            <div class="cb-product-card__price">
+                                <span class="cb-product-card__price-current">₹599</span>
+                                <span class="cb-product-card__price-original">₹799</span>
+                                <span class="cb-product-card__price-discount">25% off</span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="cb-product-card__actions">
+                        <button class="cb-product-card__add-to-cart">
+                            <i class="fas fa-shopping-bag"></i>
+                            Add to Cart
+                        </button>
+                        <button class="cb-product-card__buy-now">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Product Card 11 -->
+                <div class="cb-product-card">
+                    <a href="#" class="cb-product-card__link">
+                        <div class="cb-product-card__image">
+                            <div class="cb-product-card__image-placeholder">Product Image</div>
+                        </div>
+                        <div class="cb-product-card__content">
+                            <h3 class="cb-product-card__title">Wooden Serving Board</h3>
+                            <p class="cb-product-card__benefit">Acacia wood, food-safe finish</p>
+                            <div class="cb-product-card__rating">
+                                <div class="cb-product-card__stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="cb-product-card__review-count">(134)</span>
+                            </div>
+                            <div class="cb-product-card__price">
+                                <span class="cb-product-card__price-current">₹1,299</span>
+                                <span class="cb-product-card__price-original">₹1,699</span>
+                                <span class="cb-product-card__price-discount">24% off</span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="cb-product-card__actions">
+                        <button class="cb-product-card__add-to-cart">
+                            <i class="fas fa-shopping-bag"></i>
+                            Add to Cart
+                        </button>
+                        <button class="cb-product-card__buy-now">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Product Card 12 -->
+                <div class="cb-product-card">
+                    <a href="#" class="cb-product-card__link">
+                        <div class="cb-product-card__image">
+                            <div class="cb-product-card__image-placeholder">Product Image</div>
+                        </div>
+                        <div class="cb-product-card__content">
+                            <h3 class="cb-product-card__title">Essential Oil Diffuser</h3>
+                            <p class="cb-product-card__benefit">Ultrasonic, color changing, quiet</p>
+                            <div class="cb-product-card__rating">
+                                <div class="cb-product-card__stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="cb-product-card__review-count">(201)</span>
+                            </div>
+                            <div class="cb-product-card__price">
+                                <span class="cb-product-card__price-current">₹1,499</span>
+                                <span class="cb-product-card__price-original">₹1,999</span>
+                                <span class="cb-product-card__price-discount">25% off</span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="cb-product-card__actions">
+                        <button class="cb-product-card__add-to-cart">
+                            <i class="fas fa-shopping-bag"></i>
+                            Add to Cart
+                        </button>
+                        <button class="cb-product-card__buy-now">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Pagination -->
+        <section class="cb-shop-pagination">
+            <div class="cb-shop-pagination__inner">
+                <button class="cb-shop-pagination__prev">
+                    <i class="fas fa-chevron-left"></i>
+                    Previous
+                </button>
+                
+                <div class="cb-shop-pagination__numbers">
+                    <button class="cb-shop-pagination__number cb-shop-pagination__number--active">1</button>
+                    <button class="cb-shop-pagination__number">2</button>
+                    <button class="cb-shop-pagination__number">3</button>
+                    <span class="cb-shop-pagination__ellipsis">...</span>
+                    <button class="cb-shop-pagination__number">8</button>
+                </div>
+                
+                <button class="cb-shop-pagination__next">
+                    Next
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </section>
+
+    </div>
+
+        <!-- FOOTER SECTION -->
+        <footer class="cb-footer">
+            <div class="cb-footer__inner">
+                <!-- Main Footer Content -->
+                <div class="cb-footer__main">
+                    <!-- Brand Column -->
+                    <div class="cb-footer__brand">
+                        <div class="cb-footer__logo">
+                            <a href="#" class="cb-footer__logo-link">
+                                <span class="cb-footer__logo-text">CartBay</span>
+                            </a>
+                        </div>
+                        <p class="cb-footer__tagline">Thoughtful shopping for modern living.</p>
+                        <div class="cb-footer__social">
+                            <a href="#" class="cb-footer__social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="cb-footer__social-link">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="cb-footer__social-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="cb-footer__social-link">
+                                <i class="fab fa-pinterest"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Quick Links -->
+                    <div class="cb-footer__links">
+                        <h3 class="cb-footer__links-title">Quick Links</h3>
+                        <ul class="cb-footer__links-list">
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Home</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">All Products</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">New Arrivals</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Best Sellers</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Sale</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Categories -->
+                    <div class="cb-footer__links">
+                        <h3 class="cb-footer__links-title">Categories</h3>
+                        <ul class="cb-footer__links-list">
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Home Essentials</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Personal Care</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Kitchen & Dining</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Sustainable Living</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Gifts</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Support -->
+                    <div class="cb-footer__links">
+                        <h3 class="cb-footer__links-title">Support</h3>
+                        <ul class="cb-footer__links-list">
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Contact Us</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">FAQ</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Shipping Policy</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Return Policy</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Privacy Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Contact Info -->
+                    <div class="cb-footer__contact">
+                        <h3 class="cb-footer__contact-title">Contact Us</h3>
+                        <div class="cb-footer__contact-info">
+                            <div class="cb-footer__contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>hello@cartbay.in</span>
+                            </div>
+                            <div class="cb-footer__contact-item">
+                                <i class="fas fa-phone"></i>
+                                <span>+91 1800-123-4567</span>
+                            </div>
+                            <div class="cb-footer__contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Mumbai, India</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Newsletter Signup -->
+                        <div class="cb-footer__newsletter">
+                            <h4 class="cb-footer__newsletter-title">Stay Updated</h4>
+                            <p class="cb-footer__newsletter-text">Get early access to new collections and exclusive offers.</p>
+                            <form class="cb-footer__newsletter-form">
+                                <input type="email" class="cb-footer__newsletter-input" placeholder="Your email address">
+                                <button type="submit" class="cb-footer__newsletter-submit">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Footer Bottom -->
+                <div class="cb-footer__bottom">
+                    <div class="cb-footer__payment">
+                        <span class="cb-footer__payment-text">Secure Payment:</span>
+                        <div class="cb-footer__payment-icons">
+                            <i class="fab fa-cc-visa"></i>
+                            <i class="fab fa-cc-mastercard"></i>
+                            <i class="fab fa-cc-amex"></i>
+                            <i class="fab fa-cc-paypal"></i>
+                            <i class="fas fa-university"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="cb-footer__copyright">
+                        <p>&copy; 2023 CartBay. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+<script src="script.js"></script>
+
+
+    <!-- JavaScript for interactive elements -->
+    <!-- <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Category pills functionality
+            const categoryPills = document.querySelectorAll('.cb-shop-controls__pill');
+            categoryPills.forEach(pill => {
+                pill.addEventListener('click', function() {
+                    categoryPills.forEach(p => p.classList.remove('cb-shop-controls__pill--active'));
+                    this.classList.add('cb-shop-controls__pill--active');
+                });
+            });
+            
+            // Add to cart functionality
+            const addToCartButtons = document.querySelectorAll('.cb-product-card__add-to-cart');
+            addToCartButtons.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    const originalText = this.innerHTML;
+                    this.innerHTML = '<i class="fas fa-check"></i> Added';
+                    this.style.backgroundColor = '#4CAF50';
+                    
+                    setTimeout(() => {
+                        this.innerHTML = originalText;
+                        this.style.backgroundColor = '';
+                    }, 2000);
+                });
+            });
+            
+            // Buy now functionality
+            const buyNowButtons = document.querySelectorAll('.cb-product-card__buy-now');
+            buyNowButtons.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    // In real implementation, this would redirect to checkout
+                    console.log('Buy Now clicked');
+                });
+            });
+            
+            // Product card click (for entire card except buttons)
+            const productCards = document.querySelectorAll('.cb-product-card__link');
+            productCards.forEach(card => {
+                card.addEventListener('click', function(e) {
+                    // Don't prevent default to allow navigation
+                    console.log('Product card clicked - navigate to product page');
+                });
+            });
+            
+            // Pagination functionality
+            const paginationNumbers = document.querySelectorAll('.cb-shop-pagination__number');
+            paginationNumbers.forEach(number => {
+                number.addEventListener('click', function() {
+                    if (!this.classList.contains('cb-shop-pagination__number--active')) {
+                        paginationNumbers.forEach(n => n.classList.remove('cb-shop-pagination__number--active'));
+                        this.classList.add('cb-shop-pagination__number--active');
+                    }
+                });
+            });
+            
+            // Previous/Next pagination buttons
+            const prevBtn = document.querySelector('.cb-shop-pagination__prev');
+            const nextBtn = document.querySelector('.cb-shop-pagination__next');
+            
+            if (prevBtn) {
+                prevBtn.addEventListener('click', function() {
+                    console.log('Previous page');
+                });
+            }
+            
+            if (nextBtn) {
+                nextBtn.addEventListener('click', function() {
+                    console.log('Next page');
+                });
+            }
+        });
+    </script> -->
+</body>
+</html>

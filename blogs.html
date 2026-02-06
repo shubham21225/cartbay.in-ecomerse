@@ -1,0 +1,780 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CartBay - Premium Indian eCommerce</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Main container for WordPress/WooCommerce integration -->
+    <div class="cb-homepage-container">
+        
+        <!-- HEADER SECTION -->
+        <header class="cb-header">
+            <div class="cb-header__inner">
+                <!-- Logo and Mobile Menu Toggle -->
+                <div class="cb-header__top">
+                    <button class="cb-header__mobile-toggle" id="mobileMenuToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    
+                    <div class="cb-header__logo">
+                        <a href="#" class="cb-header__logo-link">
+                            <span class="cb-header__logo-text">CartBay</span>
+                        </a>
+                    </div>
+                    
+                    <div class="cb-header__right">
+                        <div class="cb-header__search">
+                            <button class="cb-header__search-toggle" id="searchToggle">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                        
+                        <div class="cb-header__user">
+                            <a href="#" class="cb-header__user-link">
+                                <i class="fas fa-user"></i>
+                            </a>
+                        </div>
+                        
+                        <div class="cb-header__cart">
+                            <a href="cart.html" class="cb-header__cart-link">
+                                <i class="fas fa-shopping-bag"></i>
+                                <span class="cb-header__cart-count">0</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Search Bar (Hidden on Mobile by default) -->
+                <div class="cb-header__search-bar" id="searchBar">
+                    <form class="cb-header__search-form">
+                        <input type="text" class="cb-header__search-input" placeholder="Search for products...">
+                        <button type="submit" class="cb-header__search-submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                    <button class="cb-header__search-close" id="searchClose">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                
+                <!-- Main Navigation -->
+                <nav class="cb-header__nav" id="mainNav">
+                    <ul class="cb-header__nav-list">
+                        <li class="cb-header__nav-item">
+                            <a href="index.html" class="cb-header__nav-link">Home</a>
+                        </li>
+                        <li class="cb-header__nav-item cb-header__nav-item--has-dropdown">
+                            <a href="#" class="cb-header__nav-link">Collections</a>
+                            <div class="cb-header__dropdown">
+                                <a href="#" class="cb-header__dropdown-link">Home Essentials</a>
+                                <a href="#" class="cb-header__dropdown-link">Personal Care</a>
+                                <a href="#" class="cb-header__dropdown-link">Kitchen & Dining</a>
+                                <a href="#" class="cb-header__dropdown-link">Sustainable Living</a>
+                            </div>
+                        </li>
+                        <li class="cb-header__nav-item">
+                            <a href="all-products.html" class="cb-header__nav-link">Best Sellers</a>
+                        </li>
+                        <li class="cb-header__nav-item">
+                            <a href="blogs.html" class="cb-header__nav-link">Our Blogs</a>
+                        </li>
+                        <li class="cb-header__nav-item">
+                            <a href="about.html" class="cb-header__nav-link">Our Story</a>
+                        </li>
+                        <li class="cb-header__nav-item">
+                            <a href="contact.html" class="cb-header__nav-link">Contact</a>
+                        </li>
+                    </ul>
+                    
+                    <!-- Mobile-only additional links -->
+                    <div class="cb-header__mobile-extras">
+                        <a href="#" class="cb-header__mobile-link">
+                            <i class="fas fa-user"></i>
+                            My Account
+                        </a>
+                        <a href="#" class="cb-header__mobile-link">
+                            <i class="fas fa-heart"></i>
+                            Wishlist
+                        </a>
+                        <a href="#" class="cb-header__mobile-link">
+                            <i class="fas fa-question-circle"></i>
+                            Help Center
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+
+
+
+    <!-- Blog Page Container -->
+    <div class="cb-blog-container">
+        
+        <!-- Section 1: Blog Intro -->
+        <section class="cb-blog-intro">
+            <div class="cb-blog-intro__inner">
+                <h1 class="cb-blog-intro__title">Journal</h1>
+                <p class="cb-blog-intro__subtitle">Thoughtful insights on mindful living, sustainable choices, and elevating everyday experiences</p>
+                <div class="cb-blog-intro__meta">
+                    <span class="cb-blog-intro__count">24 articles on mindful living</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Featured Article -->
+        <section class="cb-blog-featured">
+            <div class="cb-blog-featured__inner">
+                <div class="cb-blog-featured__image">
+                    <div class="cb-blog-featured__image-placeholder">Featured Article Image</div>
+                </div>
+                <div class="cb-blog-featured__content">
+                    <div class="cb-blog-featured__category">
+                        <span class="cb-blog-featured__category-tag">Sustainable Living</span>
+                    </div>
+                    <h2 class="cb-blog-featured__title">The Art of Mindful Consumption: Choosing Quality Over Quantity</h2>
+                    <p class="cb-blog-featured__excerpt">Exploring how intentional purchasing decisions lead to more meaningful possessions and reduced environmental impact. Learn practical tips for building a thoughtful home.</p>
+                    <div class="cb-blog-featured__meta">
+                        <span class="cb-blog-featured__date">March 15, 2024</span>
+                        <span class="cb-blog-featured__read-time">8 min read</span>
+                    </div>
+                    <a href="#" class="cb-blog-featured__cta">
+                        Read article
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ad Slot 1: Primary (Top) -->
+        <div class="cb-blog-ad cb-blog-ad--top">
+            <div class="cb-blog-ad__inner">
+                <div class="cb-blog-ad__label">Advertisement</div>
+                <div class="cb-blog-ad__content">
+                    <div class="cb-blog-ad__placeholder">
+                        <!-- Ad content would be injected here -->
+                        <span class="cb-blog-ad__placeholder-text">728×90 Advertisement</span>
+                        <p class="cb-blog-ad__placeholder-note">This space supports our independent journalism</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 3: Blog Grid -->
+        <section class="cb-blog-grid">
+            <div class="cb-blog-grid__inner">
+                
+                <!-- Article Card 1 -->
+                <article class="cb-blog-card">
+                    <a href="#" class="cb-blog-card__link">
+                        <div class="cb-blog-card__image">
+                            <div class="cb-blog-card__image-placeholder">Article Image</div>
+                            <div class="cb-blog-card__category">
+                                <span class="cb-blog-card__category-tag">Home Essentials</span>
+                            </div>
+                        </div>
+                        <div class="cb-blog-card__content">
+                            <h3 class="cb-blog-card__title">5 Essential Kitchen Tools for Healthier Cooking</h3>
+                            <p class="cb-blog-card__excerpt">Discover the kitchen essentials that make healthy cooking effortless and enjoyable, without cluttering your space.</p>
+                            <div class="cb-blog-card__meta">
+                                <span class="cb-blog-card__date">March 12, 2024</span>
+                                <span class="cb-blog-card__read-time">5 min read</span>
+                            </div>
+                            <div class="cb-blog-card__cta">
+                                <span class="cb-blog-card__cta-text">Read more</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                
+                <!-- Article Card 2 -->
+                <article class="cb-blog-card">
+                    <a href="#" class="cb-blog-card__link">
+                        <div class="cb-blog-card__image">
+                            <div class="cb-blog-card__image-placeholder">Article Image</div>
+                            <div class="cb-blog-card__category">
+                                <span class="cb-blog-card__category-tag">Personal Care</span>
+                            </div>
+                        </div>
+                        <div class="cb-blog-card__content">
+                            <h3 class="cb-blog-card__title">Building a Minimalist Skincare Routine That Actually Works</h3>
+                            <p class="cb-blog-card__excerpt">Why less is more when it comes to skincare. Learn to identify what your skin truly needs and simplify your routine.</p>
+                            <div class="cb-blog-card__meta">
+                                <span class="cb-blog-card__date">March 8, 2024</span>
+                                <span class="cb-blog-card__read-time">6 min read</span>
+                            </div>
+                            <div class="cb-blog-card__cta">
+                                <span class="cb-blog-card__cta-text">Read more</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                
+                <!-- Article Card 3 -->
+                <article class="cb-blog-card">
+                    <a href="#" class="cb-blog-card__link">
+                        <div class="cb-blog-card__image">
+                            <div class="cb-blog-card__image-placeholder">Article Image</div>
+                            <div class="cb-blog-card__category">
+                                <span class="cb-blog-card__category-tag">Sustainable Living</span>
+                            </div>
+                        </div>
+                        <div class="cb-blog-card__content">
+                            <h3 class="cb-blog-card__title">The True Cost of Fast Home Goods: A Sustainability Perspective</h3>
+                            <p class="cb-blog-card__excerpt">An examination of the environmental and social impact of disposable home goods versus durable alternatives.</p>
+                            <div class="cb-blog-card__meta">
+                                <span class="cb-blog-card__date">March 5, 2024</span>
+                                <span class="cb-blog-card__read-time">7 min read</span>
+                            </div>
+                            <div class="cb-blog-card__cta">
+                                <span class="cb-blog-card__cta-text">Read more</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                
+                <!-- Article Card 4 -->
+                <article class="cb-blog-card">
+                    <a href="#" class="cb-blog-card__link">
+                        <div class="cb-blog-card__image">
+                            <div class="cb-blog-card__image-placeholder">Article Image</div>
+                            <div class="cb-blog-card__category">
+                                <span class="cb-blog-card__category-tag">Interior Design</span>
+                            </div>
+                        </div>
+                        <div class="cb-blog-card__content">
+                            <h3 class="cb-blog-card__title">Creating Calm: Minimalist Bedroom Principles for Better Sleep</h3>
+                            <p class="cb-blog-card__excerpt">Transform your bedroom into a sanctuary of rest with these simple design principles and product recommendations.</p>
+                            <div class="cb-blog-card__meta">
+                                <span class="cb-blog-card__date">March 1, 2024</span>
+                                <span class="cb-blog-card__read-time">5 min read</span>
+                            </div>
+                            <div class="cb-blog-card__cta">
+                                <span class="cb-blog-card__cta-text">Read more</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- In-Content Ad Slot 1 -->
+                <div class="cb-blog-ad cb-blog-ad--inline">
+                    <div class="cb-blog-ad__inner">
+                        <div class="cb-blog-ad__label">Advertisement</div>
+                        <div class="cb-blog-ad__content">
+                            <div class="cb-blog-ad__placeholder">
+                                <span class="cb-blog-ad__placeholder-text">300×250 Advertisement</span>
+                                <p class="cb-blog-ad__placeholder-note">Ad supports independent content creation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Article Card 5 -->
+                <article class="cb-blog-card">
+                    <a href="#" class="cb-blog-card__link">
+                        <div class="cb-blog-card__image">
+                            <div class="cb-blog-card__image-placeholder">Article Image</div>
+                            <div class="cb-blog-card__category">
+                                <span class="cb-blog-card__category-tag">Kitchen & Dining</span>
+                            </div>
+                        </div>
+                        <div class="cb-blog-card__content">
+                            <h3 class="cb-blog-card__title">The Art of Setting a Thoughtful Table: Beyond Aesthetics</h3>
+                            <p class="cb-blog-card__excerpt">How intentional table settings can transform everyday meals into meaningful experiences and reduce disposable waste.</p>
+                            <div class="cb-blog-card__meta">
+                                <span class="cb-blog-card__date">February 26, 2024</span>
+                                <span class="cb-blog-card__read-time">6 min read</span>
+                            </div>
+                            <div class="cb-blog-card__cta">
+                                <span class="cb-blog-card__cta-text">Read more</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                
+                <!-- Article Card 6 -->
+                <article class="cb-blog-card">
+                    <a href="#" class="cb-blog-card__link">
+                        <div class="cb-blog-card__image">
+                            <div class="cb-blog-card__image-placeholder">Article Image</div>
+                            <div class="cb-blog-card__category">
+                                <span class="cb-blog-card__category-tag">Wellness</span>
+                            </div>
+                        </div>
+                        <div class="cb-blog-card__content">
+                            <h3 class="cb-blog-card__title">Morning Rituals: Small Habits for a More Centered Day</h3>
+                            <p class="cb-blog-card__excerpt">Simple, non-consumerist morning practices that set a positive tone for your day without requiring expensive products.</p>
+                            <div class="cb-blog-card__meta">
+                                <span class="cb-blog-card__date">February 22, 2024</span>
+                                <span class="cb-blog-card__read-time">4 min read</span>
+                            </div>
+                            <div class="cb-blog-card__cta">
+                                <span class="cb-blog-card__cta-text">Read more</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                
+                <!-- Article Card 7 -->
+                <article class="cb-blog-card">
+                    <a href="#" class="cb-blog-card__link">
+                        <div class="cb-blog-card__image">
+                            <div class="cb-blog-card__image-placeholder">Article Image</div>
+                            <div class="cb-blog-card__category">
+                                <span class="cb-blog-card__category-tag">Sustainable Living</span>
+                            </div>
+                        </div>
+                        <div class="cb-blog-card__content">
+                            <h3 class="cb-blog-card__title">Bamboo vs. Cotton: A Comparative Guide to Sustainable Textiles</h3>
+                            <p class="cb-blog-card__excerpt">Understanding the environmental impact, durability, and appropriate uses of different sustainable fabric choices.</p>
+                            <div class="cb-blog-card__meta">
+                                <span class="cb-blog-card__date">February 18, 2024</span>
+                                <span class="cb-blog-card__read-time">8 min read</span>
+                            </div>
+                            <div class="cb-blog-card__cta">
+                                <span class="cb-blog-card__cta-text">Read more</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                
+                <!-- Article Card 8 -->
+                <article class="cb-blog-card">
+                    <a href="#" class="cb-blog-card__link">
+                        <div class="cb-blog-card__image">
+                            <div class="cb-blog-card__image-placeholder">Article Image</div>
+                            <div class="cb-blog-card__category">
+                                <span class="cb-blog-card__category-tag">Home Organization</span>
+                            </div>
+                        </div>
+                        <div class="cb-blog-card__content">
+                            <h3 class="cb-blog-card__title">Decluttering with Purpose: A Room-by-Room Guide</h3>
+                            <p class="cb-blog-card__excerpt">Practical strategies for decluttering that focus on creating functional, peaceful spaces rather than minimalism for its own sake.</p>
+                            <div class="cb-blog-card__meta">
+                                <span class="cb-blog-card__date">February 14, 2024</span>
+                                <span class="cb-blog-card__read-time">7 min read</span>
+                            </div>
+                            <div class="cb-blog-card__cta">
+                                <span class="cb-blog-card__cta-text">Read more</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- In-Content Ad Slot 2 -->
+                <div class="cb-blog-ad cb-blog-ad--inline">
+                    <div class="cb-blog-ad__inner">
+                        <div class="cb-blog-ad__label">Advertisement</div>
+                        <div class="cb-blog-ad__content">
+                            <div class="cb-blog-ad__placeholder">
+                                <span class="cb-blog-ad__placeholder-text">300×250 Advertisement</span>
+                                <p class="cb-blog-ad__placeholder-note">Thank you for supporting our content</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Article Card 9 -->
+                <article class="cb-blog-card">
+                    <a href="#" class="cb-blog-card__link">
+                        <div class="cb-blog-card__image">
+                            <div class="cb-blog-card__image-placeholder">Article Image</div>
+                            <div class="cb-blog-card__category">
+                                <span class="cb-blog-card__category-tag">Product Care</span>
+                            </div>
+                        </div>
+                        <div class="cb-blog-card__content">
+                            <h3 class="cb-blog-card__title">Extending Product Lifespan: Care Tips for Common Materials</h3>
+                            <p class="cb-blog-card__excerpt">How proper care and maintenance can significantly extend the life of your possessions, reducing waste and saving money.</p>
+                            <div class="cb-blog-card__meta">
+                                <span class="cb-blog-card__date">February 10, 2024</span>
+                                <span class="cb-blog-card__read-time">6 min read</span>
+                            </div>
+                            <div class="cb-blog-card__cta">
+                                <span class="cb-blog-card__cta-text">Read more</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                
+                <!-- Article Card 10 -->
+                <article class="cb-blog-card">
+                    <a href="#" class="cb-blog-card__link">
+                        <div class="cb-blog-card__image">
+                            <div class="cb-blog-card__image-placeholder">Article Image</div>
+                            <div class="cb-blog-card__category">
+                                <span class="cb-blog-card__category-tag">Mindful Living</span>
+                            </div>
+                        </div>
+                        <div class="cb-blog-card__content">
+                            <h3 class="cb-blog-card__title">The Psychology of Color in Home Spaces: Creating Mood with Intention</h3>
+                            <p class="cb-blog-card__excerpt">How color choices impact mood and behavior, with practical tips for creating harmonious, intentional home environments.</p>
+                            <div class="cb-blog-card__meta">
+                                <span class="cb-blog-card__date">February 6, 2024</span>
+                                <span class="cb-blog-card__read-time">7 min read</span>
+                            </div>
+                            <div class="cb-blog-card__cta">
+                                <span class="cb-blog-card__cta-text">Read more</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                
+                <!-- Article Card 11 -->
+                <article class="cb-blog-card">
+                    <a href="#" class="cb-blog-card__link">
+                        <div class="cb-blog-card__image">
+                            <div class="cb-blog-card__image-placeholder">Article Image</div>
+                            <div class="cb-blog-card__category">
+                                <span class="cb-blog-card__category-tag">Sustainable Living</span>
+                            </div>
+                        </div>
+                        <div class="cb-blog-card__content">
+                            <h3 class="cb-blog-card__title">Understanding Product Certifications: What Labels Really Mean</h3>
+                            <p class="cb-blog-card__excerpt">A guide to common sustainability certifications, their meanings, and which ones matter most for different product categories.</p>
+                            <div class="cb-blog-card__meta">
+                                <span class="cb-blog-card__date">February 2, 2024</span>
+                                <span class="cb-blog-card__read-time">8 min read</span>
+                            </div>
+                            <div class="cb-blog-card__cta">
+                                <span class="cb-blog-card__cta-text">Read more</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                
+                <!-- Article Card 12 -->
+                <article class="cb-blog-card">
+                    <a href="#" class="cb-blog-card__link">
+                        <div class="cb-blog-card__image">
+                            <div class="cb-blog-card__image-placeholder">Article Image</div>
+                            <div class="cb-blog-card__category">
+                                <span class="cb-blog-card__category-tag">Home Essentials</span>
+                            </div>
+                        </div>
+                        <div class="cb-blog-card__content">
+                            <h3 class="cb-blog-card__title">The Multi-Purpose Home: Versatile Products for Small Spaces</h3>
+                            <p class="cb-blog-card__excerpt">Smart product choices that serve multiple functions, helping maximize utility in compact living situations.</p>
+                            <div class="cb-blog-card__meta">
+                                <span class="cb-blog-card__date">January 28, 2024</span>
+                                <span class="cb-blog-card__read-time">5 min read</span>
+                            </div>
+                            <div class="cb-blog-card__cta">
+                                <span class="cb-blog-card__cta-text">Read more</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Section 4: Pagination -->
+        <section class="cb-blog-pagination">
+            <div class="cb-blog-pagination__inner">
+                <button class="cb-blog-pagination__prev">
+                    <i class="fas fa-chevron-left"></i>
+                    Previous
+                </button>
+                
+                <div class="cb-blog-pagination__numbers">
+                    <button class="cb-blog-pagination__number cb-blog-pagination__number--active">1</button>
+                    <button class="cb-blog-pagination__number">2</button>
+                    <button class="cb-blog-pagination__number">3</button>
+                    <span class="cb-blog-pagination__ellipsis">...</span>
+                    <button class="cb-blog-pagination__number">6</button>
+                </div>
+                
+                <button class="cb-blog-pagination__next">
+                    Next
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                
+                <!-- Alternative: Load More Button -->
+                <div class="cb-blog-pagination__load-more">
+                    <button class="cb-blog-pagination__load-more-btn">
+                        Load More Articles
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ad Slot 2: Secondary (Bottom) -->
+        <div class="cb-blog-ad cb-blog-ad--bottom">
+            <div class="cb-blog-ad__inner">
+                <div class="cb-blog-ad__label">Advertisement</div>
+                <div class="cb-blog-ad__content">
+                    <div class="cb-blog-ad__placeholder">
+                        <span class="cb-blog-ad__placeholder-text">728×90 Advertisement</span>
+                        <p class="cb-blog-ad__placeholder-note">Advertising enables us to provide free, quality content</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    
+        <!-- FOOTER SECTION -->
+        <footer class="cb-footer">
+            <div class="cb-footer__inner">
+                <!-- Main Footer Content -->
+                <div class="cb-footer__main">
+                    <!-- Brand Column -->
+                    <div class="cb-footer__brand">
+                        <div class="cb-footer__logo">
+                            <a href="#" class="cb-footer__logo-link">
+                                <span class="cb-footer__logo-text">CartBay</span>
+                            </a>
+                        </div>
+                        <p class="cb-footer__tagline">Thoughtful shopping for modern living.</p>
+                        <div class="cb-footer__social">
+                            <a href="#" class="cb-footer__social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="cb-footer__social-link">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="cb-footer__social-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="cb-footer__social-link">
+                                <i class="fab fa-pinterest"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Quick Links -->
+                    <div class="cb-footer__links">
+                        <h3 class="cb-footer__links-title">Quick Links</h3>
+                        <ul class="cb-footer__links-list">
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Home</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">All Products</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">New Arrivals</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Best Sellers</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Sale</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Categories -->
+                    <div class="cb-footer__links">
+                        <h3 class="cb-footer__links-title">Categories</h3>
+                        <ul class="cb-footer__links-list">
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Home Essentials</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Personal Care</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Kitchen & Dining</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Sustainable Living</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Gifts</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Support -->
+                    <div class="cb-footer__links">
+                        <h3 class="cb-footer__links-title">Support</h3>
+                        <ul class="cb-footer__links-list">
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Contact Us</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">FAQ</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Shipping Policy</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Return Policy</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Privacy Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Contact Info -->
+                    <div class="cb-footer__contact">
+                        <h3 class="cb-footer__contact-title">Contact Us</h3>
+                        <div class="cb-footer__contact-info">
+                            <div class="cb-footer__contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>hello@cartbay.in</span>
+                            </div>
+                            <div class="cb-footer__contact-item">
+                                <i class="fas fa-phone"></i>
+                                <span>+91 1800-123-4567</span>
+                            </div>
+                            <div class="cb-footer__contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Mumbai, India</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Newsletter Signup -->
+                        <div class="cb-footer__newsletter">
+                            <h4 class="cb-footer__newsletter-title">Stay Updated</h4>
+                            <p class="cb-footer__newsletter-text">Get early access to new collections and exclusive offers.</p>
+                            <form class="cb-footer__newsletter-form">
+                                <input type="email" class="cb-footer__newsletter-input" placeholder="Your email address">
+                                <button type="submit" class="cb-footer__newsletter-submit">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Footer Bottom -->
+                <div class="cb-footer__bottom">
+                    <div class="cb-footer__payment">
+                        <span class="cb-footer__payment-text">Secure Payment:</span>
+                        <div class="cb-footer__payment-icons">
+                            <i class="fab fa-cc-visa"></i>
+                            <i class="fab fa-cc-mastercard"></i>
+                            <i class="fab fa-cc-amex"></i>
+                            <i class="fab fa-cc-paypal"></i>
+                            <i class="fas fa-university"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="cb-footer__copyright">
+                        <p>&copy; 2023 CartBay. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    <!-- JavaScript for interactive elements -->
+     <script src="script.js"></script>
+    <!-- <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Blog card hover effects
+            const blogCards = document.querySelectorAll('.cb-blog-card');
+            blogCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-5px)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+            
+            // Featured article CTA hover effect
+            const featuredCta = document.querySelector('.cb-blog-featured__cta');
+            if (featuredCta) {
+                featuredCta.addEventListener('mouseenter', function() {
+                    const icon = this.querySelector('i');
+                    if (icon) {
+                        icon.style.transform = 'translateX(5px)';
+                    }
+                });
+                
+                featuredCta.addEventListener('mouseleave', function() {
+                    const icon = this.querySelector('i');
+                    if (icon) {
+                        icon.style.transform = 'translateX(0)';
+                    }
+                });
+            }
+            
+            // Pagination functionality
+            const paginationNumbers = document.querySelectorAll('.cb-blog-pagination__number');
+            paginationNumbers.forEach(number => {
+                number.addEventListener('click', function() {
+                    if (!this.classList.contains('cb-blog-pagination__number--active')) {
+                        paginationNumbers.forEach(n => n.classList.remove('cb-blog-pagination__number--active'));
+                        this.classList.add('cb-blog-pagination__number--active');
+                    }
+                });
+            });
+            
+            // Previous/Next pagination buttons
+            const prevBtn = document.querySelector('.cb-blog-pagination__prev');
+            const nextBtn = document.querySelector('.cb-blog-pagination__next');
+            
+            if (prevBtn) {
+                prevBtn.addEventListener('click', function() {
+                    console.log('Previous page');
+                });
+            }
+            
+            if (nextBtn) {
+                nextBtn.addEventListener('click', function() {
+                    console.log('Next page');
+                });
+            }
+            
+            // Load more button
+            const loadMoreBtn = document.querySelector('.cb-blog-pagination__load-more-btn');
+            if (loadMoreBtn) {
+                loadMoreBtn.addEventListener('click', function() {
+                    const originalText = this.textContent;
+                    this.textContent = 'Loading...';
+                    this.disabled = true;
+                    
+                    // Simulate loading
+                    setTimeout(() => {
+                        this.textContent = originalText;
+                        this.disabled = false;
+                        console.log('Load more articles');
+                    }, 1500);
+                });
+            }
+            
+            // Article card CTA hover effects
+            const cardCtas = document.querySelectorAll('.cb-blog-card__cta');
+            cardCtas.forEach(cta => {
+                cta.addEventListener('mouseenter', function() {
+                    const icon = this.querySelector('i');
+                    if (icon) {
+                        icon.style.transform = 'translateX(5px)';
+                    }
+                });
+                
+                cta.addEventListener('mouseleave', function() {
+                    const icon = this.querySelector('i');
+                    if (icon) {
+                        icon.style.transform = 'translateX(0)';
+                    }
+                });
+            });
+        });
+    </script> -->
+</body>
+</html>

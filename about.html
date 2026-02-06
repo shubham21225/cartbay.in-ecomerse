@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CartBay - Premium Indian eCommerce</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Main container for WordPress/WooCommerce integration -->
+    <div class="cb-homepage-container">
+        
+        <!-- HEADER SECTION -->
+        <header class="cb-header">
+            <div class="cb-header__inner">
+                <!-- Logo and Mobile Menu Toggle -->
+                <div class="cb-header__top">
+                    <button class="cb-header__mobile-toggle" id="mobileMenuToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    
+                    <div class="cb-header__logo">
+                        <a href="#" class="cb-header__logo-link">
+                            <span class="cb-header__logo-text">CartBay</span>
+                        </a>
+                    </div>
+                    
+                    <div class="cb-header__right">
+                        <div class="cb-header__search">
+                            <button class="cb-header__search-toggle" id="searchToggle">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                        
+                        <div class="cb-header__user">
+                            <a href="#" class="cb-header__user-link">
+                                <i class="fas fa-user"></i>
+                            </a>
+                        </div>
+                        
+                        <div class="cb-header__cart">
+                            <a href="cart.html" class="cb-header__cart-link">
+                                <i class="fas fa-shopping-bag"></i>
+                                <span class="cb-header__cart-count">0</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Search Bar (Hidden on Mobile by default) -->
+                <div class="cb-header__search-bar" id="searchBar">
+                    <form class="cb-header__search-form">
+                        <input type="text" class="cb-header__search-input" placeholder="Search for products...">
+                        <button type="submit" class="cb-header__search-submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                    <button class="cb-header__search-close" id="searchClose">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                
+                <!-- Main Navigation -->
+                <nav class="cb-header__nav" id="mainNav">
+                    <ul class="cb-header__nav-list">
+                        <li class="cb-header__nav-item">
+                            <a href="index.html" class="cb-header__nav-link">Home</a>
+                        </li>
+                        <li class="cb-header__nav-item cb-header__nav-item--has-dropdown">
+                            <a href="#" class="cb-header__nav-link">Collections</a>
+                            <div class="cb-header__dropdown">
+                                <a href="#" class="cb-header__dropdown-link">Home Essentials</a>
+                                <a href="#" class="cb-header__dropdown-link">Personal Care</a>
+                                <a href="#" class="cb-header__dropdown-link">Kitchen & Dining</a>
+                                <a href="#" class="cb-header__dropdown-link">Sustainable Living</a>
+                            </div>
+                        </li>
+                        <li class="cb-header__nav-item">
+                            <a href="all-products.html" class="cb-header__nav-link">Best Sellers</a>
+                        </li>
+                        <li class="cb-header__nav-item">
+                            <a href="blogs.html" class="cb-header__nav-link">Our Blogs</a>
+                        </li>
+                        <li class="cb-header__nav-item">
+                            <a href="about.html" class="cb-header__nav-link">Our Story</a>
+                        </li>
+                        <li class="cb-header__nav-item">
+                            <a href="contact.html" class="cb-header__nav-link">Contact</a>
+                        </li>
+                    </ul>
+                    
+                    <!-- Mobile-only additional links -->
+                    <div class="cb-header__mobile-extras">
+                        <a href="#" class="cb-header__mobile-link">
+                            <i class="fas fa-user"></i>
+                            My Account
+                        </a>
+                        <a href="#" class="cb-header__mobile-link">
+                            <i class="fas fa-heart"></i>
+                            Wishlist
+                        </a>
+                        <a href="#" class="cb-header__mobile-link">
+                            <i class="fas fa-question-circle"></i>
+                            Help Center
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+    <!-- About Page Container -->
+    <div class="cb-about-container">
+        
+        <!-- Section 1: About Intro -->
+        <section class="cb-about-intro">
+            <div class="cb-about-intro__inner">
+                <h1 class="cb-about-intro__title">About CartBay</h1>
+                <p class="cb-about-intro__statement">Thoughtful shopping for modern living.</p>
+                <p class="cb-about-intro__text">We believe everyday products should be well-made, thoughtfully selected, and designed to last—making your home a more comfortable, intentional space.</p>
+            </div>
+        </section>
+
+        <!-- Section 2: Brand Story -->
+        <section class="cb-about-story">
+            <div class="cb-about-story__inner">
+                <div class="cb-about-story__content">
+                    <h2 class="cb-about-story__title">Why CartBay exists</h2>
+                    <p class="cb-about-story__text">CartBay began with a simple observation: too many home essentials were either cheaply made and disposable, or overpriced and inaccessible.</p>
+                    <p class="cb-about-story__text">We saw an opportunity to create something different—a collection of well-designed, durable products at fair prices, selected with care and delivered with respect for both people and the environment.</p>
+                    <p class="cb-about-story__text">Our focus is on essentials, not excess. On quality, not quantity. On thoughtful choices that simplify rather than complicate daily life.</p>
+                </div>
+                <div class="cb-about-story__visual">
+                    <div class="cb-about-story__visual-placeholder">Subtle Brand Visual</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Values & Principles -->
+        <section class="cb-about-values">
+            <div class="cb-about-values__inner">
+                <div class="cb-about-values__header">
+                    <h2 class="cb-about-values__title">Our principles</h2>
+                    <p class="cb-about-values__subtitle">The standards that guide everything we do</p>
+                </div>
+                
+                <div class="cb-about-values__grid">
+                    <!-- Value 1 -->
+                    <div class="cb-about-values__item">
+                        <div class="cb-about-values__icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3 class="cb-about-values__item-title">Quality Over Quantity</h3>
+                        <p class="cb-about-values__item-text">We carefully test and select each product, favoring durability and thoughtful design over trends and impulse buys.</p>
+                    </div>
+                    
+                    <!-- Value 2 -->
+                    <div class="cb-about-values__item">
+                        <div class="cb-about-values__icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3 class="cb-about-values__item-title">Sustainable Choices</h3>
+                        <p class="cb-about-values__item-text">We prioritize materials and processes that minimize environmental impact, without compromising on quality or functionality.</p>
+                    </div>
+                    
+                    <!-- Value 3 -->
+                    <div class="cb-about-values__item">
+                        <div class="cb-about-values__icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3 class="cb-about-values__item-title">Transparent Honesty</h3>
+                        <p class="cb-about-values__item-text">We're clear about materials, origins, and limitations. No exaggerated claims, just straightforward information.</p>
+                    </div>
+                    
+                    <!-- Value 4 -->
+                    <div class="cb-about-values__item">
+                        <div class="cb-about-values__icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3 class="cb-about-values__item-title">Customer Respect</h3>
+                        <p class="cb-about-values__item-text">We treat every customer interaction with care, from transparent policies to responsive support and fair pricing.</p>
+                    </div>
+                    
+                    <!-- Value 5 -->
+                    <div class="cb-about-values__item">
+                        <div class="cb-about-values__icon">
+                            <i class="fas fa-long-arrow-alt-right"></i>
+                        </div>
+                        <h3 class="cb-about-values__item-title">Continuous Improvement</h3>
+                        <p class="cb-about-values__item-text">We listen, learn, and refine our collection and processes based on real feedback and evolving needs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: What Makes CartBay Different -->
+        <section class="cb-about-difference">
+            <div class="cb-about-difference__inner">
+                <div class="cb-about-difference__header">
+                    <h2 class="cb-about-difference__title">What sets CartBay apart</h2>
+                    <p class="cb-about-difference__subtitle">Our approach to everyday shopping</p>
+                </div>
+                
+                <div class="cb-about-difference__grid">
+                    <!-- Difference 1 -->
+                    <div class="cb-about-difference__item">
+                        <h3 class="cb-about-difference__item-title">Carefully curated, not overwhelming</h3>
+                        <p class="cb-about-difference__item-text">We offer a thoughtfully selected collection, not endless options. This means less decision fatigue and more confidence in your choices.</p>
+                    </div>
+                    
+                    <!-- Difference 2 -->
+                    <div class="cb-about-difference__item">
+                        <h3 class="cb-about-difference__item-title">Quality that lasts, not trends that fade</h3>
+                        <p class="cb-about-difference__item-text">We focus on timeless design and durable construction, so products remain useful and appealing for years, not just seasons.</p>
+                    </div>
+                    
+                    <!-- Difference 3 -->
+                    <div class="cb-about-difference__item">
+                        <h3 class="cb-about-difference__item-title">Transparent pricing, not hidden costs</h3>
+                        <p class="cb-about-difference__item-text">Our prices include shipping for orders above ₹999, and we're clear about any additional costs upfront. No surprises at checkout.</p>
+                    </div>
+                    
+                    <!-- Difference 4 -->
+                    <div class="cb-about-difference__item">
+                        <h3 class="cb-about-difference__item-title">Real support, not automated responses</h3>
+                        <p class="cb-about-difference__item-text">Our support team responds personally to every inquiry. We believe in human conversations, not chatbot loops.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Process & Reliability -->
+        <section class="cb-about-process">
+            <div class="cb-about-process__inner">
+                <div class="cb-about-process__header">
+                    <h2 class="cb-about-process__title">How we work</h2>
+                    <p class="cb-about-process__subtitle">Our approach to reliability and quality</p>
+                </div>
+                
+                <div class="cb-about-process__steps">
+                    <!-- Step 1 -->
+                    <div class="cb-about-process__step">
+                        <div class="cb-about-process__step-number">01</div>
+                        <div class="cb-about-process__step-content">
+                            <h3 class="cb-about-process__step-title">Product Selection</h3>
+                            <p class="cb-about-process__step-text">Each product undergoes practical testing and material verification before being added to our collection. We evaluate durability, functionality, and design relevance.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 2 -->
+                    <div class="cb-about-process__step">
+                        <div class="cb-about-process__step-number">02</div>
+                        <div class="cb-about-process__step-content">
+                            <h3 class="cb-about-process__step-title">Order Handling</h3>
+                            <p class="cb-about-process__step-text">Orders are processed within 24 hours and packed with care. We use minimal, recyclable packaging and provide clear tracking information.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 3 -->
+                    <div class="cb-about-process__step">
+                        <div class="cb-about-process__step-number">03</div>
+                        <div class="cb-about-process__step-content">
+                            <h3 class="cb-about-process__step-title">Quality Assurance</h3>
+                            <p class="cb-about-process__step-text">We maintain regular quality checks with our partners and continuously gather customer feedback to ensure consistency and identify improvements.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 4 -->
+                    <div class="cb-about-process__step">
+                        <div class="cb-about-process__step-number">04</div>
+                        <div class="cb-about-process__step-content">
+                            <h3 class="cb-about-process__step-title">Customer Support</h3>
+                            <p class="cb-about-process__step-text">Our support team addresses inquiries personally, with clear policies for returns, exchanges, and resolutions. We aim for responses within 24 hours.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Trust Reinforcement -->
+        <section class="cb-about-trust">
+            <div class="cb-about-trust__inner">
+                <div class="cb-about-trust__content">
+                    <h2 class="cb-about-trust__title">Our commitment to you</h2>
+                    
+                    <div class="cb-about-trust__statements">
+                        <div class="cb-about-trust__statement">
+                            <div class="cb-about-trust__icon">
+                                <i class="fas fa-user-shield"></i>
+                            </div>
+                            <div class="cb-about-trust__statement-content">
+                                <h3 class="cb-about-trust__statement-title">Customer-first always</h3>
+                                <p class="cb-about-trust__statement-text">Every decision is evaluated through the lens of customer benefit, not just business convenience.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="cb-about-trust__statement">
+                            <div class="cb-about-trust__icon">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                            <div class="cb-about-trust__statement-content">
+                                <h3 class="cb-about-trust__statement-title">Privacy respected</h3>
+                                <p class="cb-about-trust__statement-text">Your information is protected with industry-standard security and never shared without consent.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="cb-about-trust__statement">
+                            <div class="cb-about-trust__icon">
+                                <i class="fas fa-seedling"></i>
+                            </div>
+                            <div class="cb-about-trust__statement-content">
+                                <h3 class="cb-about-trust__statement-title">Long-term thinking</h3>
+                                <p class="cb-about-trust__statement-text">We're building CartBay to last, prioritizing sustainable practices and enduring relationships over short-term gains.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7: Soft CTA -->
+        <section class="cb-about-cta">
+            <div class="cb-about-cta__inner">
+                <div class="cb-about-cta__content">
+                    <h2 class="cb-about-cta__title">Experience thoughtful shopping</h2>
+                    <p class="cb-about-cta__text">Explore our collection of carefully selected home essentials.</p>
+                    <a href="#" class="cb-about-cta__button">
+                        <i class="fas fa-shopping-bag"></i>
+                        Shop the Collection
+                    </a>
+                    <div class="cb-about-cta__links">
+                        <a href="#" class="cb-about-cta__link">
+                            <i class="fas fa-book-open"></i>
+                            Read our journal
+                        </a>
+                        <a href="#" class="cb-about-cta__link">
+                            <i class="fas fa-envelope"></i>
+                            Get in touch
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+
+            <!-- FOOTER SECTION -->
+        <footer class="cb-footer">
+            <div class="cb-footer__inner">
+                <!-- Main Footer Content -->
+                <div class="cb-footer__main">
+                    <!-- Brand Column -->
+                    <div class="cb-footer__brand">
+                        <div class="cb-footer__logo">
+                            <a href="#" class="cb-footer__logo-link">
+                                <span class="cb-footer__logo-text">CartBay</span>
+                            </a>
+                        </div>
+                        <p class="cb-footer__tagline">Thoughtful shopping for modern living.</p>
+                        <div class="cb-footer__social">
+                            <a href="#" class="cb-footer__social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="cb-footer__social-link">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="cb-footer__social-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="cb-footer__social-link">
+                                <i class="fab fa-pinterest"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Quick Links -->
+                    <div class="cb-footer__links">
+                        <h3 class="cb-footer__links-title">Quick Links</h3>
+                        <ul class="cb-footer__links-list">
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Home</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">All Products</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">New Arrivals</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Best Sellers</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Sale</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Categories -->
+                    <div class="cb-footer__links">
+                        <h3 class="cb-footer__links-title">Categories</h3>
+                        <ul class="cb-footer__links-list">
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Home Essentials</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Personal Care</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Kitchen & Dining</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Sustainable Living</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Gifts</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Support -->
+                    <div class="cb-footer__links">
+                        <h3 class="cb-footer__links-title">Support</h3>
+                        <ul class="cb-footer__links-list">
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Contact Us</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">FAQ</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Shipping Policy</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Return Policy</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Privacy Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Contact Info -->
+                    <div class="cb-footer__contact">
+                        <h3 class="cb-footer__contact-title">Contact Us</h3>
+                        <div class="cb-footer__contact-info">
+                            <div class="cb-footer__contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>hello@cartbay.in</span>
+                            </div>
+                            <div class="cb-footer__contact-item">
+                                <i class="fas fa-phone"></i>
+                                <span>+91 1800-123-4567</span>
+                            </div>
+                            <div class="cb-footer__contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Mumbai, India</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Newsletter Signup -->
+                        <div class="cb-footer__newsletter">
+                            <h4 class="cb-footer__newsletter-title">Stay Updated</h4>
+                            <p class="cb-footer__newsletter-text">Get early access to new collections and exclusive offers.</p>
+                            <form class="cb-footer__newsletter-form">
+                                <input type="email" class="cb-footer__newsletter-input" placeholder="Your email address">
+                                <button type="submit" class="cb-footer__newsletter-submit">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Footer Bottom -->
+                <div class="cb-footer__bottom">
+                    <div class="cb-footer__payment">
+                        <span class="cb-footer__payment-text">Secure Payment:</span>
+                        <div class="cb-footer__payment-icons">
+                            <i class="fab fa-cc-visa"></i>
+                            <i class="fab fa-cc-mastercard"></i>
+                            <i class="fab fa-cc-amex"></i>
+                            <i class="fab fa-cc-paypal"></i>
+                            <i class="fas fa-university"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="cb-footer__copyright">
+                        <p>&copy; 2023 CartBay. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+    <!-- JavaScript for subtle interactions -->
+     <script src="script.js"></script>
+    <!-- <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Value item hover effects
+            const valueItems = document.querySelectorAll('.cb-about-values__item');
+            valueItems.forEach(item => {
+                item.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-5px)';
+                });
+                
+                item.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+            
+            // Process step hover effects
+            const processSteps = document.querySelectorAll('.cb-about-process__step');
+            processSteps.forEach(step => {
+                step.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-3px)';
+                });
+                
+                step.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+            
+            // Difference item hover effects
+            const differenceItems = document.querySelectorAll('.cb-about-difference__item');
+            differenceItems.forEach(item => {
+                item.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-3px)';
+                });
+                
+                item.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+            
+            // CTA button hover effect
+            const ctaButton = document.querySelector('.cb-about-cta__button');
+            if (ctaButton) {
+                ctaButton.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-2px)';
+                });
+                
+                ctaButton.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            }
+            
+            // CTA link hover effects
+            const ctaLinks = document.querySelectorAll('.cb-about-cta__link');
+            ctaLinks.forEach(link => {
+                link.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-2px)';
+                });
+                
+                link.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+            
+            // Trust statement hover effects
+            const trustStatements = document.querySelectorAll('.cb-about-trust__statement');
+            trustStatements.forEach(statement => {
+                statement.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-3px)';
+                });
+                
+                statement.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+            
+            // Add subtle animation on scroll (optional, can be removed)
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+            
+            // Apply to sections for subtle entrance
+            const sections = document.querySelectorAll('.cb-about-story, .cb-about-values, .cb-about-difference, .cb-about-process, .cb-about-trust');
+            sections.forEach(section => {
+                section.style.opacity = '0';
+                section.style.transform = 'translateY(20px)';
+                section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(section);
+            });
+        });
+    </script> -->
+</body>
+</html>

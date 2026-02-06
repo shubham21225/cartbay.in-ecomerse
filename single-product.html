@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CartBay - Premium Indian eCommerce</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Main container for WordPress/WooCommerce integration -->
+    <div class="cb-homepage-container">
+        
+        <!-- HEADER SECTION -->
+        <header class="cb-header">
+            <div class="cb-header__inner">
+                <!-- Logo and Mobile Menu Toggle -->
+                <div class="cb-header__top">
+                    <button class="cb-header__mobile-toggle" id="mobileMenuToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    
+                    <div class="cb-header__logo">
+                        <a href="#" class="cb-header__logo-link">
+                            <span class="cb-header__logo-text">CartBay</span>
+                        </a>
+                    </div>
+                    
+                    <div class="cb-header__right">
+                        <div class="cb-header__search">
+                            <button class="cb-header__search-toggle" id="searchToggle">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                        
+                        <div class="cb-header__user">
+                            <a href="#" class="cb-header__user-link">
+                                <i class="fas fa-user"></i>
+                            </a>
+                        </div>
+                        
+                        <div class="cb-header__cart">
+                            <a href="cart.html" class="cb-header__cart-link">
+                                <i class="fas fa-shopping-bag"></i>
+                                <span class="cb-header__cart-count">0</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Search Bar (Hidden on Mobile by default) -->
+                <div class="cb-header__search-bar" id="searchBar">
+                    <form class="cb-header__search-form">
+                        <input type="text" class="cb-header__search-input" placeholder="Search for products...">
+                        <button type="submit" class="cb-header__search-submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                    <button class="cb-header__search-close" id="searchClose">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                
+                <!-- Main Navigation -->
+                <nav class="cb-header__nav" id="mainNav">
+                    <ul class="cb-header__nav-list">
+                        <li class="cb-header__nav-item">
+                            <a href="index.html" class="cb-header__nav-link">Home</a>
+                        </li>
+                        <li class="cb-header__nav-item cb-header__nav-item--has-dropdown">
+                            <a href="#" class="cb-header__nav-link">Collections</a>
+                            <div class="cb-header__dropdown">
+                                <a href="#" class="cb-header__dropdown-link">Home Essentials</a>
+                                <a href="#" class="cb-header__dropdown-link">Personal Care</a>
+                                <a href="#" class="cb-header__dropdown-link">Kitchen & Dining</a>
+                                <a href="#" class="cb-header__dropdown-link">Sustainable Living</a>
+                            </div>
+                        </li>
+                        <li class="cb-header__nav-item">
+                            <a href="all-products.html" class="cb-header__nav-link">Best Sellers</a>
+                        </li>
+                        <li class="cb-header__nav-item">
+                            <a href="blogs.html" class="cb-header__nav-link">Our Blogs</a>
+                        </li>
+                        <li class="cb-header__nav-item">
+                            <a href="about.html" class="cb-header__nav-link">Our Story</a>
+                        </li>
+                        <li class="cb-header__nav-item">
+                            <a href="contact.html" class="cb-header__nav-link">Contact</a>
+                        </li>
+                    </ul>
+                    
+                    <!-- Mobile-only additional links -->
+                    <div class="cb-header__mobile-extras">
+                        <a href="#" class="cb-header__mobile-link">
+                            <i class="fas fa-user"></i>
+                            My Account
+                        </a>
+                        <a href="#" class="cb-header__mobile-link">
+                            <i class="fas fa-heart"></i>
+                            Wishlist
+                        </a>
+                        <a href="#" class="cb-header__mobile-link">
+                            <i class="fas fa-question-circle"></i>
+                            Help Center
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+    <!-- Product Page Container -->
+    <div class="cb-product-container">
+        
+        <!-- Section 1: Product Hero -->
+        <section class="cb-product-hero">
+            <div class="cb-product-hero__inner">
+                
+                <!-- Product Images -->
+                <div class="cb-product-hero__gallery">
+                    <!-- Main Image -->
+                    <div class="cb-product-hero__main-image">
+                        <div class="cb-product-hero__image-placeholder">
+                            <div class="cb-product-hero__image-overlay">Main Product Image</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Thumbnails -->
+                    <div class="cb-product-hero__thumbnails">
+                        <button class="cb-product-hero__thumbnail cb-product-hero__thumbnail--active">
+                            <div class="cb-product-hero__thumbnail-placeholder">1</div>
+                        </button>
+                        <button class="cb-product-hero__thumbnail">
+                            <div class="cb-product-hero__thumbnail-placeholder">2</div>
+                        </button>
+                        <button class="cb-product-hero__thumbnail">
+                            <div class="cb-product-hero__thumbnail-placeholder">3</div>
+                        </button>
+                        <button class="cb-product-hero__thumbnail">
+                            <div class="cb-product-hero__thumbnail-placeholder">4</div>
+                        </button>
+                        <button class="cb-product-hero__thumbnail">
+                            <div class="cb-product-hero__thumbnail-placeholder">5</div>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Product Info -->
+                <div class="cb-product-hero__info">
+                    <!-- Breadcrumb (minimal) -->
+                    <div class="cb-product-hero__breadcrumb">
+                        <a href="#" class="cb-product-hero__breadcrumb-link">Home</a>
+                        <span class="cb-product-hero__breadcrumb-separator">/</span>
+                        <a href="#" class="cb-product-hero__breadcrumb-link">Bed & Bath</a>
+                        <span class="cb-product-hero__breadcrumb-separator">/</span>
+                        <span class="cb-product-hero__breadcrumb-current">Bed Sheets</span>
+                    </div>
+                    
+                    <!-- Product Title -->
+                    <h1 class="cb-product-hero__title">Premium Cotton Bed Sheet Set - 300 Thread Count</h1>
+                    
+                    <!-- Product Rating -->
+                    <div class="cb-product-hero__rating">
+                        <div class="cb-product-hero__rating-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="cb-product-hero__rating-text">4.5 (428 reviews)</span>
+                    </div>
+                    
+                    <!-- Product Price -->
+                    <div class="cb-product-hero__price">
+                        <span class="cb-product-hero__price-current">₹1,899</span>
+                        <span class="cb-product-hero__price-original">₹2,499</span>
+                        <span class="cb-product-hero__price-discount">24% off</span>
+                    </div>
+                    
+                    <!-- Product Benefit -->
+                    <p class="cb-product-hero__benefit">Breathable 100% cotton with premium sateen finish for year-round comfort.</p>
+                    
+                    <!-- Color Options -->
+                    <div class="cb-product-hero__options">
+                        <h3 class="cb-product-hero__options-title">Color</h3>
+                        <div class="cb-product-hero__colors">
+                            <button class="cb-product-hero__color-option cb-product-hero__color-option--active">
+                                <span class="cb-product-hero__color-swatch" style="background-color: #f5f5f5;"></span>
+                                <span class="cb-product-hero__color-name">White</span>
+                            </button>
+                            <button class="cb-product-hero__color-option">
+                                <span class="cb-product-hero__color-swatch" style="background-color: #f0e0c0;"></span>
+                                <span class="cb-product-hero__color-name">Beige</span>
+                            </button>
+                            <button class="cb-product-hero__color-option">
+                                <span class="cb-product-hero__color-swatch" style="background-color: #d4e6f1;"></span>
+                                <span class="cb-product-hero__color-name">Sky Blue</span>
+                            </button>
+                            <button class="cb-product-hero__color-option">
+                                <span class="cb-product-hero__color-swatch" style="background-color: #e8f5e8;"></span>
+                                <span class="cb-product-hero__color-name">Mint Green</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Size Options -->
+                    <div class="cb-product-hero__options">
+                        <h3 class="cb-product-hero__options-title">Size</h3>
+                        <div class="cb-product-hero__sizes">
+                            <button class="cb-product-hero__size-option cb-product-hero__size-option--active">
+                                <span class="cb-product-hero__size-name">Single</span>
+                            </button>
+                            <button class="cb-product-hero__size-option">
+                                <span class="cb-product-hero__size-name">Double</span>
+                            </button>
+                            <button class="cb-product-hero__size-option">
+                                <span class="cb-product-hero__size-name">Queen</span>
+                            </button>
+                            <button class="cb-product-hero__size-option">
+                                <span class="cb-product-hero__size-name">King</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Quantity & CTA -->
+                    <div class="cb-product-hero__action">
+                        <div class="cb-product-hero__quantity">
+                            <label for="cb-product-quantity" class="cb-product-hero__quantity-label">Quantity</label>
+                            <div class="cb-product-hero__quantity-selector">
+                                <button class="cb-product-hero__quantity-btn cb-product-hero__quantity-minus">
+                                    <i class="fas fa-minus"></i>
+                                </button>
+                                <input type="number" id="cb-product-quantity" class="cb-product-hero__quantity-input" value="1" min="1" max="10">
+                                <button class="cb-product-hero__quantity-btn cb-product-hero__quantity-plus">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <button class="cb-product-hero__add-to-cart">
+                            <i class="fas fa-shopping-bag"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Trust Near CTA -->
+        <section class="cb-product-trust">
+            <div class="cb-product-trust__inner">
+                <div class="cb-product-trust__items">
+                    <div class="cb-product-trust__item">
+                        <div class="cb-product-trust__icon">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <div class="cb-product-trust__content">
+                            <h3 class="cb-product-trust__title">Free Shipping</h3>
+                            <p class="cb-product-trust__text">Delivered in 3-5 business days</p>
+                        </div>
+                    </div>
+                    <div class="cb-product-trust__item">
+                        <div class="cb-product-trust__icon">
+                            <i class="fas fa-undo"></i>
+                        </div>
+                        <div class="cb-product-trust__content">
+                            <h3 class="cb-product-trust__title">Easy Returns</h3>
+                            <p class="cb-product-trust__text">10-day return policy, no questions asked</p>
+                        </div>
+                    </div>
+                    <div class="cb-product-trust__item">
+                        <div class="cb-product-trust__icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="cb-product-trust__content">
+                            <h3 class="cb-product-trust__title">Secure Payment</h3>
+                            <p class="cb-product-trust__text">SSL encrypted, 100% secure checkout</p>
+                        </div>
+                    </div>
+                    <div class="cb-product-trust__item">
+                        <div class="cb-product-trust__icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <div class="cb-product-trust__content">
+                            <h3 class="cb-product-trust__title">Quality Guarantee</h3>
+                            <p class="cb-product-trust__text">1-year warranty against manufacturing defects</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Product Details -->
+        <section class="cb-product-details">
+            <div class="cb-product-details__inner">
+                <!-- Tab Navigation -->
+                <div class="cb-product-details__tabs">
+                    <button class="cb-product-details__tab cb-product-details__tab--active" data-tab="description">
+                        Description
+                    </button>
+                    <button class="cb-product-details__tab" data-tab="features">
+                        Key Features
+                    </button>
+                    <button class="cb-product-details__tab" data-tab="specifications">
+                        Specifications
+                    </button>
+                    <button class="cb-product-details__tab" data-tab="care">
+                        Care Instructions
+                    </button>
+                </div>
+                
+                <!-- Tab Content -->
+                <div class="cb-product-details__content">
+                    <!-- Description Tab -->
+                    <div class="cb-product-details__tab-pane cb-product-details__tab-pane--active" id="description">
+                        <h2 class="cb-product-details__pane-title">Premium Comfort, Thoughtfully Crafted</h2>
+                        <p class="cb-product-details__pane-text">Our Premium Cotton Bed Sheet Set is designed for those who value both comfort and quality. Made from 100% long-staple cotton with a 300 thread count, these sheets offer a perfect balance of softness and durability.</p>
+                        <p class="cb-product-details__pane-text">The sateen weave provides a subtle sheen and silky feel, while maintaining the breathability that cotton is known for. Perfect for year-round use, these sheets will keep you cool in summer and cozy in winter.</p>
+                        
+                        <div class="cb-product-details__highlight">
+                            <h3 class="cb-product-details__highlight-title">What's Included</h3>
+                            <ul class="cb-product-details__list">
+                                <li class="cb-product-details__list-item">1 Flat Sheet</li>
+                                <li class="cb-product-details__list-item">1 Fitted Sheet</li>
+                                <li class="cb-product-details__list-item">2 Pillowcases (standard size)</li>
+                                <li class="cb-product-details__list-item">Care instructions card</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Features Tab -->
+                    <div class="cb-product-details__tab-pane" id="features">
+                        <h2 class="cb-product-details__pane-title">Key Features</h2>
+                        <div class="cb-product-details__features">
+                            <div class="cb-product-details__feature">
+                                <div class="cb-product-details__feature-icon">
+                                    <i class="fas fa-leaf"></i>
+                                </div>
+                                <div class="cb-product-details__feature-content">
+                                    <h3 class="cb-product-details__feature-title">100% Premium Cotton</h3>
+                                    <p class="cb-product-details__feature-text">Long-staple cotton fibers for superior softness and durability.</p>
+                                </div>
+                            </div>
+                            <div class="cb-product-details__feature">
+                                <div class="cb-product-details__feature-icon">
+                                    <i class="fas fa-wind"></i>
+                                </div>
+                                <div class="cb-product-details__feature-content">
+                                    <h3 class="cb-product-details__feature-title">Breathable Fabric</h3>
+                                    <p class="cb-product-details__feature-text">Natural cotton fibers allow air circulation for comfortable sleep.</p>
+                                </div>
+                            </div>
+                            <div class="cb-product-details__feature">
+                                <div class="cb-product-details__feature-icon">
+                                    <i class="fas fa-ruler-combined"></i>
+                                </div>
+                                <div class="cb-product-details__feature-content">
+                                    <h3 class="cb-product-details__feature-title">Deep Pockets</h3>
+                                    <p class="cb-product-details__feature-text">Fitted sheet with 15-inch deep pockets to accommodate thicker mattresses.</p>
+                                </div>
+                            </div>
+                            <div class="cb-product-details__feature">
+                                <div class="cb-product-details__feature-icon">
+                                    <i class="fas fa-tags"></i>
+                                </div>
+                                <div class="cb-product-details__feature-content">
+                                    <h3 class="cb-product-details__feature-title">Tagless Design</h3>
+                                    <p class="cb-product-details__feature-text">Printed care instructions for added comfort and convenience.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Specifications Tab -->
+                    <div class="cb-product-details__tab-pane" id="specifications">
+                        <h2 class="cb-product-details__pane-title">Product Specifications</h2>
+                        <div class="cb-product-details__specs">
+                            <div class="cb-product-details__spec-row">
+                                <span class="cb-product-details__spec-label">Material</span>
+                                <span class="cb-product-details__spec-value">100% Cotton</span>
+                            </div>
+                            <div class="cb-product-details__spec-row">
+                                <span class="cb-product-details__spec-label">Thread Count</span>
+                                <span class="cb-product-details__spec-value">300</span>
+                            </div>
+                            <div class="cb-product-details__spec-row">
+                                <span class="cb-product-details__spec-label">Weave</span>
+                                <span class="cb-product-details__spec-value">Sateen</span>
+                            </div>
+                            <div class="cb-product-details__spec-row">
+                                <span class="cb-product-details__spec-label">Colors Available</span>
+                                <span class="cb-product-details__spec-value">4 (White, Beige, Sky Blue, Mint Green)</span>
+                            </div>
+                            <div class="cb-product-details__spec-row">
+                                <span class="cb-product-details__spec-label">Sizes Available</span>
+                                <span class="cb-product-details__spec-value">Single, Double, Queen, King</span>
+                            </div>
+                            <div class="cb-product-details__spec-row">
+                                <span class="cb-product-details__spec-label">Care Instructions</span>
+                                <span class="cb-product-details__spec-value">Machine wash cold, Tumble dry low</span>
+                            </div>
+                            <div class="cb-product-details__spec-row">
+                                <span class="cb-product-details__spec-label">Origin</span>
+                                <span class="cb-product-details__spec-value">Made in India</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Care Instructions Tab -->
+                    <div class="cb-product-details__tab-pane" id="care">
+                        <h2 class="cb-product-details__pane-title">Care Instructions</h2>
+                        <div class="cb-product-details__care">
+                            <div class="cb-product-details__care-item">
+                                <h3 class="cb-product-details__care-title">Washing</h3>
+                                <p class="cb-product-details__care-text">Machine wash separately in cold water with mild detergent. Do not bleach.</p>
+                            </div>
+                            <div class="cb-product-details__care-item">
+                                <h3 class="cb-product-details__care-title">Drying</h3>
+                                <p class="cb-product-details__care-text">Tumble dry on low heat. Remove promptly to minimize wrinkles.</p>
+                            </div>
+                            <div class="cb-product-details__care-item">
+                                <h3 class="cb-product-details__care-title">Ironing</h3>
+                                <p class="cb-product-details__care-text">If needed, iron on medium heat while slightly damp.</p>
+                            </div>
+                            <div class="cb-product-details__care-item">
+                                <h3 class="cb-product-details__care-title">Storage</h3>
+                                <p class="cb-product-details__care-text">Store in a cool, dry place away from direct sunlight.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Social Proof -->
+        <section class="cb-product-proof">
+            <div class="cb-product-proof__inner">
+                <h2 class="cb-product-proof__title">Customer Reviews</h2>
+                <p class="cb-product-proof__subtitle">What our customers are saying</p>
+                
+                <div class="cb-product-proof__reviews">
+                    <!-- Review 1 -->
+                    <div class="cb-product-proof__review">
+                        <div class="cb-product-proof__review-header">
+                            <div class="cb-product-proof__review-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="cb-product-proof__review-meta">
+                                <span class="cb-product-proof__review-author">Priya S.</span>
+                                <span class="cb-product-proof__review-date">2 weeks ago</span>
+                            </div>
+                        </div>
+                        <h3 class="cb-product-proof__review-title">"Worth every rupee"</h3>
+                        <p class="cb-product-proof__review-text">"The quality is exceptional for the price. Sheets are soft and breathable, exactly as described. The deep pockets fit my mattress perfectly."</p>
+                    </div>
+                    
+                    <!-- Review 2 -->
+                    <div class="cb-product-proof__review">
+                        <div class="cb-product-proof__review-header">
+                            <div class="cb-product-proof__review-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="cb-product-proof__review-meta">
+                                <span class="cb-product-proof__review-author">Rohan M.</span>
+                                <span class="cb-product-proof__review-date">1 month ago</span>
+                            </div>
+                        </div>
+                        <h3 class="cb-product-proof__review-title">"Great for Indian weather"</h3>
+                        <p class="cb-product-proof__review-text">"Living in Mumbai, breathability is key. These sheets keep me comfortable year-round. The mint green color is exactly as shown in the pictures."</p>
+                    </div>
+                    
+                    <!-- Review 3 -->
+                    <div class="cb-product-proof__review">
+                        <div class="cb-product-proof__review-header">
+                            <div class="cb-product-proof__review-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="cb-product-proof__review-meta">
+                                <span class="cb-product-proof__review-author">Ananya P.</span>
+                                <span class="cb-product-proof__review-date">3 weeks ago</span>
+                            </div>
+                        </div>
+                        <h3 class="cb-product-proof__review-title">"Improved my sleep quality"</h3>
+                        <p class="cb-product-proof__review-text">"The softness is noticeable from the first use. They get even softer with each wash. Delivery was prompt and packaging was eco-friendly."</p>
+                    </div>
+                </div>
+                
+                <!-- Review Summary -->
+                <div class="cb-product-proof__summary">
+                    <div class="cb-product-proof__summary-item">
+                        <span class="cb-product-proof__summary-number">4.5/5</span>
+                        <span class="cb-product-proof__summary-label">Average Rating</span>
+                    </div>
+                    <div class="cb-product-proof__summary-item">
+                        <span class="cb-product-proof__summary-number">428</span>
+                        <span class="cb-product-proof__summary-label">Total Reviews</span>
+                    </div>
+                    <div class="cb-product-proof__summary-item">
+                        <span class="cb-product-proof__summary-number">94%</span>
+                        <span class="cb-product-proof__summary-label">Recommend</span>
+                    </div>
+                </div>
+                
+                <!-- CTA to add review -->
+                <div class="cb-product-proof__cta">
+                    <button class="cb-product-proof__cta-button">
+                        <i class="fas fa-edit"></i>
+                        Write a Review
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Related Products -->
+        <section class="cb-product-related">
+            <div class="cb-product-related__inner">
+                <div class="cb-product-related__header">
+                    <h2 class="cb-product-related__title">You Might Also Like</h2>
+                    <p class="cb-product-related__subtitle">Complete your bedroom setup</p>
+                </div>
+                
+                <div class="cb-product-related__products">
+                    <!-- Related Product 1 -->
+                    <a href="#" class="cb-product-related__product">
+                        <div class="cb-product-related__product-image">
+                            <div class="cb-product-related__image-placeholder">Product Image</div>
+                        </div>
+                        <div class="cb-product-related__product-info">
+                            <h3 class="cb-product-related__product-title">Premium Cotton Duvet Cover</h3>
+                            <div class="cb-product-related__product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span class="cb-product-related__rating-count">(189)</span>
+                            </div>
+                            <div class="cb-product-related__product-price">
+                                <span class="cb-product-related__price-current">₹2,499</span>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <!-- Related Product 2 -->
+                    <a href="#" class="cb-product-related__product">
+                        <div class="cb-product-related__product-image">
+                            <div class="cb-product-related__image-placeholder">Product Image</div>
+                        </div>
+                        <div class="cb-product-related__product-info">
+                            <h3 class="cb-product-related__product-title">Memory Foam Pillow</h3>
+                            <div class="cb-product-related__product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="cb-product-related__rating-count">(312)</span>
+                            </div>
+                            <div class="cb-product-related__product-price">
+                                <span class="cb-product-related__price-current">₹1,299</span>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <!-- Related Product 3 -->
+                    <a href="#" class="cb-product-related__product">
+                        <div class="cb-product-related__product-image">
+                            <div class="cb-product-related__image-placeholder">Product Image</div>
+                        </div>
+                        <div class="cb-product-related__product-info">
+                            <h3 class="cb-product-related__product-title">Lightweight Cotton Blanket</h3>
+                            <div class="cb-product-related__product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span class="cb-product-related__rating-count">(124)</span>
+                            </div>
+                            <div class="cb-product-related__product-price">
+                                <span class="cb-product-related__price-current">₹1,899</span>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <!-- Related Product 4 -->
+                    <a href="#" class="cb-product-related__product">
+                        <div class="cb-product-related__product-image">
+                            <div class="cb-product-related__image-placeholder">Product Image</div>
+                        </div>
+                        <div class="cb-product-related__product-info">
+                            <h3 class="cb-product-related__product-title">Organic Cotton Mattress Protector</h3>
+                            <div class="cb-product-related__product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="cb-product-related__rating-count">(267)</span>
+                            </div>
+                            <div class="cb-product-related__product-price">
+                                <span class="cb-product-related__price-current">₹1,599</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+    </div>
+
+
+        <!-- FOOTER SECTION -->
+        <footer class="cb-footer">
+            <div class="cb-footer__inner">
+                <!-- Main Footer Content -->
+                <div class="cb-footer__main">
+                    <!-- Brand Column -->
+                    <div class="cb-footer__brand">
+                        <div class="cb-footer__logo">
+                            <a href="#" class="cb-footer__logo-link">
+                                <span class="cb-footer__logo-text">CartBay</span>
+                            </a>
+                        </div>
+                        <p class="cb-footer__tagline">Thoughtful shopping for modern living.</p>
+                        <div class="cb-footer__social">
+                            <a href="#" class="cb-footer__social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="cb-footer__social-link">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="cb-footer__social-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="cb-footer__social-link">
+                                <i class="fab fa-pinterest"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Quick Links -->
+                    <div class="cb-footer__links">
+                        <h3 class="cb-footer__links-title">Quick Links</h3>
+                        <ul class="cb-footer__links-list">
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Home</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">All Products</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">New Arrivals</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Best Sellers</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Sale</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Categories -->
+                    <div class="cb-footer__links">
+                        <h3 class="cb-footer__links-title">Categories</h3>
+                        <ul class="cb-footer__links-list">
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Home Essentials</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Personal Care</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Kitchen & Dining</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Sustainable Living</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Gifts</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Support -->
+                    <div class="cb-footer__links">
+                        <h3 class="cb-footer__links-title">Support</h3>
+                        <ul class="cb-footer__links-list">
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Contact Us</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">FAQ</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Shipping Policy</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Return Policy</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Privacy Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Contact Info -->
+                    <div class="cb-footer__contact">
+                        <h3 class="cb-footer__contact-title">Contact Us</h3>
+                        <div class="cb-footer__contact-info">
+                            <div class="cb-footer__contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>hello@cartbay.in</span>
+                            </div>
+                            <div class="cb-footer__contact-item">
+                                <i class="fas fa-phone"></i>
+                                <span>+91 1800-123-4567</span>
+                            </div>
+                            <div class="cb-footer__contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Mumbai, India</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Newsletter Signup -->
+                        <div class="cb-footer__newsletter">
+                            <h4 class="cb-footer__newsletter-title">Stay Updated</h4>
+                            <p class="cb-footer__newsletter-text">Get early access to new collections and exclusive offers.</p>
+                            <form class="cb-footer__newsletter-form">
+                                <input type="email" class="cb-footer__newsletter-input" placeholder="Your email address">
+                                <button type="submit" class="cb-footer__newsletter-submit">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Footer Bottom -->
+                <div class="cb-footer__bottom">
+                    <div class="cb-footer__payment">
+                        <span class="cb-footer__payment-text">Secure Payment:</span>
+                        <div class="cb-footer__payment-icons">
+                            <i class="fab fa-cc-visa"></i>
+                            <i class="fab fa-cc-mastercard"></i>
+                            <i class="fab fa-cc-amex"></i>
+                            <i class="fab fa-cc-paypal"></i>
+                            <i class="fas fa-university"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="cb-footer__copyright">
+                        <p>&copy; 2023 CartBay. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+    <!-- JavaScript for interactive elements -->
+     <script src="script.js"></script>
+    <!-- <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Tab functionality
+            const tabs = document.querySelectorAll('.cb-product-details__tab');
+            const panes = document.querySelectorAll('.cb-product-details__tab-pane');
+            
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    const tabId = this.getAttribute('data-tab');
+                    
+                    // Remove active class from all tabs and panes
+                    tabs.forEach(t => t.classList.remove('cb-product-details__tab--active'));
+                    panes.forEach(p => p.classList.remove('cb-product-details__tab-pane--active'));
+                    
+                    // Add active class to clicked tab and corresponding pane
+                    this.classList.add('cb-product-details__tab--active');
+                    document.getElementById(tabId).classList.add('cb-product-details__tab-pane--active');
+                });
+            });
+            
+            // Quantity selector functionality
+            const quantityInput = document.querySelector('.cb-product-hero__quantity-input');
+            const minusBtn = document.querySelector('.cb-product-hero__quantity-minus');
+            const plusBtn = document.querySelector('.cb-product-hero__quantity-plus');
+            
+            if (minusBtn && plusBtn && quantityInput) {
+                minusBtn.addEventListener('click', function() {
+                    let currentValue = parseInt(quantityInput.value);
+                    if (currentValue > 1) {
+                        quantityInput.value = currentValue - 1;
+                    }
+                });
+                
+                plusBtn.addEventListener('click', function() {
+                    let currentValue = parseInt(quantityInput.value);
+                    if (currentValue < parseInt(quantityInput.max)) {
+                        quantityInput.value = currentValue + 1;
+                    }
+                });
+            }
+            
+            // Image gallery thumbnail click
+            const thumbnails = document.querySelectorAll('.cb-product-hero__thumbnail');
+            thumbnails.forEach(thumb => {
+                thumb.addEventListener('click', function() {
+                    thumbnails.forEach(t => t.classList.remove('cb-product-hero__thumbnail--active'));
+                    this.classList.add('cb-product-hero__thumbnail--active');
+                });
+            });
+            
+            // Color and size option selection
+            const colorOptions = document.querySelectorAll('.cb-product-hero__color-option');
+            const sizeOptions = document.querySelectorAll('.cb-product-hero__size-option');
+            
+            colorOptions.forEach(option => {
+                option.addEventListener('click', function() {
+                    colorOptions.forEach(o => o.classList.remove('cb-product-hero__color-option--active'));
+                    this.classList.add('cb-product-hero__color-option--active');
+                });
+            });
+            
+            sizeOptions.forEach(option => {
+                option.addEventListener('click', function() {
+                    sizeOptions.forEach(o => o.classList.remove('cb-product-hero__size-option--active'));
+                    this.classList.add('cb-product-hero__size-option--active');
+                });
+            });
+            
+            // Add to cart button click
+            const addToCartBtn = document.querySelector('.cb-product-hero__add-to-cart');
+            if (addToCartBtn) {
+                addToCartBtn.addEventListener('click', function() {
+                    const originalText = this.innerHTML;
+                    this.innerHTML = '<i class="fas fa-check"></i> Added to Cart';
+                    this.style.backgroundColor = '#4CAF50';
+                    
+                    setTimeout(() => {
+                        this.innerHTML = originalText;
+                        this.style.backgroundColor = '';
+                    }, 2000);
+                });
+            }
+        });
+    </script> -->
+</body>
+</html>
