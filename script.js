@@ -967,3 +967,87 @@
             });
         });
     
+
+
+
+
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // Navigation active state toggle (demo)
+            const navItems = document.querySelectorAll('.cb-account-nav__item');
+            navItems.forEach(item => {
+                const link = item.querySelector('.cb-account-nav__link');
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    navItems.forEach(i => i.classList.remove('cb-account-nav__item--active'));
+                    item.classList.add('cb-account-nav__item--active');
+                });
+            });
+            
+            // Save changes button feedback
+            const saveBtn = document.querySelector('.cb-account-details__save');
+            if (saveBtn) {
+                saveBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const originalText = this.innerHTML;
+                    this.innerHTML = '<i class="fas fa-check"></i> Saved!';
+                    this.style.backgroundColor = '#4CAF50';
+                    
+                    setTimeout(() => {
+                        this.innerHTML = originalText;
+                        this.style.backgroundColor = '';
+                    }, 2000);
+                });
+            }
+            
+            // Edit address links
+            const editLinks = document.querySelectorAll('.cb-account-address__edit');
+            editLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    console.log('Edit address clicked');
+                });
+            });
+            
+            // Add new address
+            const addAddress = document.querySelector('.cb-account-address__add-link');
+            if (addAddress) {
+                addAddress.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    console.log('Add new address');
+                });
+            }
+            
+            // View all orders
+            const viewAllOrders = document.querySelector('.cb-account-orders__view-all');
+            if (viewAllOrders) {
+                viewAllOrders.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    console.log('View all orders');
+                });
+            }
+            
+            // Card links
+            const cardLinks = document.querySelectorAll('.cb-account-dashboard__card-link');
+            cardLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    console.log('Navigate to:', this.textContent.trim());
+                });
+            });
+            
+            // Logout link
+            const logoutLink = document.querySelector('.cb-account-nav__item--logout .cb-account-nav__link');
+            if (logoutLink) {
+                logoutLink.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    console.log('Logout clicked');
+                });
+            }
+        });
+
+
+
+
+
+

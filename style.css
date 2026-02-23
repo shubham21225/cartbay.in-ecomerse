@@ -15,7 +15,7 @@
    HEADER SECTION
    ============================================ */
 .cb-header {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Intaer', sans-serif;
     background-color: #ffffff;
     border-bottom: 1px solid #f0f0f0;
     position: sticky;
@@ -7494,3 +7494,875 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+ * CartBay My Account Page Styles
+ * Self-contained, matches existing design system exactly
+ * Organized, secure, user-focused account experience
+ */
+
+/* ============================================
+   BASE ACCOUNT CONTAINER
+   ============================================ */
+.cb-account-container {
+    font-family: 'Inter', sans-serif;
+    color: #1a1a1a;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ============================================
+   SECTION 1: ACCOUNT INTRO
+   ============================================ */
+.cb-account-intro {
+    padding: 40px 0 30px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.cb-account-intro__inner {
+    text-align: center;
+}
+
+.cb-account-intro__title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+}
+
+.cb-account-intro__welcome {
+    font-size: 1.125rem;
+    color: #666666;
+    margin: 0;
+}
+
+.cb-account-intro__username {
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+/* ============================================
+   ACCOUNT LAYOUT (NAV + CONTENT)
+   ============================================ */
+.cb-account-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px 0 60px;
+}
+
+@media (min-width: 768px) {
+    .cb-account-layout {
+        flex-direction: row;
+        gap: 50px;
+    }
+}
+
+/* ============================================
+   SECTION 2: ACCOUNT NAVIGATION
+   ============================================ */
+.cb-account-nav {
+    flex-shrink: 0;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .cb-account-nav {
+        width: 240px;
+    }
+}
+
+.cb-account-nav__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding-bottom: 10px;
+    -webkit-overflow-scrolling: touch;
+}
+
+@media (min-width: 768px) {
+    .cb-account-nav__list {
+        flex-direction: column;
+        overflow-x: visible;
+        padding-bottom: 0;
+        gap: 5px;
+    }
+}
+
+.cb-account-nav__item {
+    flex-shrink: 0;
+}
+
+@media (min-width: 768px) {
+    .cb-account-nav__item {
+        width: 100%;
+    }
+}
+
+.cb-account-nav__link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    background-color: #ffffff;
+    border: 1px solid #f0f0f0;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #666666;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+@media (min-width: 768px) {
+    .cb-account-nav__link {
+        white-space: normal;
+    }
+}
+
+.cb-account-nav__link:hover {
+    background-color: #f9f9f9;
+    border-color: #e0e0e0;
+    color: #1a1a1a;
+    transform: translateX(5px);
+}
+
+.cb-account-nav__item--active .cb-account-nav__link {
+    background-color: #1a1a1a;
+    border-color: #1a1a1a;
+    color: #ffffff;
+}
+
+.cb-account-nav__item--logout .cb-account-nav__link {
+    color: #e53935;
+}
+
+.cb-account-nav__item--logout .cb-account-nav__link:hover {
+    background-color: #fff5f5;
+    border-color: #e53935;
+    color: #e53935;
+}
+
+.cb-account-nav__link i {
+    font-size: 1.125rem;
+    width: 20px;
+    text-align: center;
+}
+
+/* ============================================
+   MAIN CONTENT AREA
+   ============================================ */
+.cb-account-content {
+    flex: 1;
+    min-width: 0;
+}
+
+/* ============================================
+   SECTION 3: DASHBOARD OVERVIEW
+   ============================================ */
+.cb-account-dashboard {
+    margin-bottom: 40px;
+}
+
+.cb-account-dashboard__inner {
+    background-color: #ffffff;
+    border-radius: 4px;
+    border: 1px solid #f0f0f0;
+    padding: 30px;
+}
+
+.cb-account-dashboard__title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.cb-account-dashboard__cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .cb-account-dashboard__cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.cb-account-dashboard__card {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    border: 1px solid #f0f0f0;
+    transition: all 0.3s ease;
+}
+
+.cb-account-dashboard__card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    border-color: transparent;
+}
+
+.cb-account-dashboard__card-icon {
+    font-size: 2rem;
+    color: #1a1a1a;
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+.cb-account-dashboard__card-content {
+    flex: 1;
+}
+
+.cb-account-dashboard__card-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.cb-account-dashboard__card-value {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+}
+
+.cb-account-dashboard__card-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.875rem;
+    color: #666666;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.cb-account-dashboard__card-link:hover {
+    color: #1a1a1a;
+}
+
+.cb-account-dashboard__card-link i {
+    font-size: 0.75rem;
+    transition: transform 0.3s ease;
+}
+
+.cb-account-dashboard__card-link:hover i {
+    transform: translateX(5px);
+}
+
+/* ============================================
+   SECTION 4: ORDERS SECTION
+   ============================================ */
+.cb-account-orders {
+    margin-bottom: 40px;
+}
+
+.cb-account-orders__inner {
+    background-color: #ffffff;
+    border-radius: 4px;
+    border: 1px solid #f0f0f0;
+    padding: 30px;
+}
+
+.cb-account-orders__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.cb-account-orders__title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin: 0;
+}
+
+.cb-account-orders__view-all {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9375rem;
+    color: #666666;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.cb-account-orders__view-all:hover {
+    color: #1a1a1a;
+}
+
+.cb-account-orders__view-all i {
+    font-size: 0.75rem;
+    transition: transform 0.3s ease;
+}
+
+.cb-account-orders__view-all:hover i {
+    transform: translateX(5px);
+}
+
+/* Orders Table */
+.cb-account-orders__table-wrapper {
+    overflow-x: auto;
+}
+
+.cb-account-orders__table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9375rem;
+}
+
+.cb-account-orders__table th {
+    text-align: left;
+    padding: 15px 10px;
+    font-weight: 600;
+    color: #1a1a1a;
+    background-color: #f9f9f9;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.cb-account-orders__table td {
+    padding: 15px 10px;
+    border-bottom: 1px solid #f0f0f0;
+    color: #666666;
+}
+
+.cb-account-orders__table td:first-child {
+    font-weight: 500;
+    color: #1a1a1a;
+}
+
+.cb-account-orders__status {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 2px;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.cb-account-orders__status--delivered {
+    background-color: #e8f5e8;
+    color: #4CAF50;
+}
+
+.cb-account-orders__status--processing {
+    background-color: #fff3e0;
+    color: #f57c00;
+}
+
+.cb-account-orders__status--shipped {
+    background-color: #e3f2fd;
+    color: #2196f3;
+}
+
+.cb-account-orders__view {
+    color: #1a1a1a;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.cb-account-orders__view:hover {
+    color: #666666;
+}
+
+/* Mobile Table Stack */
+@media (max-width: 767px) {
+    .cb-account-orders__table,
+    .cb-account-orders__table thead,
+    .cb-account-orders__table tbody,
+    .cb-account-orders__table th,
+    .cb-account-orders__table td,
+    .cb-account-orders__table tr {
+        display: block;
+    }
+    
+    .cb-account-orders__table thead {
+        display: none;
+    }
+    
+    .cb-account-orders__table tr {
+        margin-bottom: 20px;
+        padding: 20px;
+        border: 1px solid #f0f0f0;
+        border-radius: 4px;
+    }
+    
+    .cb-account-orders__table td {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+        border-bottom: 1px solid #f0f0f0;
+    }
+    
+    .cb-account-orders__table td:last-child {
+        border-bottom: none;
+    }
+    
+    .cb-account-orders__table td:before {
+        content: attr(data-label);
+        font-weight: 600;
+        color: #1a1a1a;
+        width: 40%;
+    }
+}
+
+/* ============================================
+   EMPTY STATE (for orders, etc.)
+   ============================================ */
+.cb-account-empty {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.cb-account-empty__icon {
+    font-size: 3rem;
+    color: #f0f0f0;
+    margin-bottom: 20px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cb-account-empty__title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+}
+
+.cb-account-empty__text {
+    font-size: 1rem;
+    color: #666666;
+    margin-bottom: 25px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+.cb-account-empty__cta {
+    display: inline-block;
+    padding: 14px 32px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.cb-account-empty__cta:hover {
+    background-color: #333333;
+    transform: translateY(-2px);
+}
+
+/* ============================================
+   SECTION 5: ADDRESS MANAGEMENT
+   ============================================ */
+.cb-account-address {
+    margin-bottom: 40px;
+}
+
+.cb-account-address__inner {
+    background-color: #ffffff;
+    border-radius: 4px;
+    border: 1px solid #f0f0f0;
+    padding: 30px;
+}
+
+.cb-account-address__title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.cb-account-address__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+    .cb-account-address__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.cb-account-address__card {
+    padding: 25px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    border: 1px solid #f0f0f0;
+    transition: all 0.3s ease;
+}
+
+.cb-account-address__card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    border-color: transparent;
+}
+
+.cb-account-address__card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.cb-account-address__card-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin: 0;
+}
+
+.cb-account-address__badge {
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 4px 10px;
+    background-color: rgba(26, 26, 26, 0.05);
+    color: #666666;
+    border-radius: 2px;
+}
+
+.cb-account-address__card-content {
+    margin-bottom: 20px;
+}
+
+.cb-account-address__card-content p {
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    color: #666666;
+    margin: 0;
+}
+
+.cb-account-address__card-actions {
+    text-align: right;
+}
+
+.cb-account-address__edit {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9375rem;
+    color: #1a1a1a;
+    text-decoration: none;
+    padding: 8px 16px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.cb-account-address__edit:hover {
+    border-color: #1a1a1a;
+    transform: translateY(-2px);
+}
+
+.cb-account-address__edit i {
+    font-size: 0.875rem;
+}
+
+.cb-account-address__add {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #f0f0f0;
+}
+
+.cb-account-address__add-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+    color: #1a1a1a;
+    text-decoration: none;
+    padding: 12px 24px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.cb-account-address__add-link:hover {
+    border-color: #1a1a1a;
+    transform: translateY(-2px);
+}
+
+/* ============================================
+   SECTION 6: ACCOUNT DETAILS
+   ============================================ */
+.cb-account-details {
+    margin-bottom: 30px;
+}
+
+.cb-account-details__inner {
+    background-color: #ffffff;
+    border-radius: 4px;
+    border: 1px solid #f0f0f0;
+    padding: 30px;
+}
+
+.cb-account-details__title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.cb-account-details__form {
+    max-width: 600px;
+}
+
+.cb-account-details__field {
+    margin-bottom: 25px;
+}
+
+.cb-account-details__label {
+    display: block;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: #1a1a1a;
+    margin-bottom: 8px;
+}
+
+.cb-account-details__input {
+    width: 100%;
+    padding: 14px 16px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: #1a1a1a;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.cb-account-details__input:focus {
+    outline: none;
+    border-color: #1a1a1a;
+    box-shadow: 0 0 0 1px rgba(26, 26, 26, 0.1);
+}
+
+.cb-account-details__input:hover {
+    border-color: #cccccc;
+}
+
+.cb-account-details__field-note {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.8125rem;
+    color: #999999;
+    margin-top: 8px;
+}
+
+.cb-account-details__field-note i {
+    font-size: 0.75rem;
+    color: #1a1a1a;
+}
+
+.cb-account-details__actions {
+    margin-top: 30px;
+}
+
+.cb-account-details__save {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 16px 32px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 200px;
+}
+
+.cb-account-details__save:hover {
+    background-color: #333333;
+    transform: translateY(-2px);
+}
+
+/* ============================================
+   PRIVACY REASSURANCE
+   ============================================ */
+.cb-account-privacy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    border: 1px solid #f0f0f0;
+    margin-top: 20px;
+}
+
+.cb-account-privacy i {
+    font-size: 1.125rem;
+    color: #1a1a1a;
+}
+
+.cb-account-privacy p {
+    font-size: 0.9375rem;
+    color: #666666;
+    margin: 0;
+}
+
+/* ============================================
+   RESPONSIVE ADJUSTMENTS
+   ============================================ */
+@media (max-width: 767px) {
+    .cb-account-intro__title {
+        font-size: 2rem;
+    }
+    
+    .cb-account-intro__welcome {
+        font-size: 1rem;
+    }
+    
+    .cb-account-layout {
+        padding: 30px 0 40px;
+    }
+    
+    .cb-account-dashboard__inner,
+    .cb-account-orders__inner,
+    .cb-account-address__inner,
+    .cb-account-details__inner {
+        padding: 20px;
+    }
+    
+    .cb-account-dashboard__title {
+        font-size: 1.5rem;
+    }
+    
+    .cb-account-dashboard__cards {
+        gap: 15px;
+    }
+    
+    .cb-account-dashboard__card {
+        padding: 15px;
+    }
+    
+    .cb-account-dashboard__card-icon {
+        font-size: 1.5rem;
+        width: 40px;
+        height: 40px;
+    }
+    
+    .cb-account-dashboard__card-value {
+        font-size: 1.25rem;
+    }
+    
+    .cb-account-orders__title,
+    .cb-account-address__title,
+    .cb-account-details__title {
+        font-size: 1.25rem;
+    }
+    
+    .cb-account-address__card {
+        padding: 20px;
+    }
+    
+    .cb-account-details__save {
+        width: 100%;
+    }
+}
+
+/* Small mobile adjustments */
+@media (max-width: 479px) {
+    .cb-account-dashboard__card {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .cb-account-dashboard__card-icon {
+        margin-bottom: 10px;
+    }
+    
+    .cb-account-address__card-header {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+    
+    .cb-account-address__card-actions {
+        text-align: center;
+    }
+    
+    .cb-account-address__edit {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .cb-account-address__add-link {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .cb-account-privacy {
+        flex-direction: column;
+        text-align: center;
+    }
+}

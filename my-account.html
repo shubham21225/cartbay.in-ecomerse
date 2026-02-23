@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CartBay - Premium Indian eCommerce</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Main container for WordPress/WooCommerce integration -->
+    <!-- <div class="cb-homepage-container">
+         -->
+        <!-- HEADER SECTION -->
+        <header class="cb-header">
+            <div class="cb-header__inner">
+                <!-- Logo and Mobile Menu Toggle -->
+                <div class="cb-header__top">
+                    <button class="cb-header__mobile-toggle" id="mobileMenuToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    
+                    <div class="cb-header__logo">
+                        <a href="#" class="cb-header__logo-link">
+                            <span class="cb-header__logo-text">CartBay</span>
+                        </a>
+                    </div>
+                    
+                    <div class="cb-header__right">
+                        <div class="cb-header__search">
+                            <button class="cb-header__search-toggle" id="searchToggle">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                        
+                        <div class="cb-header__user">
+                            <a href="#" class="cb-header__user-link">
+                                <i class="fas fa-user"></i>
+                            </a>
+                        </div>
+                        
+                        <div class="cb-header__cart">
+                            <a href="cart.html" class="cb-header__cart-link">
+                                <i class="fas fa-shopping-bag"></i>
+                                <span class="cb-header__cart-count">0</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Search Bar (Hidden on Mobile by default) -->
+                <div class="cb-header__search-bar" id="searchBar">
+                    <form class="cb-header__search-form">
+                        <input type="text" class="cb-header__search-input" placeholder="Search for products...">
+                        <button type="submit" class="cb-header__search-submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                    <button class="cb-header__search-close" id="searchClose">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                
+                <!-- Main Navigation -->
+                <nav class="cb-header__nav" id="mainNav">
+                    <ul class="cb-header__nav-list">
+                        <li class="cb-header__nav-item">
+                            <a href="index.html" class="cb-header__nav-link">Home</a>
+                        </li>
+                        <li class="cb-header__nav-item cb-header__nav-item--has-dropdown">
+                            <a href="#" class="cb-header__nav-link">Collections</a>
+                            <div class="cb-header__dropdown">
+                                <a href="#" class="cb-header__dropdown-link">Home Essentials</a>
+                                <a href="#" class="cb-header__dropdown-link">Personal Care</a>
+                                <a href="#" class="cb-header__dropdown-link">Kitchen & Dining</a>
+                                <a href="#" class="cb-header__dropdown-link">Sustainable Living</a>
+                            </div>
+                        </li>
+                        <li class="cb-header__nav-item">
+                            <a href="all-products.html" class="cb-header__nav-link">Best Sellers</a>
+                        </li>
+                        <li class="cb-header__nav-item">
+                            <a href="blogs.html" class="cb-header__nav-link">Our Blogs</a>
+                        </li>
+                        <li class="cb-header__nav-item">
+                            <a href="about.html" class="cb-header__nav-link">Our Story</a>
+                        </li>
+                        <li class="cb-header__nav-item">
+                            <a href="contact.html" class="cb-header__nav-link">Contact</a>
+                        </li>
+                    </ul>
+                    
+                    <!-- Mobile-only additional links -->
+                    <div class="cb-header__mobile-extras">
+                        <a href="#" class="cb-header__mobile-link">
+                            <i class="fas fa-user"></i>
+                            My Account
+                        </a>
+                        <a href="#" class="cb-header__mobile-link">
+                            <i class="fas fa-heart"></i>
+                            Wishlist
+                        </a>
+                        <a href="#" class="cb-header__mobile-link">
+                            <i class="fas fa-question-circle"></i>
+                            Help Center
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+
+
+    <!-- Account Page Container -->
+    <div class="cb-account-container">
+        
+        <!-- Section 1: Account Intro -->
+        <section class="cb-account-intro">
+            <div class="cb-account-intro__inner">
+                <h1 class="cb-account-intro__title">My Account</h1>
+                <p class="cb-account-intro__welcome">Welcome back, <span class="cb-account-intro__username">Priya</span>!</p>
+            </div>
+        </section>
+
+        <!-- Main Account Layout -->
+        <div class="cb-account-layout">
+            
+            <!-- Section 2: Account Navigation -->
+            <nav class="cb-account-nav">
+                <ul class="cb-account-nav__list">
+                    <li class="cb-account-nav__item cb-account-nav__item--active">
+                        <a href="#" class="cb-account-nav__link">
+                            <i class="fas fa-tachometer-alt"></i>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li class="cb-account-nav__item">
+                        <a href="#" class="cb-account-nav__link">
+                            <i class="fas fa-shopping-bag"></i>
+                            Orders
+                        </a>
+                    </li>
+                    <li class="cb-account-nav__item">
+                        <a href="#" class="cb-account-nav__link">
+                            <i class="fas fa-download"></i>
+                            Downloads
+                        </a>
+                    </li>
+                    <li class="cb-account-nav__item">
+                        <a href="#" class="cb-account-nav__link">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Addresses
+                        </a>
+                    </li>
+                    <li class="cb-account-nav__item">
+                        <a href="#" class="cb-account-nav__link">
+                            <i class="fas fa-user"></i>
+                            Account Details
+                        </a>
+                    </li>
+                    <li class="cb-account-nav__item cb-account-nav__item--logout">
+                        <a href="#" class="cb-account-nav__link">
+                            <i class="fas fa-sign-out-alt"></i>
+                            Logout
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <!-- Main Content Area -->
+            <div class="cb-account-content">
+                
+                <!-- Section 3: Dashboard Overview -->
+                <section class="cb-account-dashboard">
+                    <div class="cb-account-dashboard__inner">
+                        <h2 class="cb-account-dashboard__title">Dashboard Overview</h2>
+                        
+                        <div class="cb-account-dashboard__cards">
+                            <!-- Card 1: Order Count -->
+                            <div class="cb-account-dashboard__card">
+                                <div class="cb-account-dashboard__card-icon">
+                                    <i class="fas fa-shopping-bag"></i>
+                                </div>
+                                <div class="cb-account-dashboard__card-content">
+                                    <h3 class="cb-account-dashboard__card-title">Orders</h3>
+                                    <p class="cb-account-dashboard__card-value">6 total</p>
+                                    <a href="#" class="cb-account-dashboard__card-link">View all orders <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            
+                            <!-- Card 2: Addresses -->
+                            <div class="cb-account-dashboard__card">
+                                <div class="cb-account-dashboard__card-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="cb-account-dashboard__card-content">
+                                    <h3 class="cb-account-dashboard__card-title">Addresses</h3>
+                                    <p class="cb-account-dashboard__card-value">1 shipping, 1 billing</p>
+                                    <a href="#" class="cb-account-dashboard__card-link">Manage addresses <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            
+                            <!-- Card 3: Account Details -->
+                            <div class="cb-account-dashboard__card">
+                                <div class="cb-account-dashboard__card-icon">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="cb-account-dashboard__card-content">
+                                    <h3 class="cb-account-dashboard__card-title">Profile</h3>
+                                    <p class="cb-account-dashboard__card-value">Update your details</p>
+                                    <a href="#" class="cb-account-dashboard__card-link">Edit profile <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Section 4: Orders Section (Recent) -->
+                <section class="cb-account-orders">
+                    <div class="cb-account-orders__inner">
+                        <div class="cb-account-orders__header">
+                            <h2 class="cb-account-orders__title">Recent Orders</h2>
+                            <a href="#" class="cb-account-orders__view-all">View all <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                        
+                        <!-- Desktop Table -->
+                        <div class="cb-account-orders__table-wrapper">
+                            <table class="cb-account-orders__table">
+                                <thead>
+                                    <tr>
+                                        <th>Order</th>
+                                        <th>Date</th>
+                                        <th>Status</th>
+                                        <th>Total</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td data-label="Order">#CB-1234</td>
+                                        <td data-label="Date">March 15, 2024</td>
+                                        <td data-label="Status"><span class="cb-account-orders__status cb-account-orders__status--delivered">Delivered</span></td>
+                                        <td data-label="Total">₹2,499</td>
+                                        <td data-label="Action"><a href="#" class="cb-account-orders__view">View</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label="Order">#CB-1235</td>
+                                        <td data-label="Date">March 10, 2024</td>
+                                        <td data-label="Status"><span class="cb-account-orders__status cb-account-orders__status--processing">Processing</span></td>
+                                        <td data-label="Total">₹4,198</td>
+                                        <td data-label="Action"><a href="#" class="cb-account-orders__view">View</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label="Order">#CB-1236</td>
+                                        <td data-label="Date">March 5, 2024</td>
+                                        <td data-label="Status"><span class="cb-account-orders__status cb-account-orders__status--shipped">Shipped</span></td>
+                                        <td data-label="Total">₹1,899</td>
+                                        <td data-label="Action"><a href="#" class="cb-account-orders__view">View</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <!-- Empty State (hidden by default) -->
+                        <div class="cb-account-empty" style="display: none;">
+                            <div class="cb-account-empty__icon">
+                                <i class="fas fa-shopping-bag"></i>
+                            </div>
+                            <h3 class="cb-account-empty__title">No orders yet</h3>
+                            <p class="cb-account-empty__text">Start exploring our collection to find something you'll love.</p>
+                            <a href="#" class="cb-account-empty__cta">Browse Products</a>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Section 5: Address Management -->
+                <section class="cb-account-address">
+                    <div class="cb-account-address__inner">
+                        <h2 class="cb-account-address__title">Saved Addresses</h2>
+                        
+                        <div class="cb-account-address__grid">
+                            <!-- Shipping Address -->
+                            <div class="cb-account-address__card">
+                                <div class="cb-account-address__card-header">
+                                    <h3 class="cb-account-address__card-title">Shipping Address</h3>
+                                    <span class="cb-account-address__badge">Default</span>
+                                </div>
+                                <div class="cb-account-address__card-content">
+                                    <p>Priya Sharma<br>
+                                    42, Harmony Apartments<br>
+                                    Andheri East<br>
+                                    Mumbai, Maharashtra 400069<br>
+                                    India</p>
+                                </div>
+                                <div class="cb-account-address__card-actions">
+                                    <a href="#" class="cb-account-address__edit">
+                                        <i class="fas fa-pencil-alt"></i>
+                                        Edit
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <!-- Billing Address -->
+                            <div class="cb-account-address__card">
+                                <div class="cb-account-address__card-header">
+                                    <h3 class="cb-account-address__card-title">Billing Address</h3>
+                                    <span class="cb-account-address__badge">Same as shipping</span>
+                                </div>
+                                <div class="cb-account-address__card-content">
+                                    <p>Priya Sharma<br>
+                                    42, Harmony Apartments<br>
+                                    Andheri East<br>
+                                    Mumbai, Maharashtra 400069<br>
+                                    India</p>
+                                </div>
+                                <div class="cb-account-address__card-actions">
+                                    <a href="#" class="cb-account-address__edit">
+                                        <i class="fas fa-pencil-alt"></i>
+                                        Edit
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="cb-account-address__add">
+                            <a href="#" class="cb-account-address__add-link">
+                                <i class="fas fa-plus"></i>
+                                Add New Address
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Section 6: Account Details -->
+                <section class="cb-account-details">
+                    <div class="cb-account-details__inner">
+                        <h2 class="cb-account-details__title">Account Details</h2>
+                        
+                        <form class="cb-account-details__form">
+                            <div class="cb-account-details__field">
+                                <label for="account-name" class="cb-account-details__label">Full Name</label>
+                                <input type="text" id="account-name" class="cb-account-details__input" value="Priya Sharma">
+                            </div>
+                            
+                            <div class="cb-account-details__field">
+                                <label for="account-email" class="cb-account-details__label">Email Address</label>
+                                <input type="email" id="account-email" class="cb-account-details__input" value="priya.sharma@example.com">
+                                <div class="cb-account-details__field-note">
+                                    <i class="fas fa-lock"></i>
+                                    Your email is private and never shared
+                                </div>
+                            </div>
+                            
+                            <div class="cb-account-details__field">
+                                <label for="account-current-password" class="cb-account-details__label">Current Password (leave blank to keep unchanged)</label>
+                                <input type="password" id="account-current-password" class="cb-account-details__input">
+                            </div>
+                            
+                            <div class="cb-account-details__field">
+                                <label for="account-new-password" class="cb-account-details__label">New Password</label>
+                                <input type="password" id="account-new-password" class="cb-account-details__input">
+                            </div>
+                            
+                            <div class="cb-account-details__field">
+                                <label for="account-confirm-password" class="cb-account-details__label">Confirm New Password</label>
+                                <input type="password" id="account-confirm-password" class="cb-account-details__input">
+                            </div>
+                            
+                            <div class="cb-account-details__actions">
+                                <button type="submit" class="cb-account-details__save">
+                                    <i class="fas fa-save"></i>
+                                    Save Changes
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+                
+                <!-- Logout reminder / privacy reassurance (optional) -->
+                <div class="cb-account-privacy">
+                    <i class="fas fa-shield-alt"></i>
+                    <p>Your data is protected. You're securely logged in.</p>
+                </div>
+                
+            </div> <!-- /.cb-account-content -->
+        </div> <!-- /.cb-account-layout -->
+        
+    </div> <!-- /.cb-account-container -->
+
+        <!-- FOOTER SECTION -->
+        <footer class="cb-footer">
+            <div class="cb-footer__inner">
+                <!-- Main Footer Content -->
+                <div class="cb-footer__main">
+                    <!-- Brand Column -->
+                    <div class="cb-footer__brand">
+                        <div class="cb-footer__logo">
+                            <a href="#" class="cb-footer__logo-link">
+                                <span class="cb-footer__logo-text">CartBay</span>
+                            </a>
+                        </div>
+                        <p class="cb-footer__tagline">Thoughtful shopping for modern living.</p>
+                        <div class="cb-footer__social">
+                            <a href="#" class="cb-footer__social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="cb-footer__social-link">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="cb-footer__social-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="cb-footer__social-link">
+                                <i class="fab fa-pinterest"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Quick Links -->
+                    <div class="cb-footer__links">
+                        <h3 class="cb-footer__links-title">Quick Links</h3>
+                        <ul class="cb-footer__links-list">
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Home</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">All Products</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">New Arrivals</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Best Sellers</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Sale</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Categories -->
+                    <div class="cb-footer__links">
+                        <h3 class="cb-footer__links-title">Categories</h3>
+                        <ul class="cb-footer__links-list">
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Home Essentials</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Personal Care</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Kitchen & Dining</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Sustainable Living</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Gifts</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Support -->
+                    <div class="cb-footer__links">
+                        <h3 class="cb-footer__links-title">Support</h3>
+                        <ul class="cb-footer__links-list">
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Contact Us</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">FAQ</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Shipping Policy</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Return Policy</a>
+                            </li>
+                            <li class="cb-footer__links-item">
+                                <a href="#" class="cb-footer__links-link">Privacy Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Contact Info -->
+                    <div class="cb-footer__contact">
+                        <h3 class="cb-footer__contact-title">Contact Us</h3>
+                        <div class="cb-footer__contact-info">
+                            <div class="cb-footer__contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>hello@cartbay.in</span>
+                            </div>
+                            <div class="cb-footer__contact-item">
+                                <i class="fas fa-phone"></i>
+                                <span>+91 1800-123-4567</span>
+                            </div>
+                            <div class="cb-footer__contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Mumbai, India</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Newsletter Signup -->
+                        <div class="cb-footer__newsletter">
+                            <h4 class="cb-footer__newsletter-title">Stay Updated</h4>
+                            <p class="cb-footer__newsletter-text">Get early access to new collections and exclusive offers.</p>
+                            <form class="cb-footer__newsletter-form">
+                                <input type="email" class="cb-footer__newsletter-input" placeholder="Your email address">
+                                <button type="submit" class="cb-footer__newsletter-submit">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Footer Bottom -->
+                <div class="cb-footer__bottom">
+                    <div class="cb-footer__payment">
+                        <span class="cb-footer__payment-text">Secure Payment:</span>
+                        <div class="cb-footer__payment-icons">
+                            <i class="fab fa-cc-visa"></i>
+                            <i class="fab fa-cc-mastercard"></i>
+                            <i class="fab fa-cc-amex"></i>
+                            <i class="fab fa-cc-paypal"></i>
+                            <i class="fas fa-university"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="cb-footer__copyright">
+                        <p>&copy; 2023 CartBay. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    <!-- JavaScript for interactive elements -->
+<script src="script.js"></script>
+
+    <!-- <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Form submission handling
+            const contactForm = document.getElementById('contactForm');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    const submitBtn = this.querySelector('.cb-contact-form__submit');
+                    const originalText = submitBtn.innerHTML;
+                    
+                    // Simulate form submission
+                    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+                    submitBtn.disabled = true;
+                    
+                    setTimeout(() => {
+                        // In real implementation, this would be an AJAX call
+                        submitBtn.innerHTML = '<i class="fas fa-check"></i> Message Sent';
+                        submitBtn.style.backgroundColor = '#4CAF50';
+                        
+                        setTimeout(() => {
+                            submitBtn.innerHTML = originalText;
+                            submitBtn.disabled = false;
+                            submitBtn.style.backgroundColor = '';
+                            contactForm.reset();
+                        }, 3000);
+                    }, 1500);
+                });
+            }
+            
+            // Form reset button
+            const resetBtn = document.querySelector('.cb-contact-form__reset');
+            if (resetBtn) {
+                resetBtn.addEventListener('click', function() {
+                    // Optional: Add a confirmation
+                    console.log('Form cleared');
+                });
+            }
+            
+            // FAQ accordion functionality
+            const faqQuestions = document.querySelectorAll('.cb-contact-faq__question');
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', function() {
+                    const item = this.parentElement;
+                    const answer = this.nextElementSibling;
+                    const icon = this.querySelector('.cb-contact-faq__icon');
+                    
+                    // Close other open items
+                    document.querySelectorAll('.cb-contact-faq__item').forEach(otherItem => {
+                        if (otherItem !== item && otherItem.classList.contains('cb-contact-faq__item--active')) {
+                            otherItem.classList.remove('cb-contact-faq__item--active');
+                            otherItem.querySelector('.cb-contact-faq__answer').style.maxHeight = null;
+                            otherItem.querySelector('.cb-contact-faq__icon').style.transform = 'rotate(0deg)';
+                        }
+                    });
+                    
+                    // Toggle current item
+                    item.classList.toggle('cb-contact-faq__item--active');
+                    
+                    if (item.classList.contains('cb-contact-faq__item--active')) {
+                        answer.style.maxHeight = answer.scrollHeight + 'px';
+                        icon.style.transform = 'rotate(180deg)';
+                    } else {
+                        answer.style.maxHeight = null;
+                        icon.style.transform = 'rotate(0deg)';
+                    }
+                });
+            });
+            
+            // Form validation styling
+            const formInputs = document.querySelectorAll('.cb-contact-form__input, .cb-contact-form__textarea');
+            formInputs.forEach(input => {
+                // Add focus styling
+                input.addEventListener('focus', function() {
+                    this.parentElement.classList.add('cb-contact-form__field--focused');
+                });
+                
+                input.addEventListener('blur', function() {
+                    this.parentElement.classList.remove('cb-contact-form__field--focused');
+                    
+                    // Add validation styling
+                    if (this.value.trim() === '' && this.required) {
+                        this.parentElement.classList.add('cb-contact-form__field--error');
+                    } else {
+                        this.parentElement.classList.remove('cb-contact-form__field--error');
+                        if (this.value.trim() !== '') {
+                            this.parentElement.classList.add('cb-contact-form__field--valid');
+                        } else {
+                            this.parentElement.classList.remove('cb-contact-form__field--valid');
+                        }
+                    }
+                });
+                
+                // Real-time validation for email
+                if (input.type === 'email') {
+                    input.addEventListener('input', function() {
+                        const isValid = this.checkValidity();
+                        if (this.value.trim() === '') {
+                            this.parentElement.classList.remove('cb-contact-form__field--error');
+                            this.parentElement.classList.remove('cb-contact-form__field--valid');
+                        } else if (isValid) {
+                            this.parentElement.classList.remove('cb-contact-form__field--error');
+                            this.parentElement.classList.add('cb-contact-form__field--valid');
+                        } else {
+                            this.parentElement.classList.add('cb-contact-form__field--error');
+                            this.parentElement.classList.remove('cb-contact-form__field--valid');
+                        }
+                    });
+                }
+            });
+            
+            // Select field styling
+            const selectFields = document.querySelectorAll('.cb-contact-form__select');
+            selectFields.forEach(select => {
+                select.addEventListener('change', function() {
+                    if (this.value) {
+                        this.parentElement.classList.add('cb-contact-form__field--valid');
+                    } else {
+                        this.parentElement.classList.remove('cb-contact-form__field--valid');
+                    }
+                });
+            });
+            
+            // Checkbox styling
+            const checkboxes = document.querySelectorAll('.cb-contact-form__checkbox');
+            checkboxes.forEach(checkbox => {
+                checkbox.addEventListener('change', function() {
+                    if (this.checked) {
+                        this.parentElement.classList.add('cb-contact-form__checkbox-label--checked');
+                    } else {
+                        this.parentElement.classList.remove('cb-contact-form__checkbox-label--checked');
+                    }
+                });
+            });
+            
+            // FAQ CTA hover effect
+            const faqCta = document.querySelector('.cb-contact-faq__cta-link');
+            if (faqCta) {
+                faqCta.addEventListener('mouseenter', function() {
+                    const icon = this.querySelector('i');
+                    if (icon) {
+                        icon.style.transform = 'translateX(5px)';
+                    }
+                });
+                
+                faqCta.addEventListener('mouseleave', function() {
+                    const icon = this.querySelector('i');
+                    if (icon) {
+                        icon.style.transform = 'translateX(0)';
+                    }
+                });
+            }
+        });
+    </script> -->
+</body>
+</html>
